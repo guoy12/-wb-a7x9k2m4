@@ -13,7 +13,28 @@ const getArgs = (name) => args.flatMap((arg, index) => arg === name && args[inde
 
 const scriptDir = path.dirname(new URL(import.meta.url).pathname);
 const repoDir = path.resolve(scriptDir, "..");
-const source = path.resolve(getArg("--source", "/Applications/WorkBuddy.app/Contents/Resources/app.asar"));
+
+// 跨平台默认 app.asar 路径
+function defaultSource() {
+  if (process.platform === "darwin") {
+    return "/Applications/WorkBuddy.app/Contents/Resources/app.asar";
+  }
+  if (process.platform === "win32") {
+    const candidates = [
+      path.join(os.homedir(), "AppData", "Local", "Programs", "WorkBuddy", "resources", "app.asar"),
+      path.join(os.homedir(), "AppData", "Local", "Programs", "workbuddy", "resources", "app.asar"),
+      "C:\\Program Files\\WorkBuddy\\resources\\app.asar",
+      "C:\\Program Files (x86)\\WorkBuddy\\resources\\app.asar",
+    ];
+    for (const c of candidates) {
+      if (fs.existsSync(c)) return c;
+    }
+    return candidates[0];
+  }
+  return "/Applications/WorkBuddy.app/Contents/Resources/app.asar";
+}
+
+const source = path.resolve(getArg("--source", defaultSource()));
 const output = path.resolve(getArg("--output", path.join(repoDir, ".work", "app.patched.asar")));
 const skin = path.resolve(getArg("--skin", path.join(repoDir, "theme", "skin.css")));
 const scripts = getArgs("--script").map((script) => path.resolve(script));
