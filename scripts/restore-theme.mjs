@@ -43,10 +43,12 @@ function checkRunning() {
 }
 
 const backup = path.resolve(getArg("--backup"));
-const target = path.resolve(getArg("--target", defaultTarget()));
+// --target 为空字符串时也 fallback 到默认路径
+const targetArg = getArg("--target");
+const target = path.resolve(targetArg || defaultTarget());
 const allowRunning = args.includes("--allow-running");
 if (!backup || !fs.existsSync(backup)) throw new Error("请使用 --backup 指定备份 app.asar");
-if (!fs.existsSync(target)) throw new Error(`找不到 WorkBuddy 资源：${target}`);
+if (!fs.existsSync(target)) throw new Error(`找不到 WorkBuddy 资源：${target}\n请用 --target 指定 app.asar 完整路径，例如: --target "C:\\Users\\<用户名>\\AppData\\Local\\Programs\\WorkBuddy\\resources\\app.asar"`);
 
 const isRunning = checkRunning();
 if (isRunning && !allowRunning) throw new Error("WorkBuddy 仍在运行。请完全退出应用后再恢复，或在测试副本时传入 --allow-running。");

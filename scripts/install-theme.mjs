@@ -46,7 +46,9 @@ function checkRunning() {
 }
 
 const patched = path.resolve(getArg("--patched"));
-const target = path.resolve(getArg("--target", defaultTarget()));
+// --target 为空字符串时也 fallback 到默认路径
+const targetArg = getArg("--target");
+const target = path.resolve(targetArg || defaultTarget());
 const backupRoot = path.resolve(getArg("--backup-dir", path.join(os.homedir(), ".workbuddy", "backups", "workbuddy-skin")));
 const allowRunning = args.includes("--allow-running");
 
