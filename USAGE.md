@@ -1,7 +1,7 @@
 # WorkBuddy 皮肤工坊 · 使用指南
 
-49 款主题皮肤，每款含 **浅色 + 深色双模式 CSS** 和 **AI 生成的高清背景图**（1536×1024）。
-主题格式参考 [`workbuddy-qq2008-theme`](https://cnb.woa.com/runcao/workbuddy-qq2008-theme)，通过覆盖 WorkBuddy 的 CSS 变量（`--vscode-*` / `--wb-*`）+ 关键界面选择器实现换肤。
+49 款主题皮肤，每款含 **浅色 + 深色双模式 CSS** 和 **4K 高清壁纸**（1920×1080 ~ 7680×4320）。
+通过覆盖 WorkBuddy 的 CSS 变量（`--vscode-*` / `--wb-*`）+ 关键界面选择器实现换肤，支持 macOS 和 Windows。
 
 ## 目录结构
 
@@ -25,40 +25,36 @@ workbuddy-skin-gallery/
 
 把下面这句话发给 **WorkBuddy Agent**（把 `<主题id>` 换成你要装的主题，例如 `one-piece-strawhat`）：
 
-> 请阅读 `C:\Users\Administrator\Desktop\watson\data\workbuddy-skin-gallery\skins\<主题id>\` 下的 `skin.css` 和 `hero.png`，参考 `C:\Users\Administrator\Desktop\watson\data\repos\workbuddy-qq2008-theme` 仓库的安装流程（先读它的 AGENT_INSTALL.md 和 scripts/patch-theme.mjs），把该皮肤注入当前 WorkBuddy 的 app.asar：先备份原版再原子替换，完成后告诉我重启方式和恢复路径。
+> 请克隆 `https://github.com/guoy12/-wb-a7x9k2m4.git`，阅读仓库中的 **AGENT_INSTALL.md**（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 `skins/<主题id>/skin.css` 和 `hero.png` 是纯 CSS 样式覆盖和静态图片（可先阅读审查）。脚本 `scripts/patch-theme.mjs` 和 `scripts/install-theme.mjs` 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows。
 
 Agent 会自动完成：**检查环境 → 备份 app.asar → 把 skin.css 与 hero.png 打进补丁副本 → 校验 → 原子替换**。
 装完 `Command/Ctrl + Q` 完全退出 WorkBuddy 再重开即生效。
 
 ---
 
-## 方式二：手动脚本安装（macOS 示例）
+## 方式二：手动脚本安装
 
-前提：已 clone qq2008 仓库（本仓库已放在 `data/repos/workbuddy-qq2008-theme`），Node.js ≥ 22。
+前提：已 clone 本仓库，Node.js ≥ 22，以及 `@electron/asar` 包（WorkBuddy 隔离 Node 工作区自带）。
 
 ```bash
-# 1. 选一款皮肤，例如海贼王
-SKIN_DIR="C:/Users/Administrator/Desktop/watson/data/workbuddy-skin-gallery/skins/one-piece-strawhat"
+# 1. 克隆仓库
+git clone https://github.com/guoy12/-wb-a7x9k2m4.git
+cd -wb-a7x9k2m4
 
-# 2. 复用 qq2008 仓库的 patch 脚本思路：
-#    把 app.asar 解包 -> 在入口 HTML 注入 <link skin.css> 并拷贝 hero.png -> 重新打包
-cd data/repos/workbuddy-qq2008-theme
+# 2. 构建补丁（以海贼王为例，脚本自动探测 app.asar 路径）
+node scripts/patch-theme.mjs --skin skins/one-piece-strawhat/skin.css --asset skins/one-piece-strawhat/hero.png
 
-# 3. 将其 theme/ 目录内容替换为所选皮肤
-cp "$SKIN_DIR/skin.css"  theme/qq2008-skin.css
-cp "$SKIN_DIR/hero.png"  theme/hero.png
-
-# 4. 执行它原有的安装流程（会自动备份原版 app.asar）
-./install.sh
+# 3. 安装（自动备份原版再原子替换）
+node scripts/install-theme.mjs --patched .work/app.patched.asar
 ```
 
 恢复（用安装时打印的备份路径）：
 
 ```bash
-./restore.sh "$HOME/.workbuddy/backups/workbuddy-qq2008/<时间戳>/app.asar"
+node scripts/restore-theme.mjs --backup ~/.workbuddy/backups/workbuddy-skin/<时间戳>/app.asar
 ```
 
-> Windows 没有现成 install.sh，建议直接用方式一让 Agent 操作，或方式三。
+> macOS 和 Windows 均支持，脚本自动探测 WorkBuddy 安装路径。如果探测失败，用 `--source`/`--target` 手动指定 app.asar 完整路径。
 
 ---
 
@@ -89,7 +85,7 @@ python inject_skin.py --port 9223 --css skins/one-piece-strawhat/skin.css
 | 方式 | 改动官方文件 | 重启后保留 | 可逆性 | 适合人群 |
 |------|:---:|:---:|:---:|------|
 | ① Agent 安装 | 是（有备份） | ✅ | 用备份恢复 | 大多数用户 |
-| ② 手动脚本 | 是（有备份） | ✅ | restore.sh | macOS 折腾党 |
+| ② 手动脚本 | 是（有备份） | ✅ | restore-theme.mjs | 折腾党 |
 | ③ CDP 注入 | 否 | ❌（需重注） | 即时恢复 | 想先试试效果 |
 
 ---

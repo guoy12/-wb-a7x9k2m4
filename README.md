@@ -37,18 +37,22 @@ python -m http.server 8931
 ```
 skins/<主题id>/
   ├── skin.css    # 完整主题样式（~210 条变量覆盖，light + dark）
-  ├── hero.png    # 高清背景图（CSS 内 url("./hero.png") 相对引用）
+  ├── hero.png    # 4K 高清壁纸（CSS 内 url("./hero.png") 相对引用）
   └── theme.json  # 元数据
 index.html        # 皮肤选择器页面
+themes-data.js    # 49 主题数据（自动生成）
 generate.py       # 主题生成器：9 个核心色派生 60+ CSS 变量
 data_part*.py     # 49 主题配色数据
-prompts.py        # 49 张背景图的 AI 生图 prompt
+prompts.py        # 49 张背景图的搜索关键词（Wallhaven）
+fetch_wallpapers*.py  # 壁纸批量下载脚本
+scripts/          # 通用安装脚本（patch/install/restore，跨平台）
+AGENT_INSTALL.md  # Agent 安装指令文档
 ```
 
 ## 新增皮肤
 
 1. 在 `data_part*.py` 追加主题字典（9 个核心颜色 × 明暗两套）
-2. 放一张 `hero.png` 到 `skins/<主题id>/`
+2. 放一张 `hero.png` 到 `skins/<主题id>/`（或运行 `python fetch_wallpapers_hd.py` 自动从 Wallhaven 下载）
 3. 运行 `python generate.py` 重新生成全部 CSS 与数据
 
 ## 声明
