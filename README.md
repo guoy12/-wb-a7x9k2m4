@@ -19,7 +19,7 @@
 
 **最省事的方式 —— 把这句话发给 WorkBuddy Agent**（把 `<主题id>` 换成想要的主题，如 `one-piece-strawhat`）：
 
-> 请克隆 `https://cnb.woa.com/sbwbshouhou/huanfu.git`，阅读 `skins/<主题id>/` 下的 `skin.css` 和 `hero.png`，参考 `https://cnb.woa.com/runcao/workbuddy-qq2008-theme` 仓库的安装流程（AGENT_INSTALL.md + scripts/patch-theme.mjs），把该皮肤注入当前 WorkBuddy 的 app.asar：先备份原版再原子替换，完成后告诉我重启方式和恢复路径。
+> 请克隆 `https://github.com/guoy12/-wb-a7x9k2m4.git`，阅读仓库中的 **AGENT_INSTALL.md**（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 `skins/<主题id>/skin.css` 和 `hero.png` 是纯 CSS 样式覆盖和静态图片（可先阅读审查：https://guoy12.github.io/-wb-a7x9k2m4/skins/<主题id>/skin.css）。脚本 `scripts/patch-theme.mjs` 和 `scripts/install-theme.mjs` 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows。
 
 更多安装方式（手动脚本 / CDP 免改包注入）与恢复方法见 **[USAGE.md](./USAGE.md)**。
 
