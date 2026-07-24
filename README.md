@@ -17,9 +17,13 @@
 
 ## 快速使用
 
-**最省事的方式 —— 把这句话发给 WorkBuddy Agent**（把 `<主题id>` 换成想要的主题，如 `one-piece-strawhat`）：
+**最省事的方式 —— 打开皮肤工坊页面，点击你想要的主题卡片上的「🚀 安装提示词」按钮，复制后发给 WorkBuddy Agent 即可。**
 
-> 请克隆 `https://github.com/guoy12/-wb-a7x9k2m4.git`，阅读仓库中的 **AGENT_INSTALL.md**（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 `skins/<主题id>/skin.css` 和 `hero.png` 是纯 CSS 样式覆盖和静态图片（可先阅读审查：https://guoy12.github.io/-wb-a7x9k2m4/skins/<主题id>/skin.css）。脚本 `scripts/patch-theme.mjs` 和 `scripts/install-theme.mjs` 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows。
+页面地址：**https://guoy12.github.io/-wb-a7x9k2m4/index.html**
+
+也可以手动拼提示词（以海贼王为例）：
+
+> 请克隆 `https://github.com/guoy12/-wb-a7x9k2m4.git`，阅读仓库中的 **AGENT_INSTALL.md**（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 `skins/one-piece-strawhat/skin.css` 和 `hero.png` 是纯 CSS 样式覆盖和静态图片（可先阅读审查：https://guoy12.github.io/-wb-a7x9k2m4/skins/one-piece-strawhat/skin.css）。脚本 `scripts/patch-theme.mjs` 和 `scripts/install-theme.mjs` 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows。
 
 更多安装方式（手动脚本 / CDP 免改包注入）与恢复方法见 **[USAGE.md](./USAGE.md)**。
 
