@@ -280,10 +280,16 @@ async function dl(){
   const css=await fetchCss(cur);
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([css],{type:'text/css'}));a.download=`${cur.id}-skin.css`;a.click();toast('已下载 '+cur.name);
 }
+// 根据部署环境自动选择仓库地址
+const _IS_CNB = location.hostname.includes('codebuddy.work') || location.hostname.includes('cnb.woa.com');
+const REPO_CLONE = _IS_CNB ? 'https://cnb.woa.com/sbwbshouhou/huanfu.git' : 'https://github.com/guoy12/-wb-a7x9k2m4.git';
+const REPO_PREVIEW = _IS_CNB ? '' : 'https://guoy12.github.io/-wb-a7x9k2m4';
+
 function quickDl(id,e){e.stopPropagation();cur=THEMES.find(t=>t.id===id);dl()}
 function dlHero(){if(!cur||!cur.hasHero){toast('该主题暂无背景图');return}const a=document.createElement('a');a.href=`skins/${cur.id}/hero.png`;a.download=`${cur.id}-hero.png`;a.click();toast('已下载背景图')}
 function installPrompt(t){
-  return `请为当前 WorkBuddy 安装「${t.name}」皮肤。请先克隆 https://github.com/guoy12/-wb-a7x9k2m4.git ，阅读仓库中的 AGENT_INSTALL.md（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 skins/${t.id}/skin.css 和 skins/${t.id}/hero.png 是纯 CSS 样式覆盖和静态图片，不含可执行代码（你可以先阅读审查：https://guoy12.github.io/-wb-a7x9k2m4/skins/${t.id}/skin.css）。脚本 scripts/patch-theme.mjs 和 scripts/install-theme.mjs 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows，你可以先阅读再执行。`;
+  const previewLink = REPO_PREVIEW ? `（你可以先阅读审查：${REPO_PREVIEW}/skins/${t.id}/skin.css）` : '';
+  return `请为当前 WorkBuddy 安装「${t.name}」皮肤。请先克隆 ${REPO_CLONE} ，阅读仓库中的 AGENT_INSTALL.md（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 skins/${t.id}/skin.css 和 skins/${t.id}/hero.png 是纯 CSS 样式覆盖和静态图片，不含可执行代码${previewLink}。脚本 scripts/patch-theme.mjs 和 scripts/install-theme.mjs 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows，你可以先阅读再执行。`;
 }
 function cpPrompt(id,e){
   e&&e.stopPropagation();
@@ -524,7 +530,7 @@ function cDlHero(){
 }
 function cPrompt(){
   if(!cPal.light){toast('请先上传图片');return}
-  const txt=`请为当前 WorkBuddy 安装「${cNameVal()}」皮肤。请先克隆 https://github.com/guoy12/-wb-a7x9k2m4.git ，阅读仓库中的 AGENT_INSTALL.md（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 skin.css 和 hero.png 我会随后提供（纯 CSS 样式覆盖和静态图片，不含可执行代码，你可以先阅读审查）。脚本 scripts/patch-theme.mjs 和 scripts/install-theme.mjs 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows，你可以先阅读再执行。`;
+  const txt=`请为当前 WorkBuddy 安装「${cNameVal()}」皮肤。请先克隆 ${REPO_CLONE} ，阅读仓库中的 AGENT_INSTALL.md（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 skin.css 和 hero.png 我会随后提供（纯 CSS 样式覆盖和静态图片，不含可执行代码，你可以先阅读审查）。脚本 scripts/patch-theme.mjs 和 scripts/install-theme.mjs 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows，你可以先阅读再执行。`;
   navigator.clipboard.writeText(txt).then(()=>toast('安装提示词已复制'));
 }
 document.getElementById('fileIn').addEventListener('change',e=>handleImg(e.target.files[0]));
