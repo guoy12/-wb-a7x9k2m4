@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "creative-chinese-red",
+  "name": "创意·中国红",
+  "category": "creative",
+  "categoryName": "创意",
+  "desc": "故宫宫墙红配琉璃金，国潮当道",
+  "tags": [
+    "创意",
+    "国潮",
+    "中国红"
+  ],
+  "hero": "hero.png"
+}

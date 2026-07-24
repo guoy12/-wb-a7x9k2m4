@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "nature-aurora",
+  "name": "自然·极光",
+  "category": "nature",
+  "categoryName": "自然",
+  "desc": "冰岛夜空的欧若拉，绿紫交织的光之舞",
+  "tags": [
+    "自然",
+    "极光",
+    "梦幻"
+  ],
+  "hero": "hero.png"
+}

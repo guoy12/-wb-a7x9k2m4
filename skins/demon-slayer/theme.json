@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "demon-slayer",
+  "name": "鬼灭之刃·水之呼吸",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "炭治郎的水之呼吸，蓝绿渐变如流水清澈",
+  "tags": [
+    "鬼灭",
+    "水之呼吸",
+    "蓝绿"
+  ],
+  "hero": "hero.png"
+}

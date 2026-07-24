@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "nature-glacier",
+  "name": "自然·冰川蓝",
+  "category": "nature",
+  "categoryName": "自然",
+  "desc": "冰岛冰川的纯净蓝白，世界尽头的冷酷仙境",
+  "tags": [
+    "自然",
+    "冰川",
+    "蓝白"
+  ],
+  "hero": "hero.png"
+}

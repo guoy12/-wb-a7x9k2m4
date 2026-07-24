@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "nature-ocean",
+  "name": "自然·深海蓝",
+  "category": "nature",
+  "categoryName": "自然",
+  "desc": "马里亚纳的静谧深蓝，聆听鲸歌",
+  "tags": [
+    "自然",
+    "海洋",
+    "深蓝"
+  ],
+  "hero": "hero.png"
+}

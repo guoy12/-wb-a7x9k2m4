@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "genshin-liyue",
+  "name": "原神·璃月",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "岩王帝君的鎏金黄，千岩牢固重嶂不移",
+  "tags": [
+    "原神",
+    "璃月",
+    "岩金"
+  ],
+  "hero": "hero.png"
+}

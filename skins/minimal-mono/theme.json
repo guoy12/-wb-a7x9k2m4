@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "minimal-mono",
+  "name": "简约·黑白灰",
+  "category": "minimal",
+  "categoryName": "简约",
+  "desc": "极致黑白灰，MUJI 式性冷淡风",
+  "tags": [
+    "简约",
+    "黑白",
+    "MUJI"
+  ],
+  "hero": "hero.png"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "starrail",
+  "name": "崩坏·星穹铁道",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "星穹列车的银蓝科幻，愿此行终抵群星",
+  "tags": [
+    "星铁",
+    "科幻",
+    "银蓝"
+  ],
+  "hero": "hero.png"
+}

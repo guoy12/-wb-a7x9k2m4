@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "one-piece-strawhat",
+  "name": "海贼王·草帽一伙",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "草帽海贼团的热情与自由，大海蓝与活力橙的碰撞",
+  "tags": [
+    "海贼王",
+    "热血",
+    "冒险"
+  ],
+  "hero": "hero.png"
+}

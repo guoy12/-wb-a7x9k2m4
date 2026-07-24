@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "tech-ironman",
+  "name": "科技风·钢铁侠",
+  "category": "tech",
+  "categoryName": "科技",
+  "desc": "斯塔克工业金红配色，方舟反应堆核心",
+  "tags": [
+    "科技",
+    "钢铁侠",
+    "金红"
+  ],
+  "hero": "hero.png"
+}

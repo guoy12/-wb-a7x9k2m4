@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "retro-gameboy",
+  "name": "复古·Game Boy",
+  "category": "retro",
+  "categoryName": "复古",
+  "desc": "GB 掌机经典灰绿屏，俄罗斯方块走起",
+  "tags": [
+    "复古",
+    "GameBoy",
+    "掌机"
+  ],
+  "hero": "hero.png"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "tech-gundam",
+  "name": "科技风·高达白",
+  "category": "tech",
+  "categoryName": "科技",
+  "desc": "RX-78 经典白蓝红黄，机动战士出击",
+  "tags": [
+    "科技",
+    "高达",
+    "机甲"
+  ],
+  "hero": "hero.png"
+}

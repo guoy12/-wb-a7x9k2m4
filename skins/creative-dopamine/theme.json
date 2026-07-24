@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "creative-dopamine",
+  "name": "创意·多巴胺",
+  "category": "creative",
+  "categoryName": "创意",
+  "desc": "高饱和撞色拼接，快乐因子爆炸",
+  "tags": [
+    "创意",
+    "多巴胺",
+    "撞色"
+  ],
+  "hero": "hero.png"
+}

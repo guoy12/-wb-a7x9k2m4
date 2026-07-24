@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "creative-aurora-glass",
+  "name": "创意·极光玻璃",
+  "category": "creative",
+  "categoryName": "创意",
+  "desc": "毛玻璃上的极光渐变，iOS 风格的通透感",
+  "tags": [
+    "创意",
+    "毛玻璃",
+    "极光"
+  ],
+  "hero": "hero.png"
+}

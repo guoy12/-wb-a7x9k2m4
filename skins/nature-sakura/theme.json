@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "nature-sakura",
+  "name": "自然·樱花粉",
+  "category": "nature",
+  "categoryName": "自然",
+  "desc": "京都哲学之道的樱吹雪，春日限定浪漫",
+  "tags": [
+    "自然",
+    "樱花",
+    "粉色"
+  ],
+  "hero": "hero.png"
+}

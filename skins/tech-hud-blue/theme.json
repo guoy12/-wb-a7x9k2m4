@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "tech-hud-blue",
+  "name": "科技风·全息蓝",
+  "category": "tech",
+  "categoryName": "科技",
+  "desc": "贾维斯式全息界面，冷峻的未来科技蓝",
+  "tags": [
+    "科技",
+    "HUD",
+    "全息"
+  ],
+  "hero": "hero.png"
+}

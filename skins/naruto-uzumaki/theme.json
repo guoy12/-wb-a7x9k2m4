@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "naruto-uzumaki",
+  "name": "火影忍者·鸣人",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "橙色旋风！木叶忍者永不放弃的忍道",
+  "tags": [
+    "火影",
+    "鸣人",
+    "橙色"
+  ],
+  "hero": "hero.png"
+}

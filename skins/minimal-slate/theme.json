@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "minimal-slate",
+  "name": "简约·石板蓝",
+  "category": "minimal",
+  "categoryName": "简约",
+  "desc": "高级石板灰蓝，冷静克制的商务范",
+  "tags": [
+    "简约",
+    "商务",
+    "灰蓝"
+  ],
+  "hero": "hero.png"
+}

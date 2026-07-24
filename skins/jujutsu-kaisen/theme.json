@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "jujutsu-kaisen",
+  "name": "咒术回战·咒力紫",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "宿傩之力的妖异紫，咒术师的暗黑美学",
+  "tags": [
+    "咒术",
+    "紫色",
+    "暗黑"
+  ],
+  "hero": "hero.png"
+}

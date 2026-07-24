@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "tech-tron",
+  "name": "科技风·创战纪",
+  "category": "tech",
+  "categoryName": "科技",
+  "desc": "电子网络的光轮蓝橙，极速光轨美学",
+  "tags": [
+    "科技",
+    "创战纪",
+    "光轮"
+  ],
+  "hero": "hero.png"
+}

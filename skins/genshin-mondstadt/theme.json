@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "genshin-mondstadt",
+  "name": "原神·蒙德",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "风与自由的城邦，蒲公英青绿与天空蓝",
+  "tags": [
+    "原神",
+    "蒙德",
+    "自由"
+  ],
+  "hero": "hero.png"
+}

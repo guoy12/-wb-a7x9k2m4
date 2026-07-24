@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "genshin-inazuma",
+  "name": "原神·稻妻",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "雷电将军的永恒紫电，鸣神大社的绯樱",
+  "tags": [
+    "原神",
+    "稻妻",
+    "雷紫"
+  ],
+  "hero": "hero.png"
+}

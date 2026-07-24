@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "nature-lavender",
+  "name": "自然·薰衣草",
+  "category": "nature",
+  "categoryName": "自然",
+  "desc": "普罗旺斯花田的淡紫，仲夏夜之梦",
+  "tags": [
+    "自然",
+    "薰衣草",
+    "紫色"
+  ],
+  "hero": "hero.png"
+}

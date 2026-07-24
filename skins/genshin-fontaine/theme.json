@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "genshin-fontaine",
+  "name": "原神·枫丹",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "水之国度的优雅蓝金，欧庇克莱歌剧院",
+  "tags": [
+    "原神",
+    "枫丹",
+    "水蓝"
+  ],
+  "hero": "hero.png"
+}

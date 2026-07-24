@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "retro-fc-redwhite",
+  "name": "复古·红白机",
+  "category": "retro",
+  "categoryName": "复古",
+  "desc": "任天堂 FC 红白经典配色，8-bit 童年回忆",
+  "tags": [
+    "复古",
+    "红白机",
+    "8bit"
+  ],
+  "hero": "hero.png"
+}

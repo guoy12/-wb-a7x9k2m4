@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "creative-morandi",
+  "name": "创意·莫兰迪",
+  "category": "creative",
+  "categoryName": "创意",
+  "desc": "低饱和灰调莫兰迪色，油画般的温柔",
+  "tags": [
+    "创意",
+    "莫兰迪",
+    "高级灰"
+  ],
+  "hero": "hero.png"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "minimal-mint",
+  "name": "简约·薄荷",
+  "category": "minimal",
+  "categoryName": "简约",
+  "desc": "清晨薄荷叶尖的露珠，清爽无负担",
+  "tags": [
+    "简约",
+    "薄荷",
+    "清爽"
+  ],
+  "hero": "hero.png"
+}

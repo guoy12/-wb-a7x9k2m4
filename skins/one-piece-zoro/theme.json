@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "one-piece-zoro",
+  "name": "海贼王·索隆绿",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "三刀流剑士的沉稳墨绿，九山八海无所不断",
+  "tags": [
+    "海贼王",
+    "索隆",
+    "绿色"
+  ],
+  "hero": "hero.png"
+}

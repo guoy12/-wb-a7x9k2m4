@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "retro-qq2008",
+  "name": "复古·QQ 2008",
+  "category": "retro",
+  "categoryName": "复古",
+  "desc": "经典 QQ 2008 玻璃蓝，致敬青春的滴滴声",
+  "tags": [
+    "复古",
+    "QQ",
+    "经典"
+  ],
+  "hero": "hero.png"
+}

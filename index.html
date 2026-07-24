@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorkBuddy 皮肤工坊 · 49 款主题任选</title>
+<style>
+:root{
+  --gbg:#0e1016;--gsur:#171a23;--gcard:#1e222e;--gborder:#2c3140;
+  --gtext:#e6e9f2;--gmuted:#8b92a8;--gacc:#6c8cff;--gacc2:#a78bfa;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--gbg);color:var(--gtext);min-height:100vh}
+a{color:var(--gacc)}
+/* header */
+.hd{background:linear-gradient(120deg,#1b2340 0%,#2b1e4a 55%,#3a1c50 100%);padding:44px 24px 36px;text-align:center;position:relative;overflow:hidden}
+.hd::before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 20% 30%,rgba(108,140,255,.18),transparent 45%),radial-gradient(circle at 80% 70%,rgba(167,139,250,.14),transparent 40%);animation:flt 16s ease-in-out infinite alternate}
+@keyframes flt{to{transform:translate(3%,4%) rotate(2deg)}}
+.hd h1{font-size:2.4rem;letter-spacing:-.5px;position:relative}
+.hd p{opacity:.8;margin-top:8px;position:relative}
+.hd .stats{display:flex;gap:14px;justify-content:center;margin-top:22px;position:relative;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(8px);border-radius:12px;padding:8px 22px}
+.stat b{font-size:1.5rem;display:block}
+.stat span{font-size:.78rem;opacity:.7}
+/* toolbar */
+.tb{max-width:1380px;margin:26px auto 0;padding:0 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.chip{padding:7px 16px;border-radius:18px;border:1px solid var(--gborder);background:var(--gsur);color:var(--gmuted);cursor:pointer;font-size:.88rem;transition:.18s}
+.chip:hover{color:var(--gtext);border-color:var(--gacc)}
+.chip.on{background:linear-gradient(120deg,var(--gacc),var(--gacc2));border-color:transparent;color:#fff}
+#q{flex:1;min-width:180px;padding:9px 16px;border-radius:12px;border:1px solid var(--gborder);background:var(--gsur);color:var(--gtext);font-size:.92rem;outline:none}
+#q:focus{border-color:var(--gacc)}
+/* grid */
+.grid{max-width:1380px;margin:22px auto 60px;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+.card{background:var(--gcard);border:1px solid var(--gborder);border-radius:16px;overflow:hidden;cursor:pointer;transition:.25s cubic-bezier(.4,0,.2,1);animation:up .4s ease both}
+.card:hover{transform:translateY(-5px);border-color:var(--gacc);box-shadow:0 14px 40px rgba(0,0,0,.4)}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.pv{height:190px;padding:6px;position:relative}
+.bdg{position:absolute;top:10px;right:10px;z-index:3;padding:2px 10px;border-radius:10px;font-size:.7rem;font-weight:700;color:#fff}
+.bdg.hot{background:linear-gradient(120deg,#ff6b35,#e91e63)}
+.bdg.new{background:linear-gradient(120deg,#00c853,#00acc1)}
+/* mini ui */
+.ui{height:100%;display:grid;grid-template-columns:78px 1fr;grid-template-rows:30px 1fr 34px;gap:3px;border-radius:10px;overflow:hidden;border:1px solid rgba(128,128,128,.25)}
+.ui .sb{grid-row:1/4;padding:4px;display:flex;flex-direction:column;gap:4px}
+.ui .sblogo{height:22px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;letter-spacing:.5px}
+.ui .sbit{height:16px;border-radius:4px;opacity:.55}
+.ui .sbit.on{opacity:1}
+.ui .tp{display:flex;align-items:center;gap:5px;padding:0 8px;border-radius:0}
+.ui .dot{width:7px;height:7px;border-radius:50%;opacity:.75}
+.ui .mn{padding:8px;display:flex;flex-direction:column;gap:6px;overflow:hidden}
+.ui .bb{height:20px;border-radius:7px;width:72%}
+.ui .bb.ai{width:88%;margin-left:auto}
+.ui .ips{display:flex;align-items:center;padding:0 10px;gap:6px}
+.ui .ip{flex:1;height:20px;border-radius:10px}
+.ui .snd{width:20px;height:20px;border-radius:50%;flex:none}
+/* info */
+.info{padding:14px 16px 16px}
+.info h3{font-size:1.05rem}
+.info .ds{font-size:.8rem;color:var(--gmuted);margin:4px 0 10px;line-height:1.5;min-height:2.4em}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tag{font-size:.7rem;padding:2px 9px;border-radius:9px;background:rgba(108,140,255,.12);color:var(--gacc);border:1px solid rgba(108,140,255,.22)}
+.acts{display:flex;gap:8px}
+.btn{flex:1;padding:8px 0;border-radius:9px;border:none;cursor:pointer;font-size:.85rem;font-weight:600;transition:.18s;display:flex;align-items:center;justify-content:center;gap:5px}
+.btn.p{background:linear-gradient(120deg,var(--gacc),var(--gacc2));color:#fff}
+.btn.p:hover{filter:brightness(1.12)}
+.btn.s{background:rgba(255,255,255,.06);color:var(--gmuted);border:1px solid var(--gborder)}
+.btn.s:hover{color:var(--gtext);background:rgba(255,255,255,.1)}
+/* modal */
+.mo{display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(6px);z-index:99;align-items:center;justify-content:center;padding:20px}
+.mo.show{display:flex}
+.md{background:var(--gsur);border:1px solid var(--gborder);border-radius:18px;width:min(920px,100%);max-height:92vh;overflow-y:auto}
+.mdhd{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--gborder);position:sticky;top:0;background:var(--gsur);z-index:2}
+.mdhd b{font-size:1.2rem}
+.x{width:34px;height:34px;border-radius:50%;border:none;background:rgba(255,255,255,.08);color:var(--gmuted);font-size:1.2rem;cursor:pointer}
+.x:hover{background:rgba(255,80,80,.25);color:#ff8080}
+.mdbd{padding:20px 22px}
+.seg{display:inline-flex;background:var(--gbg);border-radius:9px;padding:3px;margin-bottom:14px}
+.seg button{padding:5px 16px;border:none;border-radius:7px;background:transparent;color:var(--gmuted);cursor:pointer;font-size:.85rem}
+.seg button.on{background:var(--gacc);color:#fff}
+.big{border-radius:12px;overflow:hidden;border:1px solid var(--gborder);margin-bottom:18px}
+.big .ui{height:400px;grid-template-columns:170px 1fr;grid-template-rows:40px 1fr 52px;border:none;border-radius:0}
+.big .ui .sblogo{height:32px;font-size:11px}
+.big .ui .sbit{height:26px}
+.big .ui .bb{height:30px;border-radius:10px}
+.big .ui .ip{height:30px;border-radius:15px}
+.big .ui .snd{width:30px;height:30px}
+.pal{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 18px}
+.sw{text-align:center}
+.sw i{display:block;width:40px;height:40px;border-radius:9px;border:2px solid rgba(255,255,255,.14);margin-bottom:4px}
+.sw span{font-size:.68rem;color:var(--gmuted)}
+pre{background:var(--gbg);border:1px solid var(--gborder);border-radius:10px;padding:14px;font-size:.78rem;line-height:1.6;color:#9db4ff;max-height:220px;overflow:auto;white-space:pre-wrap;word-break:break-all}
+.ft{text-align:center;color:var(--gmuted);font-size:.82rem;padding:26px;border-top:1px solid var(--gborder)}
+.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:#2e7d32;color:#fff;padding:10px 24px;border-radius:12px;font-size:.9rem;opacity:0;transition:.3s;pointer-events:none;z-index:999}
+.toast.show{opacity:1}
+@media(max-width:640px){.hd h1{font-size:1.6rem}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hd">
+  <h1>🎨 WorkBuddy 皮肤工坊</h1>
+  <p>参考 workbuddy-qq2008-theme 主题格式 · 49 款精美皮肤 · 每款含浅色 + 深色双模式</p>
+  <div class="stats">
+    <div class="stat"><b id="cTotal">49</b><span>款主题</span></div>
+    <div class="stat"><b>7</b><span>大分类</span></div>
+    <div class="stat"><b>98</b><span>套配色方案</span></div>
+  </div>
+</header>
+
+<div class="tb" id="tb">
+  <button class="chip" style="background:linear-gradient(120deg,#f59e0b,#ef4444);border:none;color:#fff;font-weight:700" onclick="openCustom()">🖼 上传图片生成主题</button>
+  <button class="chip on" data-c="all">全部</button>
+  <button class="chip" data-c="anime">动漫</button>
+  <button class="chip" data-c="game">游戏</button>
+  <button class="chip" data-c="tech">科技</button>
+  <button class="chip" data-c="nature">自然</button>
+  <button class="chip" data-c="retro">复古</button>
+  <button class="chip" data-c="minimal">简约</button>
+  <button class="chip" data-c="creative">创意</button>
+  <input id="q" placeholder="搜索主题 / 标签…">
+</div>
+
+<div class="grid" id="grid"></div>
+
+<footer class="ft">WorkBuddy Skin Gallery · 主题结构兼容 workbuddy-qq2008-theme · 仅供个人学习交流</footer>
+
+<div class="mo" id="mo">
+  <div class="md">
+    <div class="mdhd"><b id="mTitle"></b><button class="x" onclick="closeM()">✕</button></div>
+    <div class="mbdb">
+      <div class="seg">
+        <button class="on" id="segL" onclick="setMode('light')">☀️ 浅色模式</button>
+        <button id="segD" onclick="setMode('dark')">🌙 深色模式</button>
+      </div>
+      <div class="big" id="mBig"></div>
+      <h4 style="margin-bottom:8px">配色方案</h4>
+      <div class="pal" id="mPal"></div>
+      <h4 style="margin-bottom:8px">主题文件</h4>
+      <pre id="mCss"></pre>
+      <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+        <button class="btn p" onclick="cpPrompt()">🚀 复制安装提示词</button>
+        <button class="btn s" onclick="dl()">📥 skin.css</button>
+        <button class="btn s" onclick="dlHero()">🖼 背景图</button>
+        <button class="btn s" onclick="cp()">📋 复制变量</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<!-- Custom Theme Modal -->
+<div class="mo" id="cmo">
+  <div class="md">
+    <div class="mdhd"><b>🖼 上传图片，自动生成主题</b><button class="x" onclick="closeC()">✕</button></div>
+    <div class="mbdb">
+      <div id="upZone" style="border:2px dashed var(--gborder);border-radius:12px;padding:26px;text-align:center;cursor:pointer;transition:.2s" onclick="document.getElementById('fileIn').click()">
+        <div style="font-size:2rem;margin-bottom:8px">📁</div>
+        <div style="color:var(--gmuted);font-size:.9rem">点击选择图片，或把图片拖到这里<br><span style="font-size:.75rem">自动提取主色生成整套配色 + skin.css + 安装提示词</span></div>
+      </div>
+      <input type="file" id="fileIn" accept="image/*" style="display:none">
+      <div id="cBody" style="display:none;margin-top:16px">
+        <div style="display:flex;gap:14px;align-items:center;margin-bottom:14px;flex-wrap:wrap">
+          <img id="cThumb" style="width:90px;height:60px;object-fit:cover;border-radius:8px;border:1px solid var(--gborder)">
+          <input id="cName" placeholder="主题名称，例如：我的桌面" style="flex:1;min-width:180px;padding:9px 14px;border-radius:10px;border:1px solid var(--gborder);background:var(--gbg);color:var(--gtext);font-size:.95rem;outline:none">
+        </div>
+        <div class="seg"><button class="on" id="cSegL" onclick="setCMode('light')">☀️ 浅色</button><button id="cSegD" onclick="setCMode('dark')">🌙 深色</button></div>
+        <div class="big"><div class="ui" id="cPv" style="height:340px;grid-template-columns:150px 1fr;grid-template-rows:38px 1fr 48px;border:none;border-radius:0"></div></div>
+        <h4 style="margin:0 0 8px">提取配色</h4>
+        <div class="pal" id="cPal"></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn p" onclick="cDlCss()">📥 下载 skin.css</button>
+          <button class="btn s" onclick="cDlHero()">🖼 下载背景图</button>
+          <button class="btn s" onclick="cPrompt()">🚀 复制安装提示词</button>
+        </div>
+        <pre id="cCss" style="margin-top:12px"></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="themes-data.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+let cur=null,curMode='light',cat='all',kw='';
+
+function lum(c){c=c.replace('#','');return .299*parseInt(c.substr(0,2),16)+.587*parseInt(c.substr(2,2),16)+.114*parseInt(c.substr(4,2),16)}
+function mix(a,b,f){const p=x=>[1,3,5].map(i=>parseInt(x.substr(i,2),16));const A=p(a),B=p(b);return '#'+A.map((v,i)=>Math.round(v+(B[i]-v)*f).toString(16).padStart(2,'0')).join('')}
+function onC(c){return lum(c)<150?'#ffffff':'#1a1a1a'}
+
+function uiHTML(p,big,t){
+  const dk=lum(p.bg)<128;
+  const card=dk?mix(p.bg,'#ffffff',0.06):'#ffffff';
+  const hover=dk?mix(p.sidebar,'#ffffff',0.10):mix(p.sidebar,'#ffffff',0.45);
+  const sel=dk?mix(p.accent,p.bg,0.55):mix(p.accent,'#ffffff',0.8);
+  const onA=onC(p.accent),onT=onC(p.topbar2);
+  // hero 背景: 纵向三段渐变遮罩 — 顶部透出图、底部保证文字可读
+  let mnBg=`background:${card}`;
+  if(t&&t.hasHero){
+    const v1=dk?'0.12':'0.15', v2=dk?'0.42':'0.45', v3=dk?'0.78':'0.82';
+    mnBg=`background:linear-gradient(180deg,${hexA(p.bg,v1)} 0%,${hexA(p.bg,v2)} 45%,${hexA(p.bg,v3)} 100%),url('skins/${t.id}/hero.png');background-size:cover;background-position:center`;
+  }
+  return `<div class="ui" style="background:${p.bg}">
+    <div class="sb" style="background:linear-gradient(180deg,${p.sidebar},${mix(p.sidebar,'#000000',0.07)})">
+      <div class="sblogo" style="background:${card};color:${p.accent};border:1px solid ${p.border};font-size:${big?'16px':'11px'}">${t&&t.emoji?t.emoji:'WB'}</div>
+      <div class="sbit on" style="background:${sel};border:1px solid ${p.accent}"></div>
+      <div class="sbit" style="background:${hover}"></div>
+      <div class="sbit" style="background:${hover}"></div>
+      <div class="sbit" style="background:${hover};opacity:.35"></div>
+    </div>
+    <div class="tp" style="background:linear-gradient(180deg,${p.topbar1},${p.topbar2})">
+      <span class="dot" style="background:${onT}"></span><span class="dot" style="background:${onT}"></span><span class="dot" style="background:${onT}"></span>
+    </div>
+    <div class="mn" style="${mnBg}">
+      <div class="bb" style="background:${hover};border:1px solid ${p.border}"></div>
+      <div class="bb ai" style="background:${sel};border:1px solid ${p.accent}"></div>
+      <div class="bb" style="background:${hover};width:55%;border:1px solid ${p.border}"></div>
+    </div>
+    <div class="ips" style="background:${card}">
+      <div class="ip" style="background:${dk?mix(p.bg,'#ffffff',0.05):p.bg};border:1px solid ${p.border}"></div>
+      <div class="snd" style="background:linear-gradient(180deg,${p.accent},${mix(p.accent,'#000000',0.15)})"></div>
+    </div>
+  </div>`;
+}
+function hexA(c,a){const r=parseInt(c.substr(1,2),16),g=parseInt(c.substr(3,2),16),b=parseInt(c.substr(5,2),16);return `rgba(${r},${g},${b},${a})`}
+
+function render(){
+  const g=$('#grid');g.innerHTML='';
+  const list=THEMES.filter(t=>(cat==='all'||t.cat===cat)&&(!kw||(t.name+t.desc+t.tags.join('')).toLowerCase().includes(kw)));
+  list.forEach((t,i)=>{
+    const el=document.createElement('div');el.className='card';el.style.animationDelay=(i%12*0.03)+'s';
+    el.innerHTML=`<div class="pv">${t.badge?`<span class="bdg ${t.badge}">${t.badge==='hot'?'🔥 热门':'✨ 新作'}</span>`:''}${uiHTML(t.light,false,t)}</div>
+    <div class="info"><h3>${t.name}</h3><div class="ds">${t.desc}</div>
+    <div class="tags"><span class="tag">${t.categoryName}</span>${t.tags.map(x=>`<span class="tag">${x}</span>`).join('')}</div>
+    <div class="acts"><button class="btn p" style="background:linear-gradient(120deg,${t.light.accent},${mix(t.light.accent,'#000000',0.18)})" onclick="cpPrompt('${t.id}',event)">${t.emoji||'🎨'} 安装提示词</button>
+    <button class="btn s" onclick="openM('${t.id}',event)">👁 预览</button></div></div>`;
+    el.querySelector('.pv').onclick=e=>openM(t.id,e);
+    g.appendChild(el);
+  });
+  if(!list.length)g.innerHTML='<div style="grid-column:1/-1;text-align:center;color:var(--gmuted);padding:60px 0">没有找到匹配的主题，换个关键词试试？</div>';
+}
+
+function openM(id,e){e&&e.stopPropagation();cur=THEMES.find(t=>t.id===id);curMode='light';$('#mTitle').textContent=cur.name;$('#segL').className='on';$('#segD').className='';paintM();$('#mo').classList.add('show');document.body.style.overflow='hidden'}
+function closeM(){$('#mo').classList.remove('show');document.body.style.overflow=''}
+function setMode(m){curMode=m;$('#segL').className=m==='light'?'on':'';$('#segD').className=m==='dark'?'on':'';paintM()}
+function paintM(){
+  const p=cur[curMode];
+  $('#mBig').innerHTML=uiHTML(p,true,cur);
+  const items=[['主色',p.accent],['强调色',p.secondary],['背景',p.bg],['侧栏',p.sidebar],['顶栏',p.topbar2],['文字',p.text],['边框',p.border]];
+  $('#mPal').innerHTML=items.map(([n,c])=>`<div class="sw"><i style="background:${c}"></i><span>${n}<br>${c}</span></div>`).join('');
+  $('#mCss').textContent=cssSnippet(cur,p,curMode);
+  // 弹窗主按钮跟随当前主题主色 + emoji
+  const pb=document.querySelector('#mo .md .btn.p');
+  if(pb){pb.style.background=`linear-gradient(120deg,${p.accent},${mix(p.accent,'#000000',0.18)})`;pb.textContent=`${cur.emoji||'🎨'} 复制安装提示词`;}
+}
+function cssSnippet(t,p,mode){
+  const onA=onC(p.accent);
+  return `/* ${t.name} · ${mode==='light'?'浅色':'深色'} 核心变量（完整文件请下载 skin.css）*/
+${mode==='dark'?'body.dark':':root, body, body.light'} {
+  --vscode-editor-background: ${p.bg} !important;
+  --vscode-sideBar-background: ${p.sidebar} !important;
+  --vscode-foreground: ${p.text} !important;
+  --vscode-descriptionForeground: ${p.muted} !important;
+  --vscode-input-border: ${p.border} !important;
+  --vscode-focusBorder: ${p.accent} !important;
+  --vscode-button-background: ${p.accent} !important;
+  --vscode-button-foreground: ${onA} !important;
+  --vscode-textLink-foreground: ${p.accent} !important;
+  --wb-sidebar-bg: ${p.sidebar} !important;
+  --wb-bg-primary: ${lum(p.bg)<128?mix(p.bg,'#ffffff',0.06):'#ffffff'} !important;
+  --wb-text-primary: ${p.text} !important;
+  --wb-button-primary-bg: ${p.accent} !important;
+  --wb-border-default: ${p.border} !important;
+}
+/* 顶栏渐变: linear-gradient(180deg, ${p.topbar1}, ${p.topbar2}) */`;
+}
+async function fetchCss(t){
+  try{const r=await fetch(`skins/${t.id}/skin.css`);if(r.ok)return await r.text()}catch(e){}
+  return cssSnippet(t,t.light,'light')+'\n\n'+cssSnippet(t,t.dark,'dark')+'\n/* 注意: file:// 协议下无法加载完整 skin.css，请通过本地服务器访问本页面获取完整文件 */';
+}
+async function dl(){
+  const css=await fetchCss(cur);
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([css],{type:'text/css'}));a.download=`${cur.id}-skin.css`;a.click();toast('已下载 '+cur.name);
+}
+function quickDl(id,e){e.stopPropagation();cur=THEMES.find(t=>t.id===id);dl()}
+function dlHero(){if(!cur||!cur.hasHero){toast('该主题暂无背景图');return}const a=document.createElement('a');a.href=`skins/${cur.id}/hero.png`;a.download=`${cur.id}-hero.png`;a.click();toast('已下载背景图')}
+function installPrompt(t){
+  return `请为当前 WorkBuddy 安装「${t.name}」皮肤。皮肤 CSS 文件：skins/${t.id}/skin.css，背景图：skins/${t.id}/hero.png（来自 https://cnb.woa.com/sbwbshouhou/huanfu 仓库）。请先克隆 https://cnb.woa.com/sbwbshouhou/huanfu.git 获取皮肤文件与 scripts 目录，阅读 AGENT_INSTALL.md 后，用 scripts/patch-theme.mjs --skin skins/${t.id}/skin.css --asset skins/${t.id}/hero.png 基于当前 WorkBuddy 版本构建补丁副本（scripts/patch-theme.mjs 为本仓库通用版，皮肤文件名校验已参数化），再用 scripts/install-theme.mjs --patched .work/app.patched.asar 完成备份与原子安装，最后告诉我重启方式与恢复路径。`;
+}
+function cpPrompt(id,e){
+  e&&e.stopPropagation();
+  const t=id?THEMES.find(x=>x.id===id):cur;
+  navigator.clipboard.writeText(installPrompt(t)).then(()=>toast('安装提示词已复制，直接发给 WorkBuddy Agent 即可'));
+}
+function cp(){navigator.clipboard.writeText($('#mCss').textContent).then(()=>toast('已复制到剪贴板'))}
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
+
+$('#tb').addEventListener('click',e=>{
+  const b=e.target.closest('.chip');if(!b)return;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));b.classList.add('on');cat=b.dataset.c;render();
+});
+$('#q').addEventListener('input',e=>{kw=e.target.value.trim().toLowerCase();render()});
+$('#mo').addEventListener('click',e=>{if(e.target.id==='mo')closeM()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+
+// ============ 自定义主题: 上传图片生成皮肤 ============
+let cPal={light:null,dark:null},cMode='light',cImgUrl='',cHeroBlob=null;
+
+function rgb2hsl(r,g,b){r/=255;g/=255;b/=255;const mx=Math.max(r,g,b),mn=Math.min(r,g,b);let h=0,s=0,l=(mx+mn)/2;if(mx!==mn){const d=mx-mn;s=l>.5?d/(2-mx-mn):d/(mx+mn);if(mx===r)h=((g-b)/d+(g<b?6:0))/6;else if(mx===g)h=((b-r)/d+2)/6;else h=((r-g)/d+4)/6}return[h*360,s,l]}
+function hsl2hex(h,s,l){h=((h%360)+360)%360;const c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2;let r,g,b;if(h<60){r=c;g=x;b=0}else if(h<120){r=x;g=c;b=0}else if(h<180){r=0;g=c;b=x}else if(h<240){r=0;g=x;b=c}else if(h<300){r=x;g=0;b=c}else{r=c;g=0;b=x}return '#'+[r,g,b].map(v=>Math.round((v+m)*255).toString(16).padStart(2,'0')).join('')}
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+
+function extractMainColor(img){
+  const cv=document.createElement('canvas');cv.width=cv.height=64;
+  const cx=cv.getContext('2d');cx.drawImage(img,0,0,64,64);
+  const d=cx.getImageData(0,0,64,64).data;
+  const buckets=Array.from({length:12},()=>({n:0,sh:0,ss:0,sl:0,sw:0}));
+  let ar=0,ag=0,ab=0,an=0;
+  for(let i=0;i<d.length;i+=4){
+    const r=d[i],g=d[i+1],b=d[i+2];
+    ar+=r;ag+=g;ab+=b;an++;
+    const[h,s,l]=rgb2hsl(r,g,b);
+    if(s<0.14||l<0.08||l>0.93)continue;
+    const w=s*(1-Math.abs(l-0.5));
+    const bk=buckets[Math.floor(h/30)%12];
+    bk.n++;bk.sh+=h*w;bk.ss+=s*w;bk.sl+=l*w;bk.sw+=w;
+  }
+  let best=buckets.reduce((a,b)=>b.n>a.n?b:a,buckets[0]);
+  if(best.n<10)return rgb2hsl(Math.round(ar/an),Math.round(ag/an),Math.round(ab/an));
+  return[best.sh/best.sw,best.ss/best.sw,best.sl/best.sw];
+}
+
+function buildPalettes(h,s,l){
+  const H=h;
+  const sat=clamp(s,0.45,0.85), lum=clamp(l,0.38,0.52);
+  const light={
+    accent:hsl2hex(H,sat,lum),
+    secondary:hsl2hex(H+40,clamp(s,0.4,0.8),clamp(l,0.4,0.55)),
+    bg:hsl2hex(H,clamp(s*0.4,0.15,0.5),0.955),
+    sidebar:hsl2hex(H,clamp(s*0.45,0.2,0.55),0.87),
+    topbar1:hsl2hex(H,clamp(sat+0.15,0.5,0.95),clamp(lum+0.14,0.45,0.66)),
+    topbar2:hsl2hex(H,clamp(sat+0.1,0.5,0.95),clamp(lum-0.04,0.3,0.5)),
+    text:hsl2hex(H,clamp(s*0.5,0.2,0.5),0.17),
+    muted:hsl2hex(H,clamp(s*0.3,0.1,0.35),0.45),
+    border:hsl2hex(H,clamp(s*0.55,0.25,0.6),0.74)
+  };
+  const dark={
+    accent:hsl2hex(H,clamp(s,0.5,0.9),clamp(l+0.12,0.5,0.68)),
+    secondary:hsl2hex(H+40,clamp(s,0.45,0.85),clamp(l+0.14,0.52,0.7)),
+    bg:hsl2hex(H,clamp(s*0.5,0.2,0.5),0.075),
+    sidebar:hsl2hex(H,clamp(s*0.55,0.22,0.55),0.115),
+    topbar1:hsl2hex(H,clamp(sat,0.45,0.9),clamp(lum-0.08,0.26,0.42)),
+    topbar2:hsl2hex(H,clamp(sat,0.5,0.95),clamp(lum-0.16,0.16,0.32)),
+    text:hsl2hex(H,clamp(s*0.35,0.12,0.35),0.92),
+    muted:hsl2hex(H,clamp(s*0.3,0.12,0.3),0.62),
+    border:hsl2hex(H,clamp(s*0.6,0.3,0.7),0.32)
+  };
+  return{light,dark};
+}
+
+function genFullCss(name,p,heroRef){
+  const dk=lum(p.bg)<128;
+  const card=dk?mix(p.bg,'#ffffff',0.06):'#ffffff';
+  const hover=dk?mix(p.sidebar,'#ffffff',0.10):mix(p.sidebar,'#ffffff',0.45);
+  const sel=dk?mix(p.accent,p.bg,0.55):mix(p.accent,'#ffffff',0.8);
+  const onA=onC(p.accent),onT=onC(p.topbar2);
+  const rootSel=dk?'body.dark':':root, body, body.light', bodySel=dk?'body.dark':'body';
+  const v1=dk?'0.12':'0.15',v2=dk?'0.42':'0.45',v3=dk?'0.78':'0.82';
+  const heroLayer=heroRef?`linear-gradient(180deg, ${hexA(p.bg,v1)} 0%, ${hexA(p.bg,v2)} 45%, ${hexA(p.bg,v3)} 100%), url("./${heroRef}"), `:'';
+  return `/* WorkBuddy Skin: ${name} (${dk?'dark':'light'}) — 由皮肤工坊上传图片自动生成 */
+${rootSel} {
+  --vscode-foreground: ${p.text} !important;
+  --vscode-editor-foreground: ${p.text} !important;
+  --vscode-descriptionForeground: ${p.muted} !important;
+  --vscode-disabledForeground: ${p.muted} !important;
+  --vscode-editor-background: ${p.bg} !important;
+  --vscode-sideBar-background: ${p.sidebar} !important;
+  --vscode-panel-background: ${p.bg} !important;
+  --vscode-input-background: ${card} !important;
+  --vscode-dropdown-background: ${card} !important;
+  --vscode-menu-background: ${card} !important;
+  --vscode-editorWidget-background: ${card} !important;
+  --vscode-textCodeBlock-background: ${hover} !important;
+  --vscode-input-border: ${p.border} !important;
+  --vscode-focusBorder: ${p.accent} !important;
+  --vscode-icon-foreground: ${p.muted} !important;
+  --vscode-textLink-foreground: ${p.accent} !important;
+  --vscode-textLink-activeForeground: ${p.accent} !important;
+  --vscode-button-background: ${p.accent} !important;
+  --vscode-button-foreground: ${onA} !important;
+  --vscode-button-hoverBackground: ${mix(p.accent,'#000000',0.12)} !important;
+  --vscode-progressBar-background: ${p.accent} !important;
+  --vscode-badge-background: ${p.accent} !important;
+  --vscode-badge-foreground: ${onA} !important;
+  --vscode-list-hoverBackground: ${hover} !important;
+  --vscode-list-activeSelectionBackground: ${sel} !important;
+  --vscode-list-activeSelectionForeground: ${p.text} !important;
+  --wb-home-bg-primary: ${p.sidebar} !important;
+  --wb-home-bg-secondary: ${p.bg} !important;
+  --wb-bg-primary: ${card} !important;
+  --wb-bg-secondary: ${p.bg} !important;
+  --wb-bg-tertiary: ${hover} !important;
+  --wb-bg-hover: ${hover} !important;
+  --wb-bg-active: ${sel} !important;
+  --wb-sidebar-bg: ${p.sidebar} !important;
+  --wb-text-primary: ${p.text} !important;
+  --wb-text-strong: ${p.text} !important;
+  --wb-text-medium: ${p.text} !important;
+  --wb-text-secondary: ${p.muted} !important;
+  --wb-text-tertiary: ${p.muted} !important;
+  --wb-color-text-primary: ${p.text} !important;
+  --wb-color-text-secondary: ${p.muted} !important;
+  --wb-color-text-tertiary: ${p.muted} !important;
+  --wb-icon-primary: ${p.text} !important;
+  --wb-icon-secondary: ${p.muted} !important;
+  --wb-icon-muted: ${p.muted} !important;
+  --wb-border-default: ${p.border} !important;
+  --wb-border-subtle: ${hover} !important;
+  --wb-border-focus: ${p.accent} !important;
+  --wb-bg-card-strong: ${card} !important;
+  --wb-bg-pill-hover: ${hover} !important;
+  --wb-bg-pill-active: ${p.accent} !important;
+  --wb-control-selected-bg: ${p.accent} !important;
+  --wb-button-primary-bg: ${p.accent} !important;
+  --wb-button-primary-bg-hover: ${mix(p.accent,'#000000',0.12)} !important;
+  --wb-quick-action-selected-bg: ${p.accent} !important;
+  --wb-quick-action-selected-fg: ${onA} !important;
+  --wb-quick-action-item-bg-hover: ${hover} !important;
+  --wb-home-composer-card-bg: ${card} !important;
+  --wb-home-composer-sub-card-bg: ${p.bg} !important;
+  --cb-dropdown-bg-color: ${card} !important;
+  --cb-dropdown-item-hover-bg-color: ${hover} !important;
+  --cb-hover-card-bg-color: ${hover} !important;
+}
+${bodySel}, ${bodySel} #root { color: ${p.text} !important; background: ${p.bg} !important; }
+${bodySel} .teams-container [data-view-id="sidebar"], ${bodySel} .conversation-sidebar, ${bodySel} .conversation-list {
+  background: linear-gradient(180deg, ${p.sidebar} 0%, ${mix(p.sidebar,'#000000',0.08)} 100%) !important;
+  border-right: 1px solid ${p.border} !important;
+}
+${bodySel} .conversation-list-topbar, ${bodySel} .claw-agent-chat-topbar, ${bodySel} .workbuddy-topbar, ${bodySel} .teams-top-bar {
+  background: linear-gradient(180deg, ${p.topbar1} 0%, ${p.topbar2} 100%) !important;
+  border-bottom: 1px solid ${mix(p.topbar2,'#000000',0.2)} !important;
+  color: ${onT} !important;
+}
+${bodySel} .conversation-list-topbar :where(button, svg), ${bodySel} .claw-agent-chat-topbar :where(button, svg), ${bodySel} .workbuddy-topbar :where(button, svg), ${bodySel} .teams-top-bar :where(button, svg) { color: ${onT} !important; }
+${bodySel} .teams-container [data-view-id]:not([data-view-id="sidebar"]), ${bodySel} .teams-main-content, ${bodySel} .main-content, ${bodySel} .main-content--welcome, ${bodySel} .welcome, ${bodySel} .welcome-container, ${bodySel} .claw-agent-chat-pane {
+  background-color: ${p.bg} !important;
+  background-image: ${heroLayer}linear-gradient(135deg, ${mix(p.bg,'#ffffff',0.3)} 0%, ${p.bg} 46%, ${mix(p.bg,'#000000',0.05)} 100%) !important;
+  background-size: cover !important; background-position: center !important;
+}
+${bodySel} .conversation-list-tab-row.active, ${bodySel} .conversation-list-tab-button-box.active, ${bodySel} .conversation-agent-card[class*="selected"] {
+  border-color: ${p.accent} !important; background: ${sel} !important;
+}
+${bodySel} .conversation-agent-card:hover { background: ${hover} !important; }
+${bodySel} .wb-scene-tabs__pill--active, ${bodySel} .wb-scene-tabs__pill--active:hover {
+  border-color: ${p.accent} !important; background: linear-gradient(180deg, ${p.accent}, ${mix(p.accent,'#000000',0.12)}) !important; color: ${onA} !important;
+}
+${bodySel} .wb-home-composer__chips .quick-actions__item, ${bodySel} .wb-home-composer__chip, ${bodySel} .claw-agent-chat-pane .colleague-chat-suggestions__item {
+  border: 1px solid ${p.border} !important; background: ${hexA(p.accent,0.1)} !important; color: ${p.text} !important;
+}
+${bodySel} .wb-home-composer__chips .quick-actions__item:hover, ${bodySel} .wb-home-composer__chip:hover, ${bodySel} .claw-agent-chat-pane .colleague-chat-suggestions__item:hover {
+  border-color: ${p.accent} !important; background: ${hover} !important;
+}
+${bodySel} .wb-home-composer__input-slot, ${bodySel} .claw-agent-chat-pane .colleague-chat-cb-chat [class*="input-area-container"], ${bodySel} .project-detail-view__chat-input, ${bodySel} .atm-modal-chat-input {
+  border: 1px solid ${p.border} !important; background: ${card} !important;
+}
+${bodySel} .wb-home-composer__input-slot [class*="editable"][contenteditable="true"], ${bodySel} .claw-agent-chat-pane [contenteditable="true"] { color: ${p.text} !important; }
+${bodySel} [role="dialog"], ${bodySel} .workspace-more-popover, ${bodySel} .user-menu-popover {
+  border: 1px solid ${p.border} !important; background: ${card} !important;
+}
+${bodySel} ::-webkit-scrollbar-thumb { border: 2px solid transparent; border-radius: 8px; background: ${p.border}; background-clip: padding-box; }
+${bodySel} ::selection { color: ${onA} !important; background: ${p.accent} !important; }
+/* 主题图标个性化 */
+${bodySel} .conversation-list-logo .logo-workbuddy-icon { display: none !important; }
+${bodySel} .conversation-list-logo-row::before { content: "🎨"; font-size: 24px; line-height: 36px; width: 36px; height: 36px; text-align: center; flex: 0 0 36px; }`;
+}
+
+function openCustom(){$('#cmo').classList.add('show');document.body.style.overflow='hidden'}
+function closeC(){$('#cmo').classList.remove('show');document.body.style.overflow=''}
+function setCMode(m){cMode=m;$('#cSegL').className=m==='light'?'on':'';$('#cSegD').className=m==='dark'?'on':'';paintC()}
+
+function handleImg(file){
+  if(!file||!file.type.startsWith('image/'))return;
+  const url=URL.createObjectURL(file);
+  const img=new Image();
+  img.onload=()=>{
+    cImgUrl=url;cHeroBlob=file;
+    const[h,s,l]=extractMainColor(img);
+    cPal=buildPalettes(h,s,l);
+    $('#cThumb').src=url;
+    $('#cBody').style.display='block';
+    $('#upZone').style.borderColor='var(--gacc)';
+    paintC();
+  };
+  img.src=url;
+}
+
+function paintC(){
+  const p=cPal[cMode];if(!p)return;
+  const t={id:'custom',hasHero:!!cImgUrl};
+  const saveFetch=uiHTML(p,true,t);
+  // 自定义主题 hero 用本地 blob url
+  const dk=lum(p.bg)<128;
+  const card=dk?mix(p.bg,'#ffffff',0.06):'#ffffff';
+  let html=saveFetch;
+  if(cImgUrl){
+    const v1=dk?'0.12':'0.15',v2=dk?'0.42':'0.45',v3=dk?'0.78':'0.82';
+    html=html.replace(/background:linear-gradient\(180deg[^;]+/,`background:linear-gradient(180deg,${hexA(p.bg,v1)} 0%,${hexA(p.bg,v2)} 45%,${hexA(p.bg,v3)} 100%),url('${cImgUrl}');background-size:cover;background-position:center`);
+  }
+  $('#cPv').outerHTML=html.replace('class="ui"','class="ui" id="cPv"');
+  const items=[['主色',p.accent],['强调色',p.secondary],['背景',p.bg],['侧栏',p.sidebar],['顶栏',p.topbar2],['文字',p.text],['边框',p.border]];
+  $('#cPal').innerHTML=items.map(([n,c])=>`<div class="sw"><i style="background:${c}"></i><span>${n}<br>${c}</span></div>`).join('');
+  $('#cCss').textContent=genFullCss(cNameVal(),p,cImgUrl?'hero.png':'').split('\n').slice(0,14).join('\n')+'\n/* ……完整文件请下载 skin.css（含浅色+深色两套） */';
+}
+function cNameVal(){return $('#cName').value.trim()||'自定义主题'}
+$('#cName').addEventListener('input',()=>{if(cPal.light)paintC()});
+
+function cDlCss(){
+  if(!cPal.light){toast('请先上传图片');return}
+  const css=genFullCss(cNameVal(),cPal.light,cImgUrl?'hero.png':'')+'\n\n'+genFullCss(cNameVal(),cPal.dark,cImgUrl?'hero.png':'');
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([css],{type:'text/css'}));a.download='skin.css';a.click();toast('已下载 skin.css');
+}
+function cDlHero(){
+  if(!cHeroBlob){toast('请先上传图片');return}
+  const a=document.createElement('a');a.href=cImgUrl;a.download='hero.png';a.click();toast('已下载背景图 hero.png');
+}
+function cPrompt(){
+  if(!cPal.light){toast('请先上传图片');return}
+  const txt=`请为当前 WorkBuddy 安装「${cNameVal()}」皮肤。皮肤 CSS 文件与背景图 hero.png 我会随后提供（由皮肤工坊上传图片自动生成，skin.css 内含浅色+深色两套变量）。请先克隆 https://cnb.woa.com/sbwbshouhou/huanfu.git 阅读 AGENT_INSTALL.md，用仓库内 scripts/patch-theme.mjs --skin <我提供的skin.css路径> --asset <我提供的hero.png路径> 基于当前 WorkBuddy 版本构建补丁副本（该脚本为通用版，皮肤文件名校验已参数化），再用 scripts/install-theme.mjs --patched .work/app.patched.asar 完成备份与原子安装，最后告诉我重启方式与恢复路径。`;
+  navigator.clipboard.writeText(txt).then(()=>toast('安装提示词已复制'));
+}
+document.getElementById('fileIn').addEventListener('change',e=>handleImg(e.target.files[0]));
+const uz=document.getElementById('upZone');
+uz.addEventListener('dragover',e=>{e.preventDefault();uz.style.borderColor='var(--gacc)'});
+uz.addEventListener('drop',e=>{e.preventDefault();handleImg(e.dataTransfer.files[0])});
+
+$('#cTotal').textContent=THEMES.length;
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/* WorkBuddy Skin: 原神·璃月 (genshin-liyue) - light
+   由 workbuddy-skin-gallery 生成, 结构参考 workbuddy-qq2008-theme */
+:root, body, body.light {
+  --vscode-foreground: #3a2c0c !important;
+  --vscode-editor-foreground: #3a2c0c !important;
+  --vscode-descriptionForeground: #7a6a3a !important;
+  --vscode-disabledForeground: #7a6a3a !important;
+  --vscode-editor-background: #fdf8ee !important;
+  --vscode-sideBar-background: #f2e6c8 !important;
+  --vscode-panel-background: #fdf8ee !important;
+  --vscode-input-background: #ffffff !important;
+  --vscode-dropdown-background: #ffffff !important;
+  --vscode-menu-background: #ffffff !important;
+  --vscode-editorWidget-background: #ffffff !important;
+  --vscode-textCodeBlock-background: #f7f0de !important;
+  --vscode-input-border: #e0c36a !important;
+  --vscode-focusBorder: #b8860b !important;
+  --vscode-icon-foreground: #7a6a3a !important;
+  --vscode-textLink-foreground: #b8860b !important;
+  --vscode-textLink-activeForeground: #a2760a !important;
+  --vscode-button-background: #b8860b !important;
+  --vscode-button-foreground: #ffffff !important;
+  --vscode-button-hoverBackground: #a2760a !important;
+  --vscode-progressBar-background: #b8860b !important;
+  --vscode-badge-background: #b8860b !important;
+  --vscode-badge-foreground: #ffffff !important;
+  --vscode-list-hoverBackground: #f7f0de !important;
+  --vscode-list-activeSelectionBackground: #efe4c9 !important;
+  --vscode-list-activeSelectionForeground: #3a2c0c !important;
+  --wb-home-bg-primary: #f2e6c8 !important;
+  --wb-home-bg-secondary: #fdf8ee !important;
+  --wb-bg-primary: #ffffff !important;
+  --wb-bg-secondary: #fdf8ee !important;
+  --wb-bg-tertiary: #f7f0de !important;
+  --wb-bg-hover: #f7f0de !important;
+  --wb-bg-active: #efe4c9 !important;
+  --wb-sidebar-bg: #f2e6c8 !important;
+  --wb-text-primary: #3a2c0c !important;
+  --wb-text-strong: #3a2c0c !important;
+  --wb-text-medium: #3a2c0c !important;
+  --wb-text-secondary: #7a6a3a !important;
+  --wb-text-tertiary: #7a6a3a !important;
+  --wb-color-text-primary: #3a2c0c !important;
+  --wb-color-text-secondary: #7a6a3a !important;
+  --wb-color-text-tertiary: #7a6a3a !important;
+  --wb-icon-primary: #3a2c0c !important;
+  --wb-icon-secondary: #7a6a3a !important;
+  --wb-icon-muted: #7a6a3a !important;
+  --wb-border-default: #e0c36a !important;
+  --wb-border-subtle: #f7f0de !important;
+  --wb-border-focus: #b8860b !important;
+  --wb-bg-card-strong: #ffffff !important;
+  --wb-bg-pill-hover: #f7f0de !important;
+  --wb-bg-pill-active: #b8860b !important;
+  --wb-bg-pill-active-hover: #a2760a !important;
+  --wb-control-selected-bg: #b8860b !important;
+  --wb-control-selected-bg-hover: #a2760a !important;
+  --wb-button-primary-bg: #b8860b !important;
+  --wb-button-primary-bg-hover: #a2760a !important;
+  --wb-button-primary-bg-active: #a2760a !important;
+  --wb-quick-action-arrow-bg: #f7f0de !important;
+  --wb-quick-action-selected-bg: #b8860b !important;
+  --wb-quick-action-selected-fg: #ffffff !important;
+  --wb-quick-action-item-bg-hover: #f7f0de !important;
+  --wb-quick-action-item-border-hover: #e0c36a !important;
+  --wb-quick-action-sub-item-bg: #fdf8ee !important;
+  --wb-quick-action-sub-item-hover-bg: #f7f0de !important;
+  --wb-home-composer-card-bg: #ffffff !important;
+  --wb-home-composer-sub-card-bg: #fdf8ee !important;
+  --wb-home-composer-chip-bg-hover: #f7f0de !important;
+  --wb-home-composer-arrow-fg: #7a6a3a !important;
+  --wb-quick-actions-fade-bg: #fdf8ee !important;
+  --cb-dropdown-bg-color: #ffffff !important;
+  --cb-dropdown-item-hover-bg-color: #f7f0de !important;
+  --cb-hover-card-bg-color: #f7f0de !important;
+}
+
+body,
+body #root {
+  color: #3a2c0c !important;
+  background: #fdf8ee !important;
+}
+
+body .teams-container {
+  background: #f2e6c8 !important;
+}
+
+body .teams-container [data-view-id="sidebar"],
+body .conversation-sidebar,
+body .conversation-list {
+  background: linear-gradient(180deg, #f3e8ce 0%, #f2e6c8 48%, #dfd4b8 100%) !important;
+  border-right: 1px solid #e0c36a !important;
+}
+
+body .conversation-list-topbar,
+body .claw-agent-chat-topbar,
+body .workbuddy-topbar,
+body .teams-top-bar {
+  background: linear-gradient(180deg, #d4a017 0%, #a07008 100%) !important;
+  border-bottom: 1px solid #835c07 !important;
+  color: #ffffff !important;
+}
+
+body .conversation-list-topbar :where(button, svg),
+body .claw-agent-chat-topbar :where(button, svg),
+body .workbuddy-topbar :where(button, svg),
+body .teams-top-bar :where(button, svg) {
+  color: #ffffff !important;
+}
+
+body .teams-container [data-view-id]:not([data-view-id="sidebar"]),
+body .teams-main-content,
+body .main-content,
+body .main-content--welcome,
+body .welcome,
+body .welcome-container,
+body .claw-agent-chat-pane {
+  background-color: #fdf8ee !important;
+  background-image:linear-gradient(180deg, rgba(253,248,238,0.15) 0%, rgba(253,248,238,0.45) 45%, rgba(253,248,238,0.82) 100%), url("./hero.png"),  linear-gradient(135deg, #fefaf4 0%, #fdf8ee 46%, #f3eee4 100%) !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+body .conversation-list-tab-row.active,
+body .conversation-list-tab-button-box.active {
+  border-color: #b8860b !important;
+  background: #f2e9d3 !important;
+}
+
+body .conversation-agent-card:hover {
+  background: #f7f0de !important;
+}
+
+body .conversation-agent-card[class*="selected"] {
+  border-color: #b8860b !important;
+  background: #f2e9d3 !important;
+}
+
+body .wb-scene-tabs__pill--active,
+body .wb-scene-tabs__pill--active:hover {
+  border-color: #b8860b !important;
+  background: linear-gradient(180deg, #b8860b 0%, #a2760a 100%) !important;
+  color: #ffffff !important;
+}
+
+body .wb-home-composer__chips .quick-actions__item,
+body .wb-home-composer__chips .quick-actions-sub__item,
+body .wb-home-composer__chip,
+body .claw-agent-chat-pane .colleague-chat-suggestions__item {
+  border: 1px solid #e0c36a !important;
+  background: rgba(184,134,11,0.1) !important;
+  color: #3a2c0c !important;
+}
+
+body .wb-home-composer__chips .quick-actions__item:hover,
+body .wb-home-composer__chips .quick-actions-sub__item:hover,
+body .wb-home-composer__chip:hover,
+body .claw-agent-chat-pane .colleague-chat-suggestions__item:hover {
+  border-color: #b8860b !important;
+  background: #f7f0de !important;
+}
+
+body .wb-home-composer__input-slot,
+body .claw-agent-chat-pane .colleague-chat-cb-chat [class*="input-area-container"],
+body .project-detail-view__chat-input,
+body .atm-modal-chat-input {
+  border: 1px solid #e0c36a !important;
+  background: #ffffff !important;
+  box-shadow: 0 1px 4px rgba(129,94,8,0.14) !important;
+}
+
+body .wb-home-composer__input-slot [class*="editable"][contenteditable="true"],
+body .claw-agent-chat-pane [contenteditable="true"] {
+  color: #3a2c0c !important;
+}
+
+body [role="dialog"],
+body .workspace-more-popover,
+body .user-menu-popover {
+  border: 1px solid #e0c36a !important;
+  background: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(129,94,8,0.14) !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #e0c36a;
+  background-clip: padding-box;
+}
+
+body ::selection {
+  color: #ffffff !important;
+  background: #b8860b !important;
+}
+
+/* ---- 主题图标个性化: logo 替换为主题 emoji ---- */
+body .conversation-list-logo .logo-workbuddy-icon {
+  display: none !important;
+}
+body .conversation-list-logo-row::before {
+  content: "🏮";
+  font-size: 24px;
+  line-height: 36px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  flex: 0 0 36px;
+}
+
+/* 聊天框右上角主题图标 (参考 qq2008 企鹅图) */
+body .wb-home-composer__input-slot [class*="topRightSlotStandalone"] img {
+  display: none !important;
+}
+body .wb-home-composer__input-slot [class*="topRightSlotStandalone"]::after {
+  content: "🏮";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 36px;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+@charset "UTF-8";
+/* WorkBuddy Skin: 原神·璃月 (genshin-liyue) - dark
+   由 workbuddy-skin-gallery 生成, 结构参考 workbuddy-qq2008-theme */
+body.dark {
+  --vscode-foreground: #faf3dc !important;
+  --vscode-editor-foreground: #faf3dc !important;
+  --vscode-descriptionForeground: #b8a05a !important;
+  --vscode-disabledForeground: #b8a05a !important;
+  --vscode-editor-background: #1d1a14 !important;
+  --vscode-sideBar-background: #29251c !important;
+  --vscode-panel-background: #1d1a14 !important;
+  --vscode-input-background: #282520 !important;
+  --vscode-dropdown-background: #282520 !important;
+  --vscode-menu-background: #2f2c27 !important;
+  --vscode-editorWidget-background: #2f2c27 !important;
+  --vscode-textCodeBlock-background: #3e3b33 !important;
+  --vscode-input-border: #7e6c2a !important;
+  --vscode-focusBorder: #e6c34a !important;
+  --vscode-icon-foreground: #b8a05a !important;
+  --vscode-textLink-foreground: #e6c34a !important;
+  --vscode-textLink-activeForeground: #e9ca60 !important;
+  --vscode-button-background: #e6c34a !important;
+  --vscode-button-foreground: #1a1a1a !important;
+  --vscode-button-hoverBackground: #e9ca60 !important;
+  --vscode-progressBar-background: #e6c34a !important;
+  --vscode-badge-background: #e6c34a !important;
+  --vscode-badge-foreground: #1a1a1a !important;
+  --vscode-list-hoverBackground: #3e3b33 !important;
+  --vscode-list-activeSelectionBackground: #8c7732 !important;
+  --vscode-list-activeSelectionForeground: #faf3dc !important;
+  --wb-home-bg-primary: #29251c !important;
+  --wb-home-bg-secondary: #1d1a14 !important;
+  --wb-bg-primary: #2f2c27 !important;
+  --wb-bg-secondary: #1d1a14 !important;
+  --wb-bg-tertiary: #3e3b33 !important;
+  --wb-bg-hover: #3e3b33 !important;
+  --wb-bg-active: #8c7732 !important;
+  --wb-sidebar-bg: #29251c !important;
+  --wb-text-primary: #faf3dc !important;
+  --wb-text-strong: #faf3dc !important;
+  --wb-text-medium: #faf3dc !important;
+  --wb-text-secondary: #b8a05a !important;
+  --wb-text-tertiary: #b8a05a !important;
+  --wb-color-text-primary: #faf3dc !important;
+  --wb-color-text-secondary: #b8a05a !important;
+  --wb-color-text-tertiary: #b8a05a !important;
+  --wb-icon-primary: #faf3dc !important;
+  --wb-icon-secondary: #b8a05a !important;
+  --wb-icon-muted: #b8a05a !important;
+  --wb-border-default: #7e6c2a !important;
+  --wb-border-subtle: #3e3b33 !important;
+  --wb-border-focus: #e6c34a !important;
+  --wb-bg-card-strong: #2f2c27 !important;
+  --wb-bg-pill-hover: #3e3b33 !important;
+  --wb-bg-pill-active: #e6c34a !important;
+  --wb-bg-pill-active-hover: #e9ca60 !important;
+  --wb-control-selected-bg: #e6c34a !important;
+  --wb-control-selected-bg-hover: #e9ca60 !important;
+  --wb-button-primary-bg: #e6c34a !important;
+  --wb-button-primary-bg-hover: #e9ca60 !important;
+  --wb-button-primary-bg-active: #e9ca60 !important;
+  --wb-quick-action-arrow-bg: #3e3b33 !important;
+  --wb-quick-action-selected-bg: #e6c34a !important;
+  --wb-quick-action-selected-fg: #1a1a1a !important;
+  --wb-quick-action-item-bg-hover: #3e3b33 !important;
+  --wb-quick-action-item-border-hover: #7e6c2a !important;
+  --wb-quick-action-sub-item-bg: #1d1a14 !important;
+  --wb-quick-action-sub-item-hover-bg: #3e3b33 !important;
+  --wb-home-composer-card-bg: #2f2c27 !important;
+  --wb-home-composer-sub-card-bg: #1d1a14 !important;
+  --wb-home-composer-chip-bg-hover: #3e3b33 !important;
+  --wb-home-composer-arrow-fg: #b8a05a !important;
+  --wb-quick-actions-fade-bg: #1d1a14 !important;
+  --cb-dropdown-bg-color: #2f2c27 !important;
+  --cb-dropdown-item-hover-bg-color: #3e3b33 !important;
+  --cb-hover-card-bg-color: #3e3b33 !important;
+}
+
+body.dark,
+body.dark #root {
+  color: #faf3dc !important;
+  background: #1d1a14 !important;
+}
+
+body.dark .teams-container {
+  background: #29251c !important;
+}
+
+body.dark .teams-container [data-view-id="sidebar"],
+body.dark .conversation-sidebar,
+body.dark .conversation-list {
+  background: linear-gradient(180deg, #36322a 0%, #29251c 48%, #231f18 100%) !important;
+  border-right: 1px solid #7e6c2a !important;
+}
+
+body.dark .conversation-list-topbar,
+body.dark .claw-agent-chat-topbar,
+body.dark .workbuddy-topbar,
+body.dark .teams-top-bar {
+  background: linear-gradient(180deg, #7e6725 0%, #7e6625 100%) !important;
+  border-bottom: 1px solid #67541e !important;
+  color: #ffffff !important;
+}
+
+body.dark .conversation-list-topbar :where(button, svg),
+body.dark .claw-agent-chat-topbar :where(button, svg),
+body.dark .workbuddy-topbar :where(button, svg),
+body.dark .teams-top-bar :where(button, svg) {
+  color: #ffffff !important;
+}
+
+body.dark .teams-container [data-view-id]:not([data-view-id="sidebar"]),
+body.dark .teams-main-content,
+body.dark .main-content,
+body.dark .main-content--welcome,
+body.dark .welcome,
+body.dark .welcome-container,
+body.dark .claw-agent-chat-pane {
+  background-color: #1d1a14 !important;
+  background-image:linear-gradient(180deg, rgba(29,26,20,0.12) 0%, rgba(29,26,20,0.42) 45%, rgba(29,26,20,0.78) 100%), url("./hero.png"),  linear-gradient(135deg, #282520 0%, #1d1a14 46%, #171510 100%) !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+body.dark .conversation-list-tab-row.active,
+body.dark .conversation-list-tab-button-box.active {
+  border-color: #e6c34a !important;
+  background: #826e2f !important;
+}
+
+body.dark .conversation-agent-card:hover {
+  background: #3e3b33 !important;
+}
+
+body.dark .conversation-agent-card[class*="selected"] {
+  border-color: #e6c34a !important;
+  background: #826e2f !important;
+}
+
+body.dark .wb-scene-tabs__pill--active,
+body.dark .wb-scene-tabs__pill--active:hover {
+  border-color: #e6c34a !important;
+  background: linear-gradient(180deg, #e6c34a 0%, #e9ca60 100%) !important;
+  color: #1a1a1a !important;
+}
+
+body.dark .wb-home-composer__chips .quick-actions__item,
+body.dark .wb-home-composer__chips .quick-actions-sub__item,
+body.dark .wb-home-composer__chip,
+body.dark .claw-agent-chat-pane .colleague-chat-suggestions__item {
+  border: 1px solid #7e6c2a !important;
+  background: rgba(230,195,74,0.18) !important;
+  color: #faf3dc !important;
+}
+
+body.dark .wb-home-composer__chips .quick-actions__item:hover,
+body.dark .wb-home-composer__chips .quick-actions-sub__item:hover,
+body.dark .wb-home-composer__chip:hover,
+body.dark .claw-agent-chat-pane .colleague-chat-suggestions__item:hover {
+  border-color: #e6c34a !important;
+  background: #3e3b33 !important;
+}
+
+body.dark .wb-home-composer__input-slot,
+body.dark .claw-agent-chat-pane .colleague-chat-cb-chat [class*="input-area-container"],
+body.dark .project-detail-view__chat-input,
+body.dark .atm-modal-chat-input {
+  border: 1px solid #7e6c2a !important;
+  background: #282520 !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5) !important;
+}
+
+body.dark .wb-home-composer__input-slot [class*="editable"][contenteditable="true"],
+body.dark .claw-agent-chat-pane [contenteditable="true"] {
+  color: #faf3dc !important;
+}
+
+body.dark [role="dialog"],
+body.dark .workspace-more-popover,
+body.dark .user-menu-popover {
+  border: 1px solid #7e6c2a !important;
+  background: #2f2c27 !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5) !important;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #7e6c2a;
+  background-clip: padding-box;
+}
+
+body.dark ::selection {
+  color: #1a1a1a !important;
+  background: #e6c34a !important;
+}
+
+/* ---- 主题图标个性化: logo 替换为主题 emoji ---- */
+body.dark .conversation-list-logo .logo-workbuddy-icon {
+  display: none !important;
+}
+body.dark .conversation-list-logo-row::before {
+  content: "🏮";
+  font-size: 24px;
+  line-height: 36px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  flex: 0 0 36px;
+}
+
+/* 聊天框右上角主题图标 (参考 qq2008 企鹅图) */
+body.dark .wb-home-composer__input-slot [class*="topRightSlotStandalone"] img {
+  display: none !important;
+}
+body.dark .wb-home-composer__input-slot [class*="topRightSlotStandalone"]::after {
+  content: "🏮";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 36px;
+  opacity: 0.85;
+  pointer-events: none;
+}

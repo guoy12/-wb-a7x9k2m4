@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "tech-neon-pink",
+  "name": "科技风·霓虹粉",
+  "category": "tech",
+  "categoryName": "科技",
+  "desc": "蒸汽波霓虹粉紫，复古未来主义",
+  "tags": [
+    "科技",
+    "蒸汽波",
+    "霓虹"
+  ],
+  "hero": "hero.png"
+}

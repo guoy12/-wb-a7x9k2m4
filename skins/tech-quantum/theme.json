@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "tech-quantum",
+  "name": "科技风·量子白",
+  "category": "tech",
+  "categoryName": "科技",
+  "desc": "量子实验室的纯净白与冷光银",
+  "tags": [
+    "科技",
+    "量子",
+    "极简"
+  ],
+  "hero": "hero.png"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "nature-forest",
+  "name": "自然·森林绿",
+  "category": "nature",
+  "categoryName": "自然",
+  "desc": "雨后森林的清新翠绿，负氧离子满满",
+  "tags": [
+    "自然",
+    "森林",
+    "清新"
+  ],
+  "hero": "hero.png"
+}

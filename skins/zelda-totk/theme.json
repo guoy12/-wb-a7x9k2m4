@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "zelda-totk",
+  "name": "塞尔达·王国之泪",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "海拉鲁的晨曦绿与古代佐纳乌金",
+  "tags": [
+    "塞尔达",
+    "王国之泪",
+    "冒险"
+  ],
+  "hero": "hero.png"
+}

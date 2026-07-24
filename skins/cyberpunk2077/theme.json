@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "cyberpunk2077",
+  "name": "赛博朋克 2077",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "夜之城的霓虹黄与青，Wake up Samurai",
+  "tags": [
+    "赛博朋克",
+    "夜之城",
+    "霓虹"
+  ],
+  "hero": "hero.png"
+}

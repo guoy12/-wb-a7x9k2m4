@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraft",
+  "name": "我的世界·草方块",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "经典草方块的绿与棕，像素世界等你创造",
+  "tags": [
+    "MC",
+    "像素",
+    "创造"
+  ],
+  "hero": "hero.png"
+}

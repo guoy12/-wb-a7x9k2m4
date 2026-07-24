@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "nature-sunset",
+  "name": "自然·落日橙",
+  "category": "nature",
+  "categoryName": "自然",
+  "desc": "撒哈拉黄昏的暖橘色，治愈一天的疲惫",
+  "tags": [
+    "自然",
+    "落日",
+    "暖橙"
+  ],
+  "hero": "hero.png"
+}

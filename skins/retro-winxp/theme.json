@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "retro-winxp",
+  "name": "复古·Windows XP",
+  "category": "retro",
+  "categoryName": "复古",
+  "desc": "Bliss 壁纸的经典蓝绿，任务栏的银色光泽",
+  "tags": [
+    "复古",
+    "WinXP",
+    "怀旧"
+  ],
+  "hero": "hero.png"
+}

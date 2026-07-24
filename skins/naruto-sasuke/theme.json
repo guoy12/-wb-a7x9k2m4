@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "naruto-sasuke",
+  "name": "火影忍者·佐助",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "宇智波的冷峻蓝黑，雷遁千鸟之光",
+  "tags": [
+    "火影",
+    "佐助",
+    "蓝黑"
+  ],
+  "hero": "hero.png"
+}

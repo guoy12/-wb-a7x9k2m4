@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "wuthering-waves",
+  "name": "鸣潮·今汐",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "今州城的青瓷色，岁主的温润光华",
+  "tags": [
+    "鸣潮",
+    "今汐",
+    "青瓷"
+  ],
+  "hero": "hero.png"
+}

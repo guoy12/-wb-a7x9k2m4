@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "tech-cyber-purple",
+  "name": "科技风·赛博紫",
+  "category": "tech",
+  "categoryName": "科技",
+  "desc": "赛博空间的紫电光网，数字世界的入口",
+  "tags": [
+    "科技",
+    "赛博",
+    "紫色"
+  ],
+  "hero": "hero.png"
+}

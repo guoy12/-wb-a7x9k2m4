@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "nature-desert",
+  "name": "自然·沙漠金",
+  "category": "nature",
+  "categoryName": "自然",
+  "desc": "敦煌鸣沙山的金色沙丘，大漠孤烟直",
+  "tags": [
+    "自然",
+    "沙漠",
+    "金色"
+  ],
+  "hero": "hero.png"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "retro-win98",
+  "name": "复古·Windows 98",
+  "category": "retro",
+  "categoryName": "复古",
+  "desc": "像素灰底与藏青标题栏，拨号上网的年代",
+  "tags": [
+    "复古",
+    "Win98",
+    "像素"
+  ],
+  "hero": "hero.png"
+}

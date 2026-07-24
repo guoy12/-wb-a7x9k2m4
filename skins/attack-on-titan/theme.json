@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "attack-on-titan",
+  "name": "进击的巨人·自由之翼",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "调查兵团的军绿与白翼，献出心脏吧",
+  "tags": [
+    "巨人",
+    "调查兵团",
+    "军绿"
+  ],
+  "hero": "hero.png"
+}

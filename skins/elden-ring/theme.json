@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "elden-ring",
+  "name": "艾尔登法环·黄金树",
+  "category": "game",
+  "categoryName": "游戏",
+  "desc": "褪色者啊，黄金树的赐福指引着你",
+  "tags": [
+    "法环",
+    "黄金树",
+    "史诗"
+  ],
+  "hero": "hero.png"
+}

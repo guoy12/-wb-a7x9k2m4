@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "one-piece-luffy",
+  "name": "海贼王·路飞红",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "路飞标志性红色外套，充满斗志的霸王色",
+  "tags": [
+    "海贼王",
+    "路飞",
+    "红色"
+  ],
+  "hero": "hero.png"
+}

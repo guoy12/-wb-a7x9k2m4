@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "spy-family",
+  "name": "间谍过家家·阿尼亚",
+  "category": "anime",
+  "categoryName": "动漫",
+  "desc": "阿尼亚的粉嫩花生色，哇库哇库！",
+  "tags": [
+    "间谍过家家",
+    "阿尼亚",
+    "粉色"
+  ],
+  "hero": "hero.png"
+}

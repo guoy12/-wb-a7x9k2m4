@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "tech-matrix",
+  "name": "科技风·矩阵绿",
+  "category": "tech",
+  "categoryName": "科技",
+  "desc": "黑客帝国数字雨，绿色代码瀑布",
+  "tags": [
+    "科技",
+    "矩阵",
+    "绿色"
+  ],
+  "hero": "hero.png"
+}

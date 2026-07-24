@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "minimal-ivory",
+  "name": "简约·象牙白",
+  "category": "minimal",
+  "categoryName": "简约",
+  "desc": "温润象牙白配燕麦色，日式侘寂美学",
+  "tags": [
+    "简约",
+    "侘寂",
+    "米白"
+  ],
+  "hero": "hero.png"
+}
