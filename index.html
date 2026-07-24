@@ -283,15 +283,7 @@ async function dl(){
 function quickDl(id,e){e.stopPropagation();cur=THEMES.find(t=>t.id===id);dl()}
 function dlHero(){if(!cur||!cur.hasHero){toast('该主题暂无背景图');return}const a=document.createElement('a');a.href=`skins/${cur.id}/hero.png`;a.download=`${cur.id}-hero.png`;a.click();toast('已下载背景图')}
 function installPrompt(t){
-  return `我想给 WorkBuddy 换一个自己制作的 CSS 皮肤主题「${t.name}」。皮肤文件是纯 CSS 样式规则（类似浏览器自定义样式），你可以先审查内容再决定：${`https://guoy12.github.io/-wb-a7x9k2m4/skins/${t.id}/skin.css`}
-
-请先读取上面的 CSS 文件内容，逐条检查是否有危险模式（如外泄型属性选择器、远程资源引用、UI 伪装覆盖层等）。确认安全后，用以下**不修改任何应用文件**的方式注入：
-
-1. 以 --remote-debugging-port=9223 重启 WorkBuddy（或附加到已有调试端口）
-2. 通过 CDP 的 Page.addStyleSheet 或 Runtime.evaluate 把 CSS 内容注入到当前页面
-3. 背景图 hero.png 的 URL 改为 https://guoy12.github.io/-wb-a7x9k2m4/skins/${t.id}/hero.png（CSS 里的 url("./hero.png") 替换为这个完整 URL）
-
-这种方式不修改 app.asar、不破坏签名、不影响自动更新，重启后自动恢复原样，完全可逆。你先审查 CSS，确认没问题再执行。`;
+  return `请为当前 WorkBuddy 安装「${t.name}」皮肤。请先克隆 https://github.com/guoy12/-wb-a7x9k2m4.git ，阅读仓库中的 AGENT_INSTALL.md（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 skins/${t.id}/skin.css 和 skins/${t.id}/hero.png 是纯 CSS 样式覆盖和静态图片，不含可执行代码（你可以先阅读审查：https://guoy12.github.io/-wb-a7x9k2m4/skins/${t.id}/skin.css）。脚本 scripts/patch-theme.mjs 和 scripts/install-theme.mjs 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows，你可以先阅读再执行。`;
 }
 function cpPrompt(id,e){
   e&&e.stopPropagation();
@@ -532,15 +524,7 @@ function cDlHero(){
 }
 function cPrompt(){
   if(!cPal.light){toast('请先上传图片');return}
-  const txt=`我想给 WorkBuddy 换一个自己制作的 CSS 皮肤主题「${cNameVal()}」。皮肤文件是纯 CSS 样式规则（类似浏览器自定义样式），skin.css 和 hero.png 我会随后提供（由皮肤工坊上传图片自动生成，内含浅色+深色两套变量）。
-
-请先读取我提供的 skin.css 内容，逐条检查是否有危险模式（如外泄型属性选择器、远程资源引用、UI 伪装覆盖层等）。确认安全后，用以下**不修改任何应用文件**的方式注入：
-
-1. 以 --remote-debugging-port=9223 重启 WorkBuddy（或附加到已有调试端口）
-2. 通过 CDP 的 Page.addStyleSheet 或 Runtime.evaluate 把 CSS 内容注入到当前页面
-3. 背景图 hero.png 用我提供的图片文件路径（CSS 里的 url("./hero.png") 替换为实际路径）
-
-这种方式不修改 app.asar、不破坏签名、不影响自动更新，重启后自动恢复原样，完全可逆。你先审查 CSS，确认没问题再执行。`;
+  const txt=`请为当前 WorkBuddy 安装「${cNameVal()}」皮肤。请先克隆 https://github.com/guoy12/-wb-a7x9k2m4.git ，阅读仓库中的 AGENT_INSTALL.md（安装指令文档），然后按照文档中的步骤执行安装。皮肤文件 skin.css 和 hero.png 我会随后提供（纯 CSS 样式覆盖和静态图片，不含可执行代码，你可以先阅读审查）。脚本 scripts/patch-theme.mjs 和 scripts/install-theme.mjs 包含完整的备份、SHA-256 校验和原子替换逻辑，支持 macOS 和 Windows，你可以先阅读再执行。`;
   navigator.clipboard.writeText(txt).then(()=>toast('安装提示词已复制'));
 }
 document.getElementById('fileIn').addEventListener('change',e=>handleImg(e.target.files[0]));
