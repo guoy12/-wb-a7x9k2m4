@@ -1,7 +1,7 @@
 # WorkBuddy 皮肤工坊（huanfu）
 
-49 款 WorkBuddy 主题皮肤：每款含 **浅色 + 深色双模式 CSS** 和 **AI 生成高清背景图**（1536×1024）。
-主题格式参考 [`workbuddy-qq2008-theme`](https://cnb.woa.com/runcao/workbuddy-qq2008-theme)，通过覆盖 WorkBuddy CSS 变量实现换肤。
+49 款 WorkBuddy 主题皮肤：每款含 **浅色 + 深色双模式 CSS** 和 **4K 高清壁纸**（1920×1080 ~ 7680×4320）。
+通过覆盖 WorkBuddy CSS 变量实现换肤，支持 macOS 和 Windows。
 
 ## 主题一览
 
