@@ -283,7 +283,7 @@ async function dl(){
 function quickDl(id,e){e.stopPropagation();cur=THEMES.find(t=>t.id===id);dl()}
 function dlHero(){if(!cur||!cur.hasHero){toast('该主题暂无背景图');return}const a=document.createElement('a');a.href=`skins/${cur.id}/hero.png`;a.download=`${cur.id}-hero.png`;a.click();toast('已下载背景图')}
 function installPrompt(t){
-  return `请为当前 WorkBuddy 安装「${t.name}」皮肤。皮肤 CSS 文件：skins/${t.id}/skin.css，背景图：skins/${t.id}/hero.png（来自 https://cnb.woa.com/sbwbshouhou/huanfu 仓库）。请先克隆 https://cnb.woa.com/sbwbshouhou/huanfu.git 获取皮肤文件与 scripts 目录，阅读 AGENT_INSTALL.md 后，用 scripts/patch-theme.mjs --skin skins/${t.id}/skin.css --asset skins/${t.id}/hero.png 基于当前 WorkBuddy 版本构建补丁副本（scripts/patch-theme.mjs 为本仓库通用版，皮肤文件名校验已参数化），再用 scripts/install-theme.mjs --patched .work/app.patched.asar 完成备份与原子安装，最后告诉我重启方式与恢复路径。`;
+  return `请为当前 WorkBuddy 安装「${t.name}」皮肤。皮肤 CSS 文件：skins/${t.id}/skin.css，背景图：skins/${t.id}/hero.png（来自 https://github.com/guoy12/- 仓库）。请先克隆 https://github.com/guoy12/-.git 获取皮肤文件与 scripts 目录，阅读 AGENT_INSTALL.md 后，用 scripts/patch-theme.mjs --skin skins/${t.id}/skin.css --asset skins/${t.id}/hero.png 基于当前 WorkBuddy 版本构建补丁副本（scripts/patch-theme.mjs 为本仓库通用版，皮肤文件名校验已参数化），再用 scripts/install-theme.mjs --patched .work/app.patched.asar 完成备份与原子安装，最后告诉我重启方式与恢复路径。`;
 }
 function cpPrompt(id,e){
   e&&e.stopPropagation();
@@ -524,7 +524,7 @@ function cDlHero(){
 }
 function cPrompt(){
   if(!cPal.light){toast('请先上传图片');return}
-  const txt=`请为当前 WorkBuddy 安装「${cNameVal()}」皮肤。皮肤 CSS 文件与背景图 hero.png 我会随后提供（由皮肤工坊上传图片自动生成，skin.css 内含浅色+深色两套变量）。请先克隆 https://cnb.woa.com/sbwbshouhou/huanfu.git 阅读 AGENT_INSTALL.md，用仓库内 scripts/patch-theme.mjs --skin <我提供的skin.css路径> --asset <我提供的hero.png路径> 基于当前 WorkBuddy 版本构建补丁副本（该脚本为通用版，皮肤文件名校验已参数化），再用 scripts/install-theme.mjs --patched .work/app.patched.asar 完成备份与原子安装，最后告诉我重启方式与恢复路径。`;
+  const txt=`请为当前 WorkBuddy 安装「${cNameVal()}」皮肤。皮肤 CSS 文件与背景图 hero.png 我会随后提供（由皮肤工坊上传图片自动生成，skin.css 内含浅色+深色两套变量）。请先克隆 https://github.com/guoy12/-.git 阅读 AGENT_INSTALL.md，用仓库内 scripts/patch-theme.mjs --skin <我提供的skin.css路径> --asset <我提供的hero.png路径> 基于当前 WorkBuddy 版本构建补丁副本（该脚本为通用版，皮肤文件名校验已参数化），再用 scripts/install-theme.mjs --patched .work/app.patched.asar 完成备份与原子安装，最后告诉我重启方式与恢复路径。`;
   navigator.clipboard.writeText(txt).then(()=>toast('安装提示词已复制'));
 }
 document.getElementById('fileIn').addEventListener('change',e=>handleImg(e.target.files[0]));
