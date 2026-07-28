@@ -550,8 +550,11 @@ const uz=document.getElementById('upZone');
 uz.addEventListener('dragover',e=>{e.preventDefault();uz.style.borderColor='var(--gacc)'});
 uz.addEventListener('drop',e=>{e.preventDefault();handleImg(e.dataTransfer.files[0])});
 
-$('#cTotal').textContent=THEMES.length;
-render();
+window.addEventListener('DOMContentLoaded',function(){
+  if(typeof THEMES==='undefined'){console.error('themes-data.js not loaded');return}
+  $('#cTotal').textContent=THEMES.length;
+  render();
+});
 </script>
 </body>
 </html>
