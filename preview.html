@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>skin.css 新效果预览</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0e1016;color:#e6e9f2;padding:24px}
+h1{font-size:1.4rem;margin-bottom:20px;text-align:center}
+.row{display:flex;gap:20px;margin-bottom:32px;flex-wrap:wrap}
+.theme-title{font-size:1rem;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.tags{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.tag{padding:3px 10px;border-radius:6px;font-size:.72rem;font-weight:500}
+.wb{flex:1;min-width:340px;max-width:520px;border-radius:14px;overflow:hidden;border:1px solid rgba(128,128,128,.2);box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.wb-top{display:flex;align-items:center;gap:8px;padding:0 14px;height:40px;color:#fff;font-weight:600;font-size:.85rem}
+.wb-body{display:grid;grid-template-columns:70px 1fr;min-height:360px}
+.wb-sb{display:flex;flex-direction:column;gap:5px;padding:8px 5px}
+.wb-sb-logo{height:30px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700}
+.wb-sb-item{height:18px;border-radius:5px;opacity:.5}
+.wb-sb-item.on{opacity:1}
+.wb-main{display:flex;flex-direction:column;position:relative}
+.wb-chips{display:flex;gap:5px;padding:8px 12px;flex-wrap:wrap}
+.wb-chip{padding:3px 10px;border-radius:12px;font-size:.7rem;border:1px solid;font-weight:500}
+.wb-chat{flex:1;padding:12px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.wb-msg{max-width:72%;padding:10px 14px;border-radius:12px;font-size:.8rem;line-height:1.5}
+.wb-msg.user{align-self:flex-end;border-bottom-right-radius:4px}
+.wb-msg.ai{align-self:flex-start;border-bottom-left-radius:4px}
+.wb-code{padding:10px 12px;border-radius:8px;font-family:"SF Mono","Cascadia Code",monospace;font-size:.72rem;line-height:1.6;border:1px solid}
+.wb-bq{border-left:3px solid;padding:6px 12px;border-radius:0 8px 8px 0;font-size:.72rem;line-height:1.5}
+.wb-input{display:flex;align-items:center;gap:8px;padding:8px 12px}
+.wb-ip{flex:1;height:34px;border-radius:17px;display:flex;align-items:center;padding:0 16px;font-size:.78rem}
+.wb-snd{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;flex:none}
+.wb-scroll{position:absolute;right:3px;top:8px;bottom:8px;width:6px}
+.wb-scroll-thumb{width:100%;height:60px;border-radius:3px}
+.ln{display:flex;gap:0;font-family:inherit}
+.ln-num{width:22px;text-align:right;padding-right:8px;user-select:none;opacity:.5}
+</style>
+</head>
+<body>
+<h1>skin.css 新效果预览 · 真实背景图 + 组件样式</h1>
+
+<div class="row">
+
+<!-- 海贼王 浅色 -->
+<div class="wb">
+  <div class="theme-title" style="color:#4fc3f7">⚓ 海贼王·草帽一伙（浅色模式）</div>
+  <div style="border-radius:14px;overflow:hidden;border:1px solid #90caf9">
+    <div class="wb-top" style="background:linear-gradient(180deg,#4fc3f7,#0277bd)">⚓ WorkBuddy <span style="margin-left:auto;font-weight:400;font-size:.7rem;opacity:.8">设置 ▾</span></div>
+    <div class="wb-body">
+      <div class="wb-sb" style="background:linear-gradient(180deg,#d4e7f6,#cfe4f5,#bed2e1);border-right:1px solid #90caf9">
+        <div class="wb-sb-logo" style="background:#fff;color:#0277bd">⚓</div>
+        <div class="wb-sb-item on" style="background:#90caf9"></div>
+        <div class="wb-sb-item" style="background:#90caf9"></div>
+        <div class="wb-sb-item" style="background:#90caf9"></div>
+        <div class="wb-sb-item" style="background:#90caf9"></div>
+        <div class="wb-sb-item" style="background:#90caf9"></div>
+      </div>
+      <div class="wb-main" style="background:linear-gradient(180deg,rgba(240,246,250,.15) 0%,rgba(240,246,250,.45) 45%,rgba(240,246,250,.82) 100%),url('skins/one-piece-strawhat/hero.png');background-size:cover;background-position:center">
+        <div class="wb-chips">
+          <span class="wb-chip" style="background:rgba(2,119,189,.1);border-color:#90caf9;color:#1a3a52">✦ 新建任务</span>
+          <span class="wb-chip" style="background:rgba(2,119,189,.1);border-color:#90caf9;color:#1a3a52">💬 助理</span>
+          <span class="wb-chip" style="background:rgba(2,119,189,.1);border-color:#90caf9;color:#1a3a52">📁 项目</span>
+        </div>
+        <div class="wb-chat">
+          <div class="wb-msg ai" style="background:#fff;border:1px solid #90caf9;color:#1a3a52">你好！我是 WorkBuddy 智能助手，有什么可以帮你的吗？</div>
+          <div class="wb-msg user" style="background:#0277bd;color:#fff">帮我写一个快速排序</div>
+          <div class="wb-code" style="background:#e2eff9;border-color:#90caf9;color:#1a3a52">
+            <div class="ln"><span class="ln-num" style="color:#5a7a8a">1</span><span style="color:#0277bd">def</span> quick_sort(arr):</div>
+            <div class="ln"><span class="ln-num" style="color:#5a7a8a">2</span>&nbsp;&nbsp;<span style="color:#0277bd">if</span> len(arr) <= <span style="color:#e91e63">1</span>: <span style="color:#0277bd">return</span> arr</div>
+            <div class="ln"><span class="ln-num" style="color:#5a7a8a">3</span>&nbsp;&nbsp;pivot = arr[len(arr)//<span style="color:#e91e63">2</span>]</div>
+            <div class="ln"><span class="ln-num" style="color:#5a7a8a">4</span>&nbsp;&nbsp;<span style="color:#0277bd">return</span> quick_sort([x <span style="color:#0277bd">for</span> x <span style="color:#0277bd">in</span> arr <span style="color:#0277bd">if</span> x < pivot])</div>
+          </div>
+          <div class="wb-bq" style="border-color:#0277bd;background:rgba(2,119,189,.08);color:#1a3a52">时间复杂度 O(n log n)，空间复杂度 O(n)。</div>
+        </div>
+        <div class="wb-input" style="background:rgba(240,246,250,.7)">
+          <div class="wb-ip" style="background:#fff;border:1px solid #90caf9;color:#5a7a8a">输入消息或 @ 提及...</div>
+          <div class="wb-snd" style="background:#0277bd">➤</div>
+        </div>
+        <div class="wb-scroll"><div class="wb-scroll-thumb" style="background:#90caf9"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="tags">
+    <span class="tag" style="background:#e6f1fb;color:#185fa5">行号 ✓</span>
+    <span class="tag" style="background:#e6f1fb;color:#185fa5">代码块 ✓</span>
+    <span class="tag" style="background:#e6f1fb;color:#185fa5">blockquote ✓</span>
+    <span class="tag" style="background:#e6f1fb;color:#185fa5">滚动条 ✓</span>
+    <span class="tag" style="background:#e6f1fb;color:#185fa5">输入框 focus ✓</span>
+    <span class="tag" style="background:#e6f1fb;color:#185fa5">chips ✓</span>
+  </div>
+</div>
+
+<!-- 火影 深色 -->
+<div class="wb">
+  <div class="theme-title" style="color:#ff9800">🍥 火影忍者·鸣人（深色模式）</div>
+  <div style="border-radius:14px;overflow:hidden;border:1px solid #e65100">
+    <div class="wb-top" style="background:linear-gradient(180deg,#e65100,#bf360c)">🍥 WorkBuddy <span style="margin-left:auto;font-weight:400;font-size:.7rem;opacity:.8">设置 ▾</span></div>
+    <div class="wb-body">
+      <div class="wb-sb" style="background:linear-gradient(180deg,#1a1f26,#1c2229,#161a20);border-right:1px solid #e65100">
+        <div class="wb-sb-logo" style="background:#272a2f;color:#ff9800">🍥</div>
+        <div class="wb-sb-item on" style="background:#e65100"></div>
+        <div class="wb-sb-item" style="background:#e65100"></div>
+        <div class="wb-sb-item" style="background:#e65100"></div>
+        <div class="wb-sb-item" style="background:#e65100"></div>
+        <div class="wb-sb-item" style="background:#e65100"></div>
+      </div>
+      <div class="wb-main" style="background:linear-gradient(180deg,rgba(20,23,29,.12) 0%,rgba(20,23,29,.42) 45%,rgba(20,23,29,.78) 100%),url('skins/naruto-uzumaki/hero.png');background-size:cover;background-position:center">
+        <div class="wb-chips">
+          <span class="wb-chip" style="background:rgba(230,81,0,.18);border-color:#e65100;color:#e3f2fd">✦ 新建任务</span>
+          <span class="wb-chip" style="background:rgba(230,81,0,.18);border-color:#e65100;color:#e3f2fd">💬 助理</span>
+          <span class="wb-chip" style="background:rgba(230,81,0,.18);border-color:#e65100;color:#e3f2fd">📁 项目</span>
+        </div>
+        <div class="wb-chat">
+          <div class="wb-msg ai" style="background:#272a2f;border:1px solid #e65100;color:#e3f2fd">你好！我是 WorkBuddy 智能助手，有什么可以帮你的吗？</div>
+          <div class="wb-msg user" style="background:#e65100;color:#fff">帮我写一个快速排序</div>
+          <div class="wb-code" style="background:#1c2229;border-color:#e65100;color:#e3f2fd">
+            <div class="ln"><span class="ln-num" style="color:#7fa3b8">1</span><span style="color:#ff9800">def</span> quick_sort(arr):</div>
+            <div class="ln"><span class="ln-num" style="color:#7fa3b8">2</span>&nbsp;&nbsp;<span style="color:#ff9800">if</span> len(arr) <= <span style="color:#f48fb1">1</span>: <span style="color:#ff9800">return</span> arr</div>
+            <div class="ln"><span class="ln-num" style="color:#7fa3b8">3</span>&nbsp;&nbsp;pivot = arr[len(arr)//<span style="color:#f48fb1">2</span>]</div>
+            <div class="ln"><span class="ln-num" style="color:#7fa3b8">4</span>&nbsp;&nbsp;<span style="color:#ff9800">return</span> quick_sort([x <span style="color:#ff9800">for</span> x <span style="color:#ff9800">in</span> arr <span style="color:#ff9800">if</span> x < pivot])</div>
+          </div>
+          <div class="wb-bq" style="border-color:#ff9800;background:rgba(230,81,0,.1);color:#e3f2fd">时间复杂度 O(n log n)，空间复杂度 O(n)。</div>
+        </div>
+        <div class="wb-input" style="background:rgba(20,23,29,.7)">
+          <div class="wb-ip" style="background:#202328;border:1px solid #e65100;color:#7fa3b8">输入消息或 @ 提及...</div>
+          <div class="wb-snd" style="background:#e65100">➤</div>
+        </div>
+        <div class="wb-scroll"><div class="wb-scroll-thumb" style="background:#e65100"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="tags">
+    <span class="tag" style="background:#fce7e0;color:#993c1d">深色多选择器 ✓</span>
+    <span class="tag" style="background:#fce7e0;color:#993c1d">过渡动画 ✓</span>
+    <span class="tag" style="background:#fce7e0;color:#993c1d">emoji 字体栈 ✓</span>
+    <span class="tag" style="background:#fce7e0;color:#993c1d">输入框光晕 ✓</span>
+    <span class="tag" style="background:#fce7e0;color:#993c1d">reduced-motion ✓</span>
+  </div>
+</div>
+
+</div>
+
+<div class="row">
+
+<!-- 原神璃月 浅色 -->
+<div class="wb">
+  <div class="theme-title" style="color:#e6c34a">🏮 原神·璃月（浅色模式）</div>
+  <div style="border-radius:14px;overflow:hidden;border:1px solid #a08008">
+    <div class="wb-top" style="background:linear-gradient(180deg,#d4a830,#a08008)">🏮 WorkBuddy <span style="margin-left:auto;font-weight:400;font-size:.7rem;opacity:.8">设置 ▾</span></div>
+    <div class="wb-body">
+      <div class="wb-sb" style="background:linear-gradient(180deg,#f0e4c8,#e8dab8,#dcc8a0);border-right:1px solid #a08008">
+        <div class="wb-sb-logo" style="background:#fff;color:#a08008">🏮</div>
+        <div class="wb-sb-item on" style="background:#d4a830"></div>
+        <div class="wb-sb-item" style="background:#d4a830"></div>
+        <div class="wb-sb-item" style="background:#d4a830"></div>
+        <div class="wb-sb-item" style="background:#d4a830"></div>
+        <div class="wb-sb-item" style="background:#d4a830"></div>
+      </div>
+      <div class="wb-main" style="background:linear-gradient(180deg,rgba(248,243,230,.15) 0%,rgba(248,243,230,.45) 45%,rgba(248,243,230,.82) 100%),url('skins/genshin-liyue/hero.png');background-size:cover;background-position:center">
+        <div class="wb-chips">
+          <span class="wb-chip" style="background:rgba(160,128,8,.1);border-color:#d4a830;color:#3a2e08">✦ 新建任务</span>
+          <span class="wb-chip" style="background:rgba(160,128,8,.1);border-color:#d4a830;color:#3a2e08">💬 助理</span>
+          <span class="wb-chip" style="background:rgba(160,128,8,.1);border-color:#d4a830;color:#3a2e08">📁 项目</span>
+        </div>
+        <div class="wb-chat">
+          <div class="wb-msg ai" style="background:#fff;border:1px solid #d4a830;color:#3a2e08">你好！我是 WorkBuddy 智能助手。</div>
+          <div class="wb-msg user" style="background:#a08008;color:#fff">帮我分析一下数据</div>
+          <div class="wb-code" style="background:rgba(160,128,8,.08);border-color:#d4a830;color:#3a2e08">
+            <div class="ln"><span class="ln-num" style="color:#8a7530">1</span><span style="color:#a08008">import</span> pandas <span style="color:#a08008">as</span> pd</div>
+            <div class="ln"><span class="ln-num" style="color:#8a7530">2</span>df = pd.read_csv(<span style="color:#6b8e23">"data.csv"</span>)</div>
+            <div class="ln"><span class="ln-num" style="color:#8a7530">3</span><span style="color:#a08008">print</span>(df.describe())</div>
+          </div>
+          <div class="wb-bq" style="border-color:#a08008;background:rgba(160,128,8,.08);color:#3a2e08">数据已加载，共 1024 行 12 列。</div>
+        </div>
+        <div class="wb-input" style="background:rgba(248,243,230,.7)">
+          <div class="wb-ip" style="background:#fff;border:1px solid #d4a830;color:#8a7530">输入消息或 @ 提及...</div>
+          <div class="wb-snd" style="background:#a08008">➤</div>
+        </div>
+        <div class="wb-scroll"><div class="wb-scroll-thumb" style="background:#d4a830"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 矩阵绿 深色 -->
+<div class="wb">
+  <div class="theme-title" style="color:#00e676">💊 科技风·矩阵绿（深色模式）</div>
+  <div style="border-radius:14px;overflow:hidden;border:1px solid #00e676">
+    <div class="wb-top" style="background:linear-gradient(180deg,#004d40,#003d33)">💊 WorkBuddy <span style="margin-left:auto;font-weight:400;font-size:.7rem;opacity:.8">设置 ▾</span></div>
+    <div class="wb-body">
+      <div class="wb-sb" style="background:linear-gradient(180deg,#0a1a16,#0d1f1a,#081410);border-right:1px solid #00e676">
+        <div class="wb-sb-logo" style="background:#0d1f1a;color:#00e676">💊</div>
+        <div class="wb-sb-item on" style="background:#00e676"></div>
+        <div class="wb-sb-item" style="background:#00e676"></div>
+        <div class="wb-sb-item" style="background:#00e676"></div>
+        <div class="wb-sb-item" style="background:#00e676"></div>
+        <div class="wb-sb-item" style="background:#00e676"></div>
+      </div>
+      <div class="wb-main" style="background:linear-gradient(180deg,rgba(8,20,16,.12) 0%,rgba(8,20,16,.42) 45%,rgba(8,20,16,.78) 100%),url('skins/tech-matrix/hero.png');background-size:cover;background-position:center">
+        <div class="wb-chips">
+          <span class="wb-chip" style="background:rgba(0,230,118,.18);border-color:#00e676;color:#c8ffd8">✦ 新建任务</span>
+          <span class="wb-chip" style="background:rgba(0,230,118,.18);border-color:#00e676;color:#c8ffd8">💬 助理</span>
+          <span class="wb-chip" style="background:rgba(0,230,118,.18);border-color:#00e676;color:#c8ffd8">📁 项目</span>
+        </div>
+        <div class="wb-chat">
+          <div class="wb-msg ai" style="background:#0d1f1a;border:1px solid #00e676;color:#c8ffd8">System online. Ready to process.</div>
+          <div class="wb-msg user" style="background:#00e676;color:#003d33">scan the matrix</div>
+          <div class="wb-code" style="background:#0a1a16;border-color:#00e676;color:#c8ffd8">
+            <div class="ln"><span class="ln-num" style="color:#4a8a6a">1</span><span style="color:#00e676">const</span> matrix = <span style="color:#00e676">await</span> scan()</div>
+            <div class="ln"><span class="ln-num" style="color:#4a8a6a">2</span><span style="color:#00e676">if</span> (matrix.active) {</div>
+            <div class="ln"><span class="ln-num" style="color:#4a8a6a">3</span>&nbsp;&nbsp;<span style="color:#00e676">return</span> matrix.decode()</div>
+            <div class="ln"><span class="ln-num" style="color:#4a8a6a">4</span>}</div>
+          </div>
+          <div class="wb-bq" style="border-color:#00e676;background:rgba(0,230,118,.1);color:#c8ffd8">Matrix scanned: 256 nodes active.</div>
+        </div>
+        <div class="wb-input" style="background:rgba(8,20,16,.7)">
+          <div class="wb-ip" style="background:#0a1a16;border:1px solid #00e676;color:#4a8a6a">> _</div>
+          <div class="wb-snd" style="background:#00e676;color:#003d33">➤</div>
+        </div>
+        <div class="wb-scroll"><div class="wb-scroll-thumb" style="background:#00e676"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<p style="text-align:center;color:#8b92a8;font-size:.8rem;margin-top:20px">
+  ↑ 4 款主题 × 明暗双模式 · 真实 4K 背景图 · 新增组件样式（代码块/blockquote/行号/滚动条/输入框光晕）· 过渡动画 · reduced-motion 降级
+</p>
+</body>
+</html>
