@@ -3,35 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="49 款 WorkBuddy 主题皮肤，含浅色+深色双模式 CSS 和 4K 高清壁纸，支持 macOS 和 Windows">
+<meta property="og:title" content="WorkBuddy 皮肤工坊 · 49 款主题任选">
+<meta property="og:description" content="49 款主题皮肤，明暗双模式，4K 壁纸，一键安装">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
 <title>WorkBuddy 皮肤工坊 · 49 款主题任选</title>
 <style>
 :root{
-  --gbg:#0e1016;--gsur:#171a23;--gcard:#1e222e;--gborder:#2c3140;
-  --gtext:#e6e9f2;--gmuted:#8b92a8;--gacc:#6c8cff;--gacc2:#a78bfa;
+  --gbg:#0c0f14;--gsur:#141821;--gcard:#1a1f2c;--gborder:#2a3040;
+  --gtext:#e8ecf4;--gmuted:#8b92a8;--gacc:#10b981;--gacc2:#34d399;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--gbg);color:var(--gtext);min-height:100vh}
+@font-face{font-family:'Outfit';src:url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');font-display:swap}
+body{font-family:'Outfit',-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--gbg);color:var(--gtext);min-height:100vh}
 a{color:var(--gacc)}
 /* header */
-.hd{background:linear-gradient(120deg,#1b2340 0%,#2b1e4a 55%,#3a1c50 100%);padding:44px 24px 36px;text-align:center;position:relative;overflow:hidden}
-.hd::before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 20% 30%,rgba(108,140,255,.18),transparent 45%),radial-gradient(circle at 80% 70%,rgba(167,139,250,.14),transparent 40%);animation:flt 16s ease-in-out infinite alternate}
-@keyframes flt{to{transform:translate(3%,4%) rotate(2deg)}}
+.hd{background:linear-gradient(120deg,#0a2e1e 0%,#0d3a2a 55%,#0f4a35 100%);padding:44px 24px 36px;text-align:center;position:relative;overflow:hidden}
+.hd::before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 20% 30%,rgba(16,185,129,.15),transparent 45%),radial-gradient(circle at 80% 70%,rgba(52,211,153,.10),transparent 40%)}
+.hd h1,.hd p,.hd .stats{opacity:0;animation:up .5s ease both}
+.hd h1{animation-delay:.05s}
+.hd p{animation-delay:.15s}
+.hd .stats{animation-delay:.25s}
 .hd h1{font-size:2.4rem;letter-spacing:-.5px;position:relative}
 .hd p{opacity:.8;margin-top:8px;position:relative}
-.hd .stats{display:flex;gap:14px;justify-content:center;margin-top:22px;position:relative;flex-wrap:wrap}
-.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(8px);border-radius:12px;padding:8px 22px}
-.stat b{font-size:1.5rem;display:block}
-.stat span{font-size:.78rem;opacity:.7}
+.hd .stats{display:flex;gap:14px;justify-content:center;margin-top:22px;position:relative;flex-wrap:wrap;font-size:.95rem;color:var(--gmuted);letter-spacing:.3px}
+.hd .stats b{color:var(--gacc);font-weight:700}
 /* toolbar */
 .tb{max-width:1380px;margin:26px auto 0;padding:0 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .chip{padding:7px 16px;border-radius:18px;border:1px solid var(--gborder);background:var(--gsur);color:var(--gmuted);cursor:pointer;font-size:.88rem;transition:.18s}
 .chip:hover{color:var(--gtext);border-color:var(--gacc)}
-.chip.on{background:linear-gradient(120deg,var(--gacc),var(--gacc2));border-color:transparent;color:#fff}
+.chip.on{background:var(--gacc);border-color:transparent;color:#fff}
 #q{flex:1;min-width:180px;padding:9px 16px;border-radius:12px;border:1px solid var(--gborder);background:var(--gsur);color:var(--gtext);font-size:.92rem;outline:none}
 #q:focus{border-color:var(--gacc)}
 /* grid */
 .grid{max-width:1380px;margin:22px auto 60px;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
-.card{background:var(--gcard);border:1px solid var(--gborder);border-radius:16px;overflow:hidden;cursor:pointer;transition:.25s cubic-bezier(.4,0,.2,1);animation:up .4s ease both}
+.card{background:var(--gcard);border:1px solid var(--gborder);border-radius:16px;overflow:hidden;cursor:pointer;transition:.25s cubic-bezier(.4,0,.2,1);animation:up .4s ease both;content-visibility:auto;contain-intrinsic-size:320px 380px}
 .card:hover{transform:translateY(-5px);border-color:var(--gacc);box-shadow:0 14px 40px rgba(0,0,0,.4)}
 @keyframes up{from{opacity:0;transform:translateY(14px)}}
 .pv{height:190px;padding:6px;position:relative}
@@ -57,11 +65,11 @@ a{color:var(--gacc)}
 .info h3{font-size:1.05rem}
 .info .ds{font-size:.8rem;color:var(--gmuted);margin:4px 0 10px;line-height:1.5;min-height:2.4em}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
-.tag{font-size:.7rem;padding:2px 9px;border-radius:9px;background:rgba(108,140,255,.12);color:var(--gacc);border:1px solid rgba(108,140,255,.22)}
+.tag{font-size:.7rem;padding:2px 9px;border-radius:9px;background:rgba(16,185,129,.10);color:var(--gacc);border:1px solid rgba(16,185,129,.22)}
 .acts{display:flex;gap:8px}
 .btn{flex:1;padding:8px 0;border-radius:9px;border:none;cursor:pointer;font-size:.85rem;font-weight:600;transition:.18s;display:flex;align-items:center;justify-content:center;gap:5px}
-.btn.p{background:linear-gradient(120deg,var(--gacc),var(--gacc2));color:#fff}
-.btn.p:hover{filter:brightness(1.12)}
+.btn.p{background:var(--gacc);color:#fff}
+.btn.p:hover{background:var(--gacc2)}
 .btn.s{background:rgba(255,255,255,.06);color:var(--gmuted);border:1px solid var(--gborder)}
 .btn.s:hover{color:var(--gtext);background:rgba(255,255,255,.1)}
 /* modal */
@@ -92,18 +100,19 @@ pre{background:var(--gbg);border:1px solid var(--gborder);border-radius:10px;pad
 .toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:#2e7d32;color:#fff;padding:10px 24px;border-radius:12px;font-size:.9rem;opacity:0;transition:.3s;pointer-events:none;z-index:999}
 .toast.show{opacity:1}
 @media(max-width:640px){.hd h1{font-size:1.6rem}.grid{grid-template-columns:1fr}}
+/* focus visible */
+.btn:focus-visible,.card:focus-visible,.chip:focus-visible,#q:focus-visible{outline:2px solid var(--gacc);outline-offset:2px}
+.x:focus-visible{outline:2px solid var(--gacc);outline-offset:2px}
+/* reduced motion */
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
 
 <header class="hd">
   <h1>🎨 WorkBuddy 皮肤工坊</h1>
-  <p>参考 workbuddy-qq2008-theme 主题格式 · 49 款精美皮肤 · 每款含浅色 + 深色双模式</p>
-  <div class="stats">
-    <div class="stat"><b id="cTotal">49</b><span>款主题</span></div>
-    <div class="stat"><b>7</b><span>大分类</span></div>
-    <div class="stat"><b>98</b><span>套配色方案</span></div>
-  </div>
+  <p>49 款精美皮肤 · 每款含浅色 + 深色双模式 · 4K 高清壁纸</p>
+  <div class="stats"><b>49</b> 款主题 · <b>7</b> 大分类 · <b>98</b> 套配色 · <b>明暗</b> 双模式</div>
 </header>
 
 <div class="tb" id="tb">
@@ -121,11 +130,11 @@ pre{background:var(--gbg);border:1px solid var(--gborder);border-radius:10px;pad
 
 <div class="grid" id="grid"></div>
 
-<footer class="ft">WorkBuddy Skin Gallery · 主题结构兼容 workbuddy-qq2008-theme · 仅供个人学习交流</footer>
+<footer class="ft">WorkBuddy Skin Gallery · 仅供个人学习交流</footer>
 
-<div class="mo" id="mo">
+<div class="mo" id="mo" role="dialog" aria-modal="true" aria-label="主题预览">
   <div class="md">
-    <div class="mdhd"><b id="mTitle"></b><button class="x" onclick="closeM()">✕</button></div>
+    <div class="mdhd"><b id="mTitle"></b><button class="x" onclick="closeM()" aria-label="关闭">✕</button></div>
     <div class="mbdb">
       <div class="seg">
         <button class="on" id="segL" onclick="setMode('light')">☀️ 浅色模式</button>
@@ -148,9 +157,9 @@ pre{background:var(--gbg);border:1px solid var(--gborder);border-radius:10px;pad
 <div class="toast" id="toast"></div>
 
 <!-- Custom Theme Modal -->
-<div class="mo" id="cmo">
+<div class="mo" id="cmo" role="dialog" aria-modal="true" aria-label="自定义主题生成">
   <div class="md">
-    <div class="mdhd"><b>🖼 上传图片，自动生成主题</b><button class="x" onclick="closeC()">✕</button></div>
+    <div class="mdhd"><b>🖼 上传图片，自动生成主题</b><button class="x" onclick="closeC()" aria-label="关闭">✕</button></div>
     <div class="mbdb">
       <div id="upZone" style="border:2px dashed var(--gborder);border-radius:12px;padding:26px;text-align:center;cursor:pointer;transition:.2s" onclick="document.getElementById('fileIn').click()">
         <div style="font-size:2rem;margin-bottom:8px">📁</div>
@@ -227,12 +236,14 @@ function render(){
   const list=THEMES.filter(t=>(cat==='all'||t.cat===cat)&&(!kw||(t.name+t.desc+t.tags.join('')).toLowerCase().includes(kw)));
   list.forEach((t,i)=>{
     const el=document.createElement('div');el.className='card';el.style.animationDelay=(i%12*0.03)+'s';
+    el.setAttribute('role','button');el.setAttribute('tabindex','0');el.setAttribute('aria-label',`预览 ${t.name}`);
     el.innerHTML=`<div class="pv">${t.badge?`<span class="bdg ${t.badge}">${t.badge==='hot'?'🔥 热门':'✨ 新作'}</span>`:''}${uiHTML(t.light,false,t)}</div>
     <div class="info"><h3>${t.name}</h3><div class="ds">${t.desc}</div>
     <div class="tags"><span class="tag">${t.categoryName}</span>${t.tags.map(x=>`<span class="tag">${x}</span>`).join('')}</div>
     <div class="acts"><button class="btn p" style="background:linear-gradient(120deg,${t.light.accent},${mix(t.light.accent,'#000000',0.18)})" onclick="cpPrompt('${t.id}',event)">${t.emoji||'🎨'} 安装提示词</button>
     <button class="btn s" onclick="openM('${t.id}',event)">👁 预览</button></div></div>`;
     el.querySelector('.pv').onclick=e=>openM(t.id,e);
+    el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openM(t.id,e)}};
     g.appendChild(el);
   });
   if(!list.length)g.innerHTML='<div style="grid-column:1/-1;text-align:center;color:var(--gmuted);padding:60px 0">没有找到匹配的主题，换个关键词试试？</div>';
@@ -240,6 +251,7 @@ function render(){
 
 function openM(id,e){e&&e.stopPropagation();cur=THEMES.find(t=>t.id===id);curMode='light';$('#mTitle').textContent=cur.name;$('#segL').className='on';$('#segD').className='';paintM();$('#mo').classList.add('show');document.body.style.overflow='hidden'}
 function closeM(){$('#mo').classList.remove('show');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeM();closeC()}});
 function setMode(m){curMode=m;$('#segL').className=m==='light'?'on':'';$('#segD').className=m==='dark'?'on':'';paintM()}
 function paintM(){
   const p=cur[curMode];
