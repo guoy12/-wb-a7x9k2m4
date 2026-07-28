@@ -341,6 +341,137 @@ body .wb-home-composer__input-slot [class*="topRightSlotStandalone"]::after {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
 
+/* ---- 加载动画/skeleton ---- */
+body [class*="skeleton"],
+body [class*="loading"],
+body [class*="spinner"],
+body [class*="placeholder"],
+body [class*="shimmer"] {
+  background: #e6f2f7 !important;
+  color: #4e7080 !important;
+}
+body [class*="spinner"] {
+  border-color: #81d4fa !important;
+  border-top-color: #0277bd !important;
+}
+
+/* ---- 开关/复选框/单选 ---- */
+body input[type="checkbox"]:checked,
+body input[type="radio"]:checked,
+body [class*="switch"][class*="checked"],
+body [class*="toggle"][class*="on"] {
+  background: #0277bd !important;
+  border-color: #0277bd !important;
+}
+body [class*="switch"],
+body [class*="toggle"] {
+  border-color: #81d4fa !important;
+}
+
+/* ---- 右键菜单/上下文菜单 ---- */
+body [class*="context-menu"],
+body [class*="contextMenu"],
+body [class*="menu-item"],
+body [class*="menuItem"],
+body [class*="menu-list"],
+body [class*="menuList"] {
+  background: #ffffff !important;
+  color: #0e2a3a !important;
+  border-color: #81d4fa !important;
+}
+body [class*="menu-item"]:hover,
+body [class*="menuItem"]:hover {
+  background: #e6f2f7 !important;
+  color: #0e2a3a !important;
+}
+
+/* ---- 设置页面 ---- */
+body [class*="settings"],
+body [class*="preferences"],
+body [class*="config-page"],
+body [class*="SettingItem"],
+body [class*="setting-item"] {
+  background: #ffffff !important;
+  color: #0e2a3a !important;
+  border-color: #81d4fa !important;
+}
+body [class*="setting-item"]:hover {
+  background: #e6f2f7 !important;
+}
+
+/* ---- 空状态 ---- */
+body [class*="empty-state"],
+body [class*="emptyState"],
+body [class*="no-data"],
+body [class*="noData"],
+body [class*="illustration"] {
+  color: #4e7080 !important;
+}
+
+/* ---- 链接预览卡片 ---- */
+body [class*="link-card"],
+body [class*="linkCard"],
+body [class*="preview-card"],
+body [class*="previewCard"] {
+  background: #ffffff !important;
+  border-color: #81d4fa !important;
+  color: #0e2a3a !important;
+  border-radius: 8px !important;
+}
+body [class*="link-card"]:hover,
+body [class*="linkCard"]:hover,
+body [class*="preview-card"]:hover {
+  border-color: #0277bd !important;
+}
+
+/* ---- 代码复制按钮 ---- */
+body [class*="copy-button"],
+body [class*="copyButton"],
+body [class*="code-copy"],
+body [class*="codeCopy"] {
+  background: #e6f2f7 !important;
+  color: #4e7080 !important;
+  border-color: #81d4fa !important;
+  border-radius: 6px !important;
+}
+body [class*="copy-button"]:hover,
+body [class*="copyButton"]:hover,
+body [class*="code-copy"]:hover {
+  background: #0277bd !important;
+  color: #ffffff !important;
+}
+
+/* ---- 搜索高亮 ---- */
+body mark,
+body [class*="highlight"],
+body [class*="search-match"] {
+  background: rgba(2,119,189,0.1) !important;
+  color: #0277bd !important;
+  border-radius: 3px !important;
+}
+
+/* ---- 拖拽区域 ---- */
+body [class*="dropzone"]:not([class*="dragging"]),
+body [class*="dropZone"]:not([class*="dragging"]) {
+  border-color: #81d4fa !important;
+  background: #e6f2f7 !important;
+}
+body [class*="dropzone"][class*="dragging"],
+body [class*="dropZone"][class*="active"],
+body [class*="drop-zone"][class*="drag"] {
+  border-color: #0277bd !important;
+  background: rgba(2,119,189,0.1) !important;
+}
+
+/* ---- 消息时间戳/元信息 ---- */
+body [class*="timestamp"],
+body [class*="message-time"],
+body [class*="messageTime"],
+body [class*="meta-text"],
+body [class*="metaText"] {
+  color: #4e7080 !important;
+}
+
 /* ---- reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   body,
@@ -694,6 +825,137 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-com
   opacity: 0.85;
   pointer-events: none;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+/* ---- 加载动画/skeleton ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skeleton"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="loading"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="spinner"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="placeholder"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="shimmer"] {
+  background: #33393e !important;
+  color: #6fa8c0 !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="spinner"] {
+  border-color: #35799e !important;
+  border-top-color: #29b6f6 !important;
+}
+
+/* ---- 开关/复选框/单选 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[type="checkbox"]:checked,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[type="radio"]:checked,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="switch"][class*="checked"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="toggle"][class*="on"] {
+  background: #29b6f6 !important;
+  border-color: #29b6f6 !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="switch"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="toggle"] {
+  border-color: #35799e !important;
+}
+
+/* ---- 右键菜单/上下文菜单 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="context-menu"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="contextMenu"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menu-item"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menuItem"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menu-list"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menuList"] {
+  background: #272a2f !important;
+  color: #e1f5fe !important;
+  border-color: #35799e !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menu-item"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menuItem"]:hover {
+  background: #33393e !important;
+  color: #e1f5fe !important;
+}
+
+/* ---- 设置页面 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="settings"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="preferences"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="config-page"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="SettingItem"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="setting-item"] {
+  background: #272a2f !important;
+  color: #e1f5fe !important;
+  border-color: #35799e !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="setting-item"]:hover {
+  background: #33393e !important;
+}
+
+/* ---- 空状态 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="empty-state"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="emptyState"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="no-data"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="noData"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="illustration"] {
+  color: #6fa8c0 !important;
+}
+
+/* ---- 链接预览卡片 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="link-card"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="linkCard"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="preview-card"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="previewCard"] {
+  background: #272a2f !important;
+  border-color: #35799e !important;
+  color: #e1f5fe !important;
+  border-radius: 8px !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="link-card"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="linkCard"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="preview-card"]:hover {
+  border-color: #29b6f6 !important;
+}
+
+/* ---- 代码复制按钮 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="copy-button"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="copyButton"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="code-copy"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="codeCopy"] {
+  background: #33393e !important;
+  color: #6fa8c0 !important;
+  border-color: #35799e !important;
+  border-radius: 6px !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="copy-button"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="copyButton"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="code-copy"]:hover {
+  background: #29b6f6 !important;
+  color: #ffffff !important;
+}
+
+/* ---- 搜索高亮 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body mark,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="highlight"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="search-match"] {
+  background: rgba(41,182,246,0.18) !important;
+  color: #29b6f6 !important;
+  border-radius: 3px !important;
+}
+
+/* ---- 拖拽区域 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropzone"]:not([class*="dragging"]),
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropZone"]:not([class*="dragging"]) {
+  border-color: #35799e !important;
+  background: #33393e !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropzone"][class*="dragging"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropZone"][class*="active"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="drop-zone"][class*="drag"] {
+  border-color: #29b6f6 !important;
+  background: rgba(41,182,246,0.18) !important;
+}
+
+/* ---- 消息时间戳/元信息 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="timestamp"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="message-time"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="messageTime"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="meta-text"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="metaText"] {
+  color: #6fa8c0 !important;
 }
 
 /* ---- reduced motion ---- */
