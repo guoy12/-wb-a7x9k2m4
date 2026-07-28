@@ -133,8 +133,9 @@ def derive(p, dark=False):
 # ---------- CSS 模板 ----------
 CSS_TMPL = '''@charset "UTF-8";
 /* WorkBuddy Skin: %(name)s (%(id)s) - %(mode)s
-   由 workbuddy-skin-gallery 生成, 结构参考 workbuddy-qq2008-theme */
+   由 workbuddy-skin-gallery 生成 */
 %(rootsel)s {
+  /* -- 基础色 -- */
   --vscode-foreground: %(text)s !important;
   --vscode-editor-foreground: %(text)s !important;
   --vscode-descriptionForeground: %(muted)s !important;
@@ -142,6 +143,7 @@ CSS_TMPL = '''@charset "UTF-8";
   --vscode-editor-background: %(bg)s !important;
   --vscode-sideBar-background: %(sidebar)s !important;
   --vscode-panel-background: %(bg)s !important;
+  /* -- 输入/下拉/菜单 -- */
   --vscode-input-background: %(input)s !important;
   --vscode-dropdown-background: %(input)s !important;
   --vscode-menu-background: %(card)s !important;
@@ -149,18 +151,52 @@ CSS_TMPL = '''@charset "UTF-8";
   --vscode-textCodeBlock-background: %(hover)s !important;
   --vscode-input-border: %(border)s !important;
   --vscode-focusBorder: %(accent)s !important;
+  /* -- 图标/链接 -- */
   --vscode-icon-foreground: %(muted)s !important;
   --vscode-textLink-foreground: %(accent)s !important;
   --vscode-textLink-activeForeground: %(accent_hover)s !important;
+  /* -- 按钮 -- */
   --vscode-button-background: %(accent)s !important;
   --vscode-button-foreground: %(onaccent)s !important;
   --vscode-button-hoverBackground: %(accent_hover)s !important;
   --vscode-progressBar-background: %(accent)s !important;
   --vscode-badge-background: %(accent)s !important;
   --vscode-badge-foreground: %(onaccent)s !important;
+  /* -- 列表 -- */
   --vscode-list-hoverBackground: %(hover)s !important;
   --vscode-list-activeSelectionBackground: %(active)s !important;
   --vscode-list-activeSelectionForeground: %(text)s !important;
+  --vscode-list-inactiveSelectionBackground: %(hover)s !important;
+  --vscode-list-focusBackground: %(active)s !important;
+  /* -- 行号/缩进/括号 -- */
+  --vscode-editorLineNumber-foreground: %(muted)s !important;
+  --vscode-editorLineNumber-activeForeground: %(text)s !important;
+  --vscode-editorIndentGuide-background1: %(border)s !important;
+  --vscode-editorBracketHighlight-foreground1: %(accent)s !important;
+  --vscode-editorBracketHighlight-foreground2: %(secondary)s !important;
+  /* -- 滚动条 -- */
+  --vscode-scrollbarSlider-background: %(border)s !important;
+  --vscode-scrollbarSlider-hoverBackground: %(accent)s !important;
+  --vscode-scrollbarSlider-activeBackground: %(accent_hover)s !important;
+  /* -- Tab -- */
+  --vscode-tab-activeBackground: %(card)s !important;
+  --vscode-tab-inactiveBackground: %(bg)s !important;
+  --vscode-tab-border: %(border)s !important;
+  --vscode-tab-activeForeground: %(text)s !important;
+  --vscode-tab-inactiveForeground: %(muted)s !important;
+  /* -- Activity Bar / Status Bar / Title Bar -- */
+  --vscode-activityBar-background: %(sidebar)s !important;
+  --vscode-activityBar-foreground: %(accent)s !important;
+  --vscode-activityBar-inactiveForeground: %(muted)s !important;
+  --vscode-statusBar-background: %(topbar2)s !important;
+  --vscode-statusBar-foreground: %(ontopbar)s !important;
+  --vscode-titleBar-activeBackground: %(topbar1)s !important;
+  --vscode-titleBar-activeForeground: %(ontopbar)s !important;
+  /* -- 通知 -- */
+  --vscode-notifications-background: %(card)s !important;
+  --vscode-notifications-foreground: %(text)s !important;
+  --vscode-notificationLink-foreground: %(accent)s !important;
+  /* -- WorkBuddy 专有 -- */
   --wb-home-bg-primary: %(sidebar)s !important;
   --wb-home-bg-secondary: %(bg)s !important;
   --wb-bg-primary: %(card)s !important;
@@ -209,6 +245,19 @@ CSS_TMPL = '''@charset "UTF-8";
   --cb-hover-card-bg-color: %(hover)s !important;
 }
 
+/* ---- 全局过渡动画（主题切换平滑） ---- */
+%(bodysel)s,
+%(bodysel)s #root,
+%(bodysel)s .teams-container,
+%(bodysel)s .conversation-sidebar,
+%(bodysel)s .main-content,
+%(bodysel)s .claw-agent-chat-pane,
+%(bodysel)s .conversation-list,
+%(bodysel)s .conversation-list-topbar,
+%(bodysel)s .workbuddy-topbar {
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease !important;
+}
+
 %(bodysel)s,
 %(bodysel)s #root {
   color: %(text)s !important;
@@ -242,6 +291,7 @@ CSS_TMPL = '''@charset "UTF-8";
   color: %(ontopbar)s !important;
 }
 
+/* ---- 主内容区 + hero 背景图 ---- */
 %(bodysel)s .teams-container [data-view-id]:not([data-view-id="sidebar"]),
 %(bodysel)s .teams-main-content,
 %(bodysel)s .main-content,
@@ -255,6 +305,7 @@ CSS_TMPL = '''@charset "UTF-8";
   background-position: center !important;
 }
 
+/* ---- Tab 选中态 ---- */
 %(bodysel)s .conversation-list-tab-row.active,
 %(bodysel)s .conversation-list-tab-button-box.active {
   border-color: %(accent)s !important;
@@ -277,6 +328,7 @@ CSS_TMPL = '''@charset "UTF-8";
   color: %(onaccent)s !important;
 }
 
+/* ---- 快捷操作 chips ---- */
 %(bodysel)s .wb-home-composer__chips .quick-actions__item,
 %(bodysel)s .wb-home-composer__chips .quick-actions-sub__item,
 %(bodysel)s .wb-home-composer__chip,
@@ -294,6 +346,7 @@ CSS_TMPL = '''@charset "UTF-8";
   background: %(hover)s !important;
 }
 
+/* ---- 输入框 ---- */
 %(bodysel)s .wb-home-composer__input-slot,
 %(bodysel)s .claw-agent-chat-pane .colleague-chat-cb-chat [class*="input-area-container"],
 %(bodysel)s .project-detail-view__chat-input,
@@ -301,6 +354,14 @@ CSS_TMPL = '''@charset "UTF-8";
   border: 1px solid %(border)s !important;
   background: %(input)s !important;
   box-shadow: 0 1px 4px %(shadow)s !important;
+  border-radius: 12px !important;
+  transition: border-color .2s ease, box-shadow .2s ease !important;
+}
+
+%(bodysel)s .wb-home-composer__input-slot:focus-within,
+%(bodysel)s .claw-agent-chat-pane [class*="input-area-container"]:focus-within {
+  border-color: %(accent)s !important;
+  box-shadow: 0 0 0 3px %(chip_bg)s, 0 1px 8px %(shadow)s !important;
 }
 
 %(bodysel)s .wb-home-composer__input-slot [class*="editable"][contenteditable="true"],
@@ -308,24 +369,89 @@ CSS_TMPL = '''@charset "UTF-8";
   color: %(text)s !important;
 }
 
+/* ---- 弹窗/浮层 ---- */
 %(bodysel)s [role="dialog"],
 %(bodysel)s .workspace-more-popover,
-%(bodysel)s .user-menu-popover {
+%(bodysel)s .user-menu-popover,
+%(bodysel)s [class*="tooltip"],
+%(bodysel)s [class*="popover"],
+%(bodysel)s [class*="dropdown-menu"] {
   border: 1px solid %(border)s !important;
   background: %(card)s !important;
+  color: %(text)s !important;
   box-shadow: 0 6px 18px %(shadow)s !important;
 }
 
+/* ---- 滚动条 ---- */
+%(bodysel)s ::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+%(bodysel)s ::-webkit-scrollbar-track {
+  background: transparent !important;
+}
 %(bodysel)s ::-webkit-scrollbar-thumb {
   border: 2px solid transparent;
   border-radius: 8px;
   background: %(border)s;
   background-clip: padding-box;
 }
+%(bodysel)s ::-webkit-scrollbar-thumb:hover {
+  background: %(accent)s;
+}
 
+/* ---- 选中文字 ---- */
 %(bodysel)s ::selection {
   color: %(onaccent)s !important;
   background: %(accent)s !important;
+}
+
+/* ---- 代码块 ---- */
+%(bodysel)s code,
+%(bodysel)s pre,
+%(bodysel)s .code-block,
+%(bodysel)s [class*="code-block"],
+%(bodysel)s [class*="codeBlock"] {
+  background: %(hover)s !important;
+  color: %(text)s !important;
+  border: 1px solid %(border)s !important;
+  border-radius: 8px !important;
+}
+%(bodysel)s pre code {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* ---- Markdown 内容 ---- */
+%(bodysel)s h1, %(bodysel)s h2, %(bodysel)s h3,
+%(bodysel)s h4, %(bodysel)s h5, %(bodysel)s h6 {
+  color: %(text)s !important;
+}
+%(bodysel)s blockquote {
+  border-left: 3px solid %(accent)s !important;
+  background: %(chip_bg)s !important;
+  color: %(text)s !important;
+  border-radius: 0 8px 8px 0 !important;
+  padding: 8px 16px !important;
+}
+%(bodysel)s table {
+  border-collapse: collapse !important;
+}
+%(bodysel)s th, %(bodysel)s td {
+  border: 1px solid %(border)s !important;
+  color: %(text)s !important;
+}
+%(bodysel)s th {
+  background: %(hover)s !important;
+}
+%(bodysel)s hr {
+  border-color: %(border)s !important;
+}
+%(bodysel)s a {
+  color: %(accent)s !important;
+}
+%(bodysel)s a:hover {
+  color: %(accent_hover)s !important;
 }
 
 /* ---- 主题图标个性化: logo 替换为主题 emoji ---- */
@@ -340,9 +466,10 @@ CSS_TMPL = '''@charset "UTF-8";
   height: 36px;
   text-align: center;
   flex: 0 0 36px;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
 
-/* 聊天框右上角主题图标 (参考 qq2008 企鹅图) */
+/* 聊天框右上角主题图标 */
 %(bodysel)s .wb-home-composer__input-slot [class*="topRightSlotStandalone"] img {
   display: none !important;
 }
@@ -354,6 +481,19 @@ CSS_TMPL = '''@charset "UTF-8";
   font-size: 36px;
   opacity: 0.85;
   pointer-events: none;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+/* ---- reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  %(bodysel)s,
+  %(bodysel)s #root,
+  %(bodysel)s .teams-container,
+  %(bodysel)s .conversation-sidebar,
+  %(bodysel)s .main-content,
+  %(bodysel)s .claw-agent-chat-pane {
+    transition: none !important;
+  }
 }
 '''
 
@@ -373,8 +513,8 @@ def render_css(theme, palette, mode, dark, hero_file=None):
         hero = ''
     v.update(
         id=theme['id'], name=theme['name'], mode=mode,
-        rootsel='body.dark' if dark else ':root, body, body.light',
-        bodysel='body.dark' if dark else 'body',
+        rootsel='body.dark, body.dark-theme, body[data-theme="dark"], html.dark body' if dark else ':root, body, body.light',
+        bodysel='body.dark, body.dark-theme, body[data-theme="dark"], html.dark body' if dark else 'body',
         onaccent=on_accent, ontopbar=on_topbar,
         hero_layer=hero,
         emoji=THEME_EMOJI.get(theme['id'], '🎨'),
