@@ -621,6 +621,50 @@ body a:hover {
   text-decoration: underline !important;
 }
 
+/* ---- 欢迎页搜索框 / 空状态搜索 ---- */
+body [class*="welcome-search"],
+body [class*="welcomeSearch"],
+body [class*="home-search"],
+body [class*="homeSearch"],
+body [class*="hero-search"],
+body [class*="heroSearch"],
+body [class*="empty-search"],
+body [class*="emptySearch"],
+body [class*="quick-search-input"],
+body [class*="quickSearchInput"] {
+  background: #e5e3de !important;
+  border-color: #a0a0a0 !important;
+  color: #1a1a1a !important;
+  border-radius: 12px !important;
+}
+body [class*="welcome-search"] input,
+body [class*="welcomeSearch"] input,
+body [class*="home-search"] input,
+body [class*="hero-search"] input,
+body [class*="empty-search"] input,
+body [class*="quick-search-input"] input,
+body [class*="welcome-search"] textarea,
+body [class*="hero-search"] textarea,
+body [class*="empty-search"] textarea {
+  background: transparent !important;
+  color: #1a1a1a !important;
+}
+body [class*="welcome-search"] input::placeholder,
+body [class*="welcome-search"] textarea::placeholder,
+body [class*="hero-search"] input::placeholder,
+body [class*="empty-search"] input::placeholder,
+body [class*="home-search"] input::placeholder {
+  color: #5a5a5a !important;
+}
+
+/* ---- 透明容器/卡片背景（防止白色矩形） ---- */
+body [class*="welcome-card"],
+body [class*="welcomeCard"],
+body [class*="welcome-container"]:not([class*="modal"]),
+body [class*="welcome-container"]:not([class*="dialog"]) {
+  background: transparent !important;
+}
+
 /* ---- reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   body,
@@ -1254,6 +1298,50 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body a {
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body a:hover {
   text-decoration: underline !important;
+}
+
+/* ---- 欢迎页搜索框 / 空状态搜索 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-search"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeSearch"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="home-search"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="homeSearch"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="hero-search"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="heroSearch"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="empty-search"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="emptySearch"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="quick-search-input"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="quickSearchInput"] {
+  background: #33333e !important;
+  border-color: #3a3a6a !important;
+  color: #e8e8e8 !important;
+  border-radius: 12px !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-search"] input,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeSearch"] input,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="home-search"] input,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="hero-search"] input,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="empty-search"] input,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="quick-search-input"] input,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-search"] textarea,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="hero-search"] textarea,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="empty-search"] textarea {
+  background: transparent !important;
+  color: #e8e8e8 !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-search"] input::placeholder,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-search"] textarea::placeholder,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="hero-search"] input::placeholder,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="empty-search"] input::placeholder,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="home-search"] input::placeholder {
+  color: #8888a0 !important;
+}
+
+/* ---- 透明容器/卡片背景（防止白色矩形） ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-card"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeCard"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-container"]:not([class*="modal"]),
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-container"]:not([class*="dialog"]) {
+  background: transparent !important;
 }
 
 /* ---- reduced motion ---- */
