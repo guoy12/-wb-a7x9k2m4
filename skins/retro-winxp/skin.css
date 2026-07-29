@@ -665,6 +665,28 @@ body [class*="welcome-container"]:not([class*="dialog"]) {
   background: transparent !important;
 }
 
+/* ---- 欢迎页头像/装饰容器（防止白色圆形） ---- */
+body [class*="welcome-avatar"],
+body [class*="welcomeAvatar"],
+body [class*="robot-avatar"],
+body [class*="robotAvatar"],
+body [class*="assistant-avatar"],
+body [class*="assistantAvatar"],
+body [class*="welcome-icon"],
+body [class*="welcomeIcon"],
+body [class*="welcome-logo"],
+body [class*="welcomeLogo"] {
+  background: rgba(0,88,230,0.1) !important;
+  border-color: #9db9e8 !important;
+}
+
+/* ---- 通用兜底：欢迎页所有非输入容器强制透明背景 ---- */
+body [class*="welcome"] [class*="container"]:not([class*="modal"]):not([class*="dialog"]),
+body [class*="welcome"] [class*="box"]:not([class*="modal"]):not([class*="dialog"]),
+body [class*="welcome"] [class*="wrapper"]:not([class*="modal"]):not([class*="dialog"]) {
+  background: transparent !important;
+}
+
 /* ---- reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   body,
@@ -1341,6 +1363,28 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="wel
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeCard"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-container"]:not([class*="modal"]),
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-container"]:not([class*="dialog"]) {
+  background: transparent !important;
+}
+
+/* ---- 欢迎页头像/装饰容器（防止白色圆形） ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-avatar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeAvatar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="robot-avatar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="robotAvatar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="assistant-avatar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="assistantAvatar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-icon"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeIcon"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-logo"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeLogo"] {
+  background: rgba(91,155,245,0.18) !important;
+  border-color: #3e60b9 !important;
+}
+
+/* ---- 通用兜底：欢迎页所有非输入容器强制透明背景 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome"] [class*="container"]:not([class*="modal"]):not([class*="dialog"]),
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome"] [class*="box"]:not([class*="modal"]):not([class*="dialog"]),
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome"] [class*="wrapper"]:not([class*="modal"]):not([class*="dialog"]) {
   background: transparent !important;
 }
 
