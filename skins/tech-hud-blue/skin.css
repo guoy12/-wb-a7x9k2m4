@@ -167,7 +167,7 @@ body .welcome,
 body .welcome-container,
 body .claw-agent-chat-pane {
   background-color: #f2f8fb !important;
-  background-image:linear-gradient(180deg, rgba(242,248,251,0.15) 0%, rgba(242,248,251,0.45) 45%, rgba(242,248,251,0.82) 100%), url("./hero.png"),  linear-gradient(135deg, #f7fafc 0%, #f2f8fb 46%, #e8eef1 100%) !important;
+  background-image:linear-gradient(180deg, rgba(242,248,251,0.3) 0%, rgba(242,248,251,0.55) 45%, rgba(242,248,251,0.75) 100%), url("./hero.png"),  linear-gradient(135deg, #f7fafc 0%, #f2f8fb 46%, #e8eef1 100%) !important;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -472,6 +472,155 @@ body [class*="metaText"] {
   color: #4e7080 !important;
 }
 
+/* ---- 专家页面 / 技能卡片 ---- */
+body [class*="expert-card"],
+body [class*="expertCard"],
+body [class*="skill-card"],
+body [class*="skillCard"] {
+  background: #ffffff !important;
+  border-color: #81d4fa !important;
+  color: #0e2a3a !important;
+  border-radius: 8px !important;
+}
+body [class*="expert-card"]:hover,
+body [class*="expertCard"]:hover,
+body [class*="skill-card"]:hover,
+body [class*="skillCard"]:hover {
+  border-color: #0277bd !important;
+  background: #e6f2f7 !important;
+}
+
+/* ---- 命令面板 ---- */
+body [class*="command-palette"],
+body [class*="commandPalette"],
+body [class*="quick-input"],
+body [class*="quickInput"],
+body [class*="command-input"],
+body [class*="commandInput"] {
+  background: #ffffff !important;
+  border-color: #81d4fa !important;
+  color: #0e2a3a !important;
+}
+
+/* ---- @提及 / 附件 ---- */
+body [class*="mention"],
+body [class*="Mention"] {
+  background: rgba(2,119,189,0.1) !important;
+  color: #0277bd !important;
+  border-radius: 4px !important;
+}
+body [class*="attachment"],
+body [class*="Attachment"],
+body [class*="file-card"],
+body [class*="fileCard"] {
+  background: #e6f2f7 !important;
+  border-color: #81d4fa !important;
+  color: #0e2a3a !important;
+  border-radius: 8px !important;
+}
+
+/* ---- Markdown 容器 / diff / 终端 ---- */
+body [class*="markdown-body"],
+body [class*="markdownBody"],
+body [class*="prose"] {
+  color: #0e2a3a !important;
+}
+body [class*="diff-view"],
+body [class*="diffView"],
+body [class*="code-diff"],
+body [class*="codeDiff"] {
+  background: #e6f2f7 !important;
+  border-color: #81d4fa !important;
+  border-radius: 8px !important;
+}
+body [class*="diff-view"] [class*="add"],
+body [class*="diffView"] [class*="add"],
+body [class*="line-add"] {
+  background: rgba(2,119,189,0.1) !important;
+}
+body [class*="diff-view"] [class*="del"],
+body [class*="diffView"] [class*="del"],
+body [class*="line-del"] {
+  background: rgba(255,0,0,0.08) !important;
+}
+body [class*="terminal"],
+body [class*="Terminal"],
+body [class*="xterm"] {
+  background: #f2f8fb !important;
+  border-color: #81d4fa !important;
+  color: #0e2a3a !important;
+  border-radius: 8px !important;
+}
+
+/* ---- 头像 / 树 / 分页 / 面包屑 ---- */
+body [class*="avatar"],
+body [class*="Avatar"] {
+  border-color: #81d4fa !important;
+}
+body [class*="tree-node"],
+body [class*="treeNode"],
+body [class*="tree-item"],
+body [class*="treeItem"] {
+  color: #0e2a3a !important;
+}
+body [class*="tree-node"]:hover,
+body [class*="treeNode"]:hover,
+body [class*="tree-item"]:hover {
+  background: #e6f2f7 !important;
+}
+body [class*="tree-node"][class*="active"],
+body [class*="treeNode"][class*="selected"],
+body [class*="tree-item"][class*="active"] {
+  background: #c7e1f0 !important;
+  color: #0e2a3a !important;
+}
+body [class*="pagination"],
+body [class*="Pagination"] {
+  color: #0e2a3a !important;
+}
+body [class*="pagination"] [class*="active"],
+body [class*="Pagination"] [class*="active"] {
+  background: #0277bd !important;
+  color: #ffffff !important;
+  border-color: #0277bd !important;
+}
+body [class*="breadcrumb"],
+body [class*="Breadcrumb"] {
+  color: #4e7080 !important;
+}
+body [class*="breadcrumb"] a,
+body [class*="Breadcrumb"] a {
+  color: #0277bd !important;
+}
+
+/* ---- 优化: caret-color / 等宽字体 / Firefox 兼容 / 链接 ---- */
+body [contenteditable="true"],
+body input[type="text"],
+body input[type="search"],
+body textarea {
+  caret-color: #0277bd !important;
+}
+body code,
+body pre,
+body [class*="code-block"],
+body [class*="codeBlock"] {
+  font-family: "SF Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", "Consolas", monospace !important;
+}
+body ::-moz-selection {
+  color: #ffffff !important;
+  background: #0277bd !important;
+}
+body {
+  scrollbar-color: #81d4fa transparent;
+  scrollbar-width: thin;
+}
+body a {
+  text-decoration: none !important;
+}
+body a:hover {
+  text-decoration: underline !important;
+}
+
 /* ---- reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   body,
@@ -653,7 +802,7 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .welcome,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .welcome-container,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-pane {
   background-color: #14181d !important;
-  background-image:linear-gradient(180deg, rgba(20,24,29,0.12) 0%, rgba(20,24,29,0.42) 45%, rgba(20,24,29,0.78) 100%), url("./hero.png"),  linear-gradient(135deg, #202428 0%, #14181d 46%, #101317 100%) !important;
+  background-image:linear-gradient(180deg, rgba(20,24,29,0.25) 0%, rgba(20,24,29,0.5) 45%, rgba(20,24,29,0.7) 100%), url("./hero.png"),  linear-gradient(135deg, #202428 0%, #14181d 46%, #101317 100%) !important;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -956,6 +1105,155 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="mes
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="meta-text"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="metaText"] {
   color: #6fa8c0 !important;
+}
+
+/* ---- 专家页面 / 技能卡片 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="expert-card"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="expertCard"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skill-card"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skillCard"] {
+  background: #272a2f !important;
+  border-color: #35799e !important;
+  color: #e1f5fe !important;
+  border-radius: 8px !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="expert-card"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="expertCard"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skill-card"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skillCard"]:hover {
+  border-color: #29b6f6 !important;
+  background: #33393e !important;
+}
+
+/* ---- 命令面板 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="command-palette"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="commandPalette"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="quick-input"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="quickInput"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="command-input"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="commandInput"] {
+  background: #272a2f !important;
+  border-color: #35799e !important;
+  color: #e1f5fe !important;
+}
+
+/* ---- @提及 / 附件 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="mention"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Mention"] {
+  background: rgba(41,182,246,0.18) !important;
+  color: #29b6f6 !important;
+  border-radius: 4px !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="attachment"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Attachment"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="file-card"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="fileCard"] {
+  background: #33393e !important;
+  border-color: #35799e !important;
+  color: #e1f5fe !important;
+  border-radius: 8px !important;
+}
+
+/* ---- Markdown 容器 / diff / 终端 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="markdown-body"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="markdownBody"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="prose"] {
+  color: #e1f5fe !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diff-view"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diffView"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="code-diff"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="codeDiff"] {
+  background: #33393e !important;
+  border-color: #35799e !important;
+  border-radius: 8px !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diff-view"] [class*="add"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diffView"] [class*="add"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="line-add"] {
+  background: rgba(41,182,246,0.18) !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diff-view"] [class*="del"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diffView"] [class*="del"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="line-del"] {
+  background: rgba(255,0,0,0.08) !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="terminal"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Terminal"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="xterm"] {
+  background: #14181d !important;
+  border-color: #35799e !important;
+  color: #e1f5fe !important;
+  border-radius: 8px !important;
+}
+
+/* ---- 头像 / 树 / 分页 / 面包屑 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="avatar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Avatar"] {
+  border-color: #35799e !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-node"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="treeNode"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-item"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="treeItem"] {
+  color: #e1f5fe !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-node"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="treeNode"]:hover,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-item"]:hover {
+  background: #33393e !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-node"][class*="active"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="treeNode"][class*="selected"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-item"][class*="active"] {
+  background: #206f94 !important;
+  color: #e1f5fe !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="pagination"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Pagination"] {
+  color: #e1f5fe !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="pagination"] [class*="active"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Pagination"] [class*="active"] {
+  background: #29b6f6 !important;
+  color: #ffffff !important;
+  border-color: #29b6f6 !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="breadcrumb"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Breadcrumb"] {
+  color: #6fa8c0 !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="breadcrumb"] a,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Breadcrumb"] a {
+  color: #29b6f6 !important;
+}
+
+/* ---- 优化: caret-color / 等宽字体 / Firefox 兼容 / 链接 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [contenteditable="true"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[type="text"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[type="search"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body textarea {
+  caret-color: #29b6f6 !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body code,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body pre,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="code-block"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="codeBlock"] {
+  font-family: "SF Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", "Consolas", monospace !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body ::-moz-selection {
+  color: #ffffff !important;
+  background: #29b6f6 !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body {
+  scrollbar-color: #35799e transparent;
+  scrollbar-width: thin;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body a {
+  text-decoration: none !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body a:hover {
+  text-decoration: underline !important;
 }
 
 /* ---- reduced motion ---- */
