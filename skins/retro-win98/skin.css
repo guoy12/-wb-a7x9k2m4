@@ -687,6 +687,41 @@ body [class*="welcome"] [class*="wrapper"]:not([class*="modal"]):not([class*="di
   background: transparent !important;
 }
 
+/* ---- 任务/状态通知条（防止白框） ---- */
+body [class*="task-notify"],
+body [class*="taskNotify"],
+body [class*="running-task"],
+body [class*="runningTask"],
+body [class*="progress-toast"],
+body [class*="progressToast"],
+body [class*="read-tip"],
+body [class*="readTip"],
+body [class*="file-loaded"],
+body [class*="fileLoaded"],
+body [class*="status-message"],
+body [class*="statusMessage"],
+body [class*="info-tip"],
+body [class*="infoTip"],
+body [class*="tip-bar"],
+body [class*="tipBar"],
+body [class*="notification-bar"],
+body [class*="notificationBar"] {
+  background: #e5e3de !important;
+  border-color: #a0a0a0 !important;
+  color: #1a1a1a !important;
+}
+
+/* ---- 兜底：所有 body 下的浅色容器都强制覆盖 ---- */
+body div[style*="background-color: rgb(255, 255, 255)"],
+body div[style*="background: rgb(255, 255, 255)"],
+body div[style*="background-color:#fff"],
+body div[style*="background-color: #fff"],
+body div[style*="background:#fff"],
+body div[style*="background: #fff"] {
+  background: #e5e3de !important;
+  background-color: #e5e3de !important;
+}
+
 /* ---- reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   body,
@@ -1386,6 +1421,41 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="wel
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome"] [class*="box"]:not([class*="modal"]):not([class*="dialog"]),
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome"] [class*="wrapper"]:not([class*="modal"]):not([class*="dialog"]) {
   background: transparent !important;
+}
+
+/* ---- 任务/状态通知条（防止白框） ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="task-notify"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="taskNotify"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="running-task"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="runningTask"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="progress-toast"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="progressToast"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="read-tip"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="readTip"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="file-loaded"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="fileLoaded"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="status-message"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="statusMessage"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="info-tip"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="infoTip"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tip-bar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tipBar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="notification-bar"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="notificationBar"] {
+  background: #33333e !important;
+  border-color: #3a3a6a !important;
+  color: #e8e8e8 !important;
+}
+
+/* ---- 兜底：所有 body 下的浅色容器都强制覆盖 ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background-color: rgb(255, 255, 255)"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background: rgb(255, 255, 255)"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background-color:#fff"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background-color: #fff"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background:#fff"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background: #fff"] {
+  background: #33333e !important;
+  background-color: #33333e !important;
 }
 
 /* ---- reduced motion ---- */
