@@ -90,8 +90,8 @@ function patchHtml(html) {
     const marker = path.basename(script);
     if (!html.includes(marker)) tags.push(`  <script defer src="./assets/${marker}"></script>`);
   }
-  // 注入白框自动修复脚本 - 监听 DOM 变化, 把白色背景的状态条/通知条改成透明
-  const fixScript = `<script>(function(){function f(){document.querySelectorAll('div').forEach(function(d){var s=getComputedStyle(d);if(s.backgroundColor==='rgb(255, 255, 255)'&&d.offsetWidth>100&&d.offsetHeight<150&&d.offsetHeight>8){d.style.backgroundColor='transparent';d.style.setProperty('background-color','transparent','important')}})}var o=new MutationObserver(function(){f()});if(document.body){o.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});f()}else{document.addEventListener('DOMContentLoaded',function(){o.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});f()})}})();</script>`;
+  // 注入白框自动修复脚本 - 防抖 + 只检查新增节点, 避免性能问题
+  const fixScript = `<script>(function(){var t;function f(muts){var seen=new Set();(muts||[]).forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1&&n.tagName==='DIV')seen.add(n);if(n.querySelectorAll)n.querySelectorAll('div').forEach(function(c){seen.add(c)})})});if(seen.size===0){document.querySelectorAll('div').forEach(function(d){seen.add(d)})}seen.forEach(function(d){var s=getComputedStyle(d);if(s.backgroundColor==='rgb(255, 255, 255)'&&d.offsetWidth>100&&d.offsetHeight<150&&d.offsetHeight>8){d.style.setProperty('background-color','transparent','important')}})}var o=new MutationObserver(function(muts){clearTimeout(t);t=setTimeout(function(){f(muts)},300)});if(document.body){o.observe(document.body,{childList:true,subtree:true});f()}else{document.addEventListener('DOMContentLoaded',function(){o.observe(document.body,{childList:true,subtree:true});f()})}})();</script>`;
   if (!html.includes("fixWhiteBg")) tags.push(fixScript);
   if (tags.length === 0) return html;
   if (!html.includes("</head>")) throw new Error("renderer/index.html 中未找到 </head>");
