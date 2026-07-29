@@ -711,6 +711,21 @@ body [class*="notificationBar"] {
   color: #0e2a40 !important;
 }
 
+/* ---- 按 placeholder 文本选择（覆盖"思考中"输入框） ---- */
+body input[placeholder*="思考"],
+body input[placeholder*="input"],
+body input[placeholder*="消息"],
+body input[placeholder*="请输入"],
+body textarea[placeholder*="思考"],
+body textarea[placeholder*="消息"],
+body div[placeholder*="思考"],
+body div[contenteditable="true"][data-placeholder*="思考"],
+body div[contenteditable="true"][aria-placeholder*="思考"] {
+  background: #e8f1f8 !important;
+  border-color: #81d4fa !important;
+  color: #0e2a40 !important;
+}
+
 /* ---- 兜底：所有 body 下的浅色容器都强制覆盖 ---- */
 body div[style*="background-color: rgb(255, 255, 255)"],
 body div[style*="background: rgb(255, 255, 255)"],
@@ -1442,6 +1457,21 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tip
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tipBar"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="notification-bar"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="notificationBar"] {
+  background: #33383e !important;
+  border-color: #35799e !important;
+  color: #e1f5fe !important;
+}
+
+/* ---- 按 placeholder 文本选择（覆盖"思考中"输入框） ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="思考"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="input"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="消息"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="请输入"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body textarea[placeholder*="思考"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body textarea[placeholder*="消息"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[placeholder*="思考"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[contenteditable="true"][data-placeholder*="思考"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[contenteditable="true"][aria-placeholder*="思考"] {
   background: #33383e !important;
   border-color: #35799e !important;
   color: #e1f5fe !important;

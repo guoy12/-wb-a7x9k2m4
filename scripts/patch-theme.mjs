@@ -90,9 +90,8 @@ function patchHtml(html) {
     const marker = path.basename(script);
     if (!html.includes(marker)) tags.push(`  <script defer src="./assets/${marker}"></script>`);
   }
-  // 注入白框自动修复脚本 - 防抖 + 只检查新增节点, 避免性能问题
-  const fixScript = `<script>(function(){var t;function f(muts){var seen=new Set();(muts||[]).forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1&&n.tagName==='DIV')seen.add(n);if(n.querySelectorAll)n.querySelectorAll('div').forEach(function(c){seen.add(c)})})});if(seen.size===0){document.querySelectorAll('div').forEach(function(d){seen.add(d)})}seen.forEach(function(d){var s=getComputedStyle(d);if(s.backgroundColor==='rgb(255, 255, 255)'&&d.offsetWidth>100&&d.offsetHeight<150&&d.offsetHeight>8){d.style.setProperty('background-color','transparent','important')}})}var o=new MutationObserver(function(muts){clearTimeout(t);t=setTimeout(function(){f(muts)},300)});if(document.body){o.observe(document.body,{childList:true,subtree:true});f()}else{document.addEventListener('DOMContentLoaded',function(){o.observe(document.body,{childList:true,subtree:true});f()})}})();</script>`;
-  if (!html.includes("fixWhiteBg")) tags.push(fixScript);
+  // 移除 MutationObserver JS（性能开销主因），改用 CSS 覆盖白框
+  // 兜底规则已包含 input[placeholder*="思考"] 等
   if (tags.length === 0) return html;
   if (!html.includes("</head>")) throw new Error("renderer/index.html 中未找到 </head>");
   return html.replace("</head>", `${tags.join("\n")}\n</head>`);
