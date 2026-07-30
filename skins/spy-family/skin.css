@@ -161,8 +161,16 @@ body .teams-container {
 body .teams-container [data-view-id="sidebar"],
 body .conversation-sidebar,
 body .conversation-list {
-  background: linear-gradient(180deg, #f7dfe8 0%, #f6dbe6 48%, #e2c9d4 100%) !important;
+  background: linear-gradient(180deg, #f7dfe8 0%, #f6dbe6 48%, #e2c9d4 100%), rgba(16,8,26,0.45) !important;
+  background-blend-mode: normal !important;
   border-right: 1px solid #f48fb1 !important;
+}
+body .teams-container [data-view-id="sidebar"] *,
+body .conversation-sidebar *,
+body .conversation-list *,
+body [data-view-id="sidebar"] *,
+body [data-view-id="sidebar"] {
+  color: #3a1024 !important;
 }
 
 body .conversation-list-topbar,
@@ -272,6 +280,13 @@ body .atm-modal-chat-input [contenteditable] {
   background: #ffffff !important;
   border: 1px solid #f48fb1 !important;
   border-radius: 12px !important;
+}
+
+/* 强制所有 body 下的浅色容器透明背景（最暴力兜底） */
+body div,
+body span,
+body section {
+  background-color: transparent;
 }
 
 /* ---- 弹窗/浮层 ---- */
@@ -950,8 +965,16 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .teams-conta
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .teams-container [data-view-id="sidebar"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-sidebar,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-list {
-  background: linear-gradient(180deg, #362a30 0%, #291c23 48%, #23181e 100%) !important;
+  background: linear-gradient(180deg, #362a30 0%, #291c23 48%, #23181e 100%), rgba(16,8,26,0.45) !important;
+  background-blend-mode: normal !important;
   border-right: 1px solid #91305b !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .teams-container [data-view-id="sidebar"] *,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-sidebar *,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-list *,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [data-view-id="sidebar"] *,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [data-view-id="sidebar"] {
+  color: #fce4ec !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-list-topbar,
@@ -1061,6 +1084,13 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-c
   background: #282024 !important;
   border: 1px solid #91305b !important;
   border-radius: 12px !important;
+}
+
+/* 强制所有 body 下的浅色容器透明背景（最暴力兜底） */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body span,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body section {
+  background-color: transparent;
 }
 
 /* ---- 弹窗/浮层 ---- */
