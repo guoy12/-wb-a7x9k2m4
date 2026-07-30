@@ -110,6 +110,29 @@
   --cb-dropdown-bg-color: #ffffff !important;
   --cb-dropdown-item-hover-bg-color: #eef4e5 !important;
   --cb-hover-card-bg-color: #eef4e5 !important;
+  /* ⭐ 输入框双遮蔽源覆盖（白条根因） */
+  --atm-surface: #ffffff !important;
+  --atm-chat-content-bg: #ffffff !important;
+  --cb-input-background: #ffffff !important;
+  --cb-main-area-background: #f5f8ef !important;
+  --cb-content-background: #f5f8ef !important;
+  --cb-bg-surface: #ffffff !important;
+  --cb-vscode-editor-background: #f5f8ef !important;
+  --cb-vscode-sideBar-background: #e2ecd4 !important;
+  --cb-vscode-foreground: #26301a !important;
+  --cb-vscode-editor-foreground: #26301a !important;
+  --cb-text-primary: #26301a !important;
+  --cb-text-secondary: #68745c !important;
+  --cb-vscode-titleBar-activeBackground: #7cb342 !important;
+  --cb-vscode-titleBar-activeForeground: #ffffff !important;
+  --cb-vscode-input-background: #ffffff !important;
+  --cb-vscode-dropdown-background: #ffffff !important;
+  --cb-vscode-button-background: #558b2f !important;
+  --cb-vscode-button-foreground: #ffffff !important;
+  --cb-vscode-button-hoverBackground: #4b7a29 !important;
+  --cb-vscode-list-hoverBackground: #eef4e5 !important;
+  --cb-vscode-scrollbarSlider-background: #aed581 !important;
+  --cb-vscode-scrollbarSlider-hoverBackground: #558b2f !important;
 }
 
 /* ---- 全局过渡动画（主题切换平滑） ---- */
@@ -234,6 +257,21 @@ body .claw-agent-chat-pane [class*="input-area-container"]:focus-within {
 body .wb-home-composer__input-slot [class*="editable"][contenteditable="true"],
 body .claw-agent-chat-pane [contenteditable="true"] {
   color: #26301a !important;
+}
+
+/* ⭐ atm-modal-chat-input 直接覆盖（白条根因：双遮蔽源） */
+body .atm-modal-chat-input,
+body .atm-modal-chat-input * {
+  --atm-surface: #ffffff !important;
+  --atm-chat-content-bg: #ffffff !important;
+}
+body .atm-modal-chat-input [class*="_mainArea_"],
+body .atm-modal-chat-input [class*="_content_"],
+body .atm-modal-chat-input textarea,
+body .atm-modal-chat-input [contenteditable] {
+  background: #ffffff !important;
+  border: 1px solid #aed581 !important;
+  border-radius: 12px !important;
 }
 
 /* ---- 弹窗/浮层 ---- */
@@ -861,6 +899,29 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body {
   --cb-dropdown-bg-color: #2a2f27 !important;
   --cb-dropdown-item-hover-bg-color: #383e33 !important;
   --cb-hover-card-bg-color: #383e33 !important;
+  /* ⭐ 输入框双遮蔽源覆盖（白条根因） */
+  --atm-surface: #242820 !important;
+  --atm-chat-content-bg: #242820 !important;
+  --cb-input-background: #242820 !important;
+  --cb-main-area-background: #181d14 !important;
+  --cb-content-background: #181d14 !important;
+  --cb-bg-surface: #2a2f27 !important;
+  --cb-vscode-editor-background: #181d14 !important;
+  --cb-vscode-sideBar-background: #22291c !important;
+  --cb-vscode-foreground: #f1f8e9 !important;
+  --cb-vscode-editor-foreground: #f1f8e9 !important;
+  --cb-text-primary: #f1f8e9 !important;
+  --cb-text-secondary: #a2b58c !important;
+  --cb-vscode-titleBar-activeBackground: #4e792a !important;
+  --cb-vscode-titleBar-activeForeground: #ffffff !important;
+  --cb-vscode-input-background: #242820 !important;
+  --cb-vscode-dropdown-background: #2a2f27 !important;
+  --cb-vscode-button-background: #8bc34a !important;
+  --cb-vscode-button-foreground: #1a1a1a !important;
+  --cb-vscode-button-hoverBackground: #99ca60 !important;
+  --cb-vscode-list-hoverBackground: #383e33 !important;
+  --cb-vscode-scrollbarSlider-background: #689f38 !important;
+  --cb-vscode-scrollbarSlider-hoverBackground: #8bc34a !important;
 }
 
 /* ---- 全局过渡动画（主题切换平滑） ---- */
@@ -985,6 +1046,21 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__input-slot [class*="editable"][contenteditable="true"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-pane [contenteditable="true"] {
   color: #f1f8e9 !important;
+}
+
+/* ⭐ atm-modal-chat-input 直接覆盖（白条根因：双遮蔽源） */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input * {
+  --atm-surface: #242820 !important;
+  --atm-chat-content-bg: #242820 !important;
+}
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input [class*="_mainArea_"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input [class*="_content_"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input textarea,
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input [contenteditable] {
+  background: #242820 !important;
+  border: 1px solid #689f38 !important;
+  border-radius: 12px !important;
 }
 
 /* ---- 弹窗/浮层 ---- */

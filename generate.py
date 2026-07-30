@@ -90,7 +90,7 @@ THEME_EMOJI = {
     "nature-lavender":"💜","nature-aurora":"🌌","nature-desert":"🏜️","nature-glacier":"🧊",
     "retro-qq2008":"🐧","retro-winxp":"🖥️","retro-win98":"💾","retro-fc-redwhite":"🎮","retro-gameboy":"👾",
     "minimal-mono":"⬛","minimal-ivory":"🕯️","minimal-mint":"🌿","minimal-slate":"🏢",
-    "creative-aurora-glass":"🔮","creative-dopamine":"🎨","creative-morandi":"🏺","creative-chinese-red":"🏯",
+    "creative-aurora-glass":"🔮","creative-dopamine":"🎨","creative-morandi":"🏺","creative-chinese-red":"🏯","pink-crystal":"🌸",
 }
 
 def derive(p, dark=False):
@@ -243,6 +243,29 @@ CSS_TMPL = '''@charset "UTF-8";
   --cb-dropdown-bg-color: %(card)s !important;
   --cb-dropdown-item-hover-bg-color: %(hover)s !important;
   --cb-hover-card-bg-color: %(hover)s !important;
+  /* ⭐ 输入框双遮蔽源覆盖（白条根因） */
+  --atm-surface: %(input)s !important;
+  --atm-chat-content-bg: %(input)s !important;
+  --cb-input-background: %(input)s !important;
+  --cb-main-area-background: %(bg)s !important;
+  --cb-content-background: %(bg)s !important;
+  --cb-bg-surface: %(card)s !important;
+  --cb-vscode-editor-background: %(bg)s !important;
+  --cb-vscode-sideBar-background: %(sidebar)s !important;
+  --cb-vscode-foreground: %(text)s !important;
+  --cb-vscode-editor-foreground: %(text)s !important;
+  --cb-text-primary: %(text)s !important;
+  --cb-text-secondary: %(muted)s !important;
+  --cb-vscode-titleBar-activeBackground: %(topbar1)s !important;
+  --cb-vscode-titleBar-activeForeground: %(ontopbar)s !important;
+  --cb-vscode-input-background: %(input)s !important;
+  --cb-vscode-dropdown-background: %(card)s !important;
+  --cb-vscode-button-background: %(accent)s !important;
+  --cb-vscode-button-foreground: %(onaccent)s !important;
+  --cb-vscode-button-hoverBackground: %(accent_hover)s !important;
+  --cb-vscode-list-hoverBackground: %(hover)s !important;
+  --cb-vscode-scrollbarSlider-background: %(border)s !important;
+  --cb-vscode-scrollbarSlider-hoverBackground: %(accent)s !important;
 }
 
 /* ---- 全局过渡动画（主题切换平滑） ---- */
@@ -255,7 +278,7 @@ CSS_TMPL = '''@charset "UTF-8";
 %(bodysel)s .conversation-list,
 %(bodysel)s .conversation-list-topbar,
 %(bodysel)s .workbuddy-topbar {
-  transition: background-color .3s ease, color .3s ease, border-color .3s ease !important;
+  transition: background-color .15s ease, color .15s ease !important;
 }
 
 %(bodysel)s,
@@ -369,6 +392,21 @@ CSS_TMPL = '''@charset "UTF-8";
   color: %(text)s !important;
 }
 
+/* ⭐ atm-modal-chat-input 直接覆盖（白条根因：双遮蔽源） */
+%(bodysel)s .atm-modal-chat-input,
+%(bodysel)s .atm-modal-chat-input * {
+  --atm-surface: %(input)s !important;
+  --atm-chat-content-bg: %(input)s !important;
+}
+%(bodysel)s .atm-modal-chat-input [class*="_mainArea_"],
+%(bodysel)s .atm-modal-chat-input [class*="_content_"],
+%(bodysel)s .atm-modal-chat-input textarea,
+%(bodysel)s .atm-modal-chat-input [contenteditable] {
+  background: %(input)s !important;
+  border: 1px solid %(border)s !important;
+  border-radius: 12px !important;
+}
+
 /* ---- 弹窗/浮层 ---- */
 %(bodysel)s [role="dialog"],
 %(bodysel)s .workspace-more-popover,
@@ -382,11 +420,7 @@ CSS_TMPL = '''@charset "UTF-8";
   box-shadow: 0 6px 18px %(shadow)s !important;
 }
 
-/* ---- 滚动条 ---- */
-%(bodysel)s ::-webkit-scrollbar {
-  width: 8px !important;
-  height: 8px !important;
-}
+/* ---- 滚动条 (只改颜色不改尺寸) ---- */
 %(bodysel)s ::-webkit-scrollbar-track {
   background: transparent !important;
 }
@@ -432,7 +466,6 @@ CSS_TMPL = '''@charset "UTF-8";
   background: %(chip_bg)s !important;
   color: %(text)s !important;
   border-radius: 0 8px 8px 0 !important;
-  padding: 8px 16px !important;
 }
 %(bodysel)s table {
   border-collapse: collapse !important;
@@ -461,11 +494,6 @@ CSS_TMPL = '''@charset "UTF-8";
 %(bodysel)s .conversation-list-logo-row::before {
   content: "%(emoji)s";
   font-size: 24px;
-  line-height: 36px;
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  flex: 0 0 36px;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
 
@@ -482,6 +510,402 @@ CSS_TMPL = '''@charset "UTF-8";
   opacity: 0.85;
   pointer-events: none;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+/* ---- 加载动画/skeleton ---- */
+%(bodysel)s [class*="skeleton"],
+%(bodysel)s [class*="loading"],
+%(bodysel)s [class*="spinner"],
+%(bodysel)s [class*="placeholder"],
+%(bodysel)s [class*="shimmer"] {
+  background: %(hover)s !important;
+  color: %(muted)s !important;
+}
+%(bodysel)s [class*="spinner"] {
+  border-color: %(border)s !important;
+  border-top-color: %(accent)s !important;
+}
+
+/* ---- 开关/复选框/单选 ---- */
+%(bodysel)s input[type="checkbox"]:checked,
+%(bodysel)s input[type="radio"]:checked,
+%(bodysel)s [class*="switch"][class*="checked"],
+%(bodysel)s [class*="toggle"][class*="on"] {
+  background: %(accent)s !important;
+  border-color: %(accent)s !important;
+}
+%(bodysel)s [class*="switch"],
+%(bodysel)s [class*="toggle"] {
+  border-color: %(border)s !important;
+}
+
+/* ---- 右键菜单/上下文菜单 ---- */
+%(bodysel)s [class*="context-menu"],
+%(bodysel)s [class*="contextMenu"],
+%(bodysel)s [class*="menu-item"],
+%(bodysel)s [class*="menuItem"],
+%(bodysel)s [class*="menu-list"],
+%(bodysel)s [class*="menuList"] {
+  background: %(card)s !important;
+  color: %(text)s !important;
+  border-color: %(border)s !important;
+}
+%(bodysel)s [class*="menu-item"]:hover,
+%(bodysel)s [class*="menuItem"]:hover {
+  background: %(hover)s !important;
+  color: %(text)s !important;
+}
+
+/* ---- 设置页面 ---- */
+%(bodysel)s [class*="settings"],
+%(bodysel)s [class*="preferences"],
+%(bodysel)s [class*="config-page"],
+%(bodysel)s [class*="SettingItem"],
+%(bodysel)s [class*="setting-item"] {
+  background: %(card)s !important;
+  color: %(text)s !important;
+  border-color: %(border)s !important;
+}
+%(bodysel)s [class*="setting-item"]:hover {
+  background: %(hover)s !important;
+}
+
+/* ---- 空状态 ---- */
+%(bodysel)s [class*="empty-state"],
+%(bodysel)s [class*="emptyState"],
+%(bodysel)s [class*="no-data"],
+%(bodysel)s [class*="noData"],
+%(bodysel)s [class*="illustration"] {
+  color: %(muted)s !important;
+}
+
+/* ---- 链接预览卡片 ---- */
+%(bodysel)s [class*="link-card"],
+%(bodysel)s [class*="linkCard"],
+%(bodysel)s [class*="preview-card"],
+%(bodysel)s [class*="previewCard"] {
+  background: %(card)s !important;
+  border-color: %(border)s !important;
+  color: %(text)s !important;
+  border-radius: 8px !important;
+}
+%(bodysel)s [class*="link-card"]:hover,
+%(bodysel)s [class*="linkCard"]:hover,
+%(bodysel)s [class*="preview-card"]:hover {
+  border-color: %(accent)s !important;
+}
+
+/* ---- 代码复制按钮 ---- */
+%(bodysel)s [class*="copy-button"],
+%(bodysel)s [class*="copyButton"],
+%(bodysel)s [class*="code-copy"],
+%(bodysel)s [class*="codeCopy"] {
+  background: %(hover)s !important;
+  color: %(muted)s !important;
+  border-color: %(border)s !important;
+  border-radius: 6px !important;
+}
+%(bodysel)s [class*="copy-button"]:hover,
+%(bodysel)s [class*="copyButton"]:hover,
+%(bodysel)s [class*="code-copy"]:hover {
+  background: %(accent)s !important;
+  color: %(onaccent)s !important;
+}
+
+/* ---- 搜索高亮 ---- */
+%(bodysel)s mark,
+%(bodysel)s [class*="highlight"],
+%(bodysel)s [class*="search-match"] {
+  background: %(chip_bg)s !important;
+  color: %(accent)s !important;
+  border-radius: 3px !important;
+}
+
+/* ---- 拖拽区域 ---- */
+%(bodysel)s [class*="dropzone"]:not([class*="dragging"]),
+%(bodysel)s [class*="dropZone"]:not([class*="dragging"]) {
+  border-color: %(border)s !important;
+  background: %(hover)s !important;
+}
+%(bodysel)s [class*="dropzone"][class*="dragging"],
+%(bodysel)s [class*="dropZone"][class*="active"],
+%(bodysel)s [class*="drop-zone"][class*="drag"] {
+  border-color: %(accent)s !important;
+  background: %(chip_bg)s !important;
+}
+
+/* ---- 消息时间戳/元信息 ---- */
+%(bodysel)s [class*="timestamp"],
+%(bodysel)s [class*="message-time"],
+%(bodysel)s [class*="messageTime"],
+%(bodysel)s [class*="meta-text"],
+%(bodysel)s [class*="metaText"] {
+  color: %(muted)s !important;
+}
+
+/* ---- 专家页面 / 技能卡片 ---- */
+%(bodysel)s [class*="expert-card"],
+%(bodysel)s [class*="expertCard"],
+%(bodysel)s [class*="skill-card"],
+%(bodysel)s [class*="skillCard"] {
+  background: %(card)s !important;
+  border-color: %(border)s !important;
+  color: %(text)s !important;
+  border-radius: 8px !important;
+}
+%(bodysel)s [class*="expert-card"]:hover,
+%(bodysel)s [class*="expertCard"]:hover,
+%(bodysel)s [class*="skill-card"]:hover,
+%(bodysel)s [class*="skillCard"]:hover {
+  border-color: %(accent)s !important;
+  background: %(hover)s !important;
+}
+
+/* ---- 命令面板 ---- */
+%(bodysel)s [class*="command-palette"],
+%(bodysel)s [class*="commandPalette"],
+%(bodysel)s [class*="quick-input"],
+%(bodysel)s [class*="quickInput"],
+%(bodysel)s [class*="command-input"],
+%(bodysel)s [class*="commandInput"] {
+  background: %(card)s !important;
+  border-color: %(border)s !important;
+  color: %(text)s !important;
+}
+
+/* ---- @提及 / 附件 ---- */
+%(bodysel)s [class*="mention"],
+%(bodysel)s [class*="Mention"] {
+  background: %(chip_bg)s !important;
+  color: %(accent)s !important;
+  border-radius: 4px !important;
+}
+%(bodysel)s [class*="attachment"],
+%(bodysel)s [class*="Attachment"],
+%(bodysel)s [class*="file-card"],
+%(bodysel)s [class*="fileCard"] {
+  background: %(hover)s !important;
+  border-color: %(border)s !important;
+  color: %(text)s !important;
+  border-radius: 8px !important;
+}
+
+/* ---- Markdown 容器 / diff / 终端 ---- */
+%(bodysel)s [class*="markdown-body"],
+%(bodysel)s [class*="markdownBody"],
+%(bodysel)s [class*="prose"] {
+  color: %(text)s !important;
+}
+%(bodysel)s [class*="diff-view"],
+%(bodysel)s [class*="diffView"],
+%(bodysel)s [class*="code-diff"],
+%(bodysel)s [class*="codeDiff"] {
+  background: %(hover)s !important;
+  border-color: %(border)s !important;
+  border-radius: 8px !important;
+}
+%(bodysel)s [class*="diff-view"] [class*="add"],
+%(bodysel)s [class*="diffView"] [class*="add"],
+%(bodysel)s [class*="line-add"] {
+  background: %(chip_bg)s !important;
+}
+%(bodysel)s [class*="diff-view"] [class*="del"],
+%(bodysel)s [class*="diffView"] [class*="del"],
+%(bodysel)s [class*="line-del"] {
+  background: rgba(255,0,0,0.08) !important;
+}
+%(bodysel)s [class*="terminal"],
+%(bodysel)s [class*="Terminal"],
+%(bodysel)s [class*="xterm"] {
+  background: %(bg)s !important;
+  border-color: %(border)s !important;
+  color: %(text)s !important;
+  border-radius: 8px !important;
+}
+
+/* ---- 头像 / 树 / 分页 / 面包屑 ---- */
+%(bodysel)s [class*="avatar"],
+%(bodysel)s [class*="Avatar"] {
+  border-color: %(border)s !important;
+}
+%(bodysel)s [class*="tree-node"],
+%(bodysel)s [class*="treeNode"],
+%(bodysel)s [class*="tree-item"],
+%(bodysel)s [class*="treeItem"] {
+  color: %(text)s !important;
+}
+%(bodysel)s [class*="tree-node"]:hover,
+%(bodysel)s [class*="treeNode"]:hover,
+%(bodysel)s [class*="tree-item"]:hover {
+  background: %(hover)s !important;
+}
+%(bodysel)s [class*="tree-node"][class*="active"],
+%(bodysel)s [class*="treeNode"][class*="selected"],
+%(bodysel)s [class*="tree-item"][class*="active"] {
+  background: %(active)s !important;
+  color: %(text)s !important;
+}
+%(bodysel)s [class*="pagination"],
+%(bodysel)s [class*="Pagination"] {
+  color: %(text)s !important;
+}
+%(bodysel)s [class*="pagination"] [class*="active"],
+%(bodysel)s [class*="Pagination"] [class*="active"] {
+  background: %(accent)s !important;
+  color: %(onaccent)s !important;
+  border-color: %(accent)s !important;
+}
+%(bodysel)s [class*="breadcrumb"],
+%(bodysel)s [class*="Breadcrumb"] {
+  color: %(muted)s !important;
+}
+%(bodysel)s [class*="breadcrumb"] a,
+%(bodysel)s [class*="Breadcrumb"] a {
+  color: %(accent)s !important;
+}
+
+/* ---- 优化: caret-color / 等宽字体 / Firefox 兼容 / 链接 ---- */
+%(bodysel)s [contenteditable="true"],
+%(bodysel)s input[type="text"],
+%(bodysel)s input[type="search"],
+%(bodysel)s textarea {
+  caret-color: %(accent)s !important;
+}
+%(bodysel)s code,
+%(bodysel)s pre,
+%(bodysel)s [class*="code-block"],
+%(bodysel)s [class*="codeBlock"] {
+  font-family: "SF Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", "Consolas", monospace !important;
+}
+%(bodysel)s ::-moz-selection {
+  color: %(onaccent)s !important;
+  background: %(accent)s !important;
+}
+%(bodysel)s {
+  scrollbar-color: %(border)s transparent;
+  scrollbar-width: thin;
+}
+%(bodysel)s a {
+  text-decoration: none !important;
+}
+%(bodysel)s a:hover {
+  text-decoration: underline !important;
+}
+
+/* ---- 欢迎页搜索框 / 空状态搜索 ---- */
+%(bodysel)s [class*="welcome-search"],
+%(bodysel)s [class*="welcomeSearch"],
+%(bodysel)s [class*="home-search"],
+%(bodysel)s [class*="homeSearch"],
+%(bodysel)s [class*="hero-search"],
+%(bodysel)s [class*="heroSearch"],
+%(bodysel)s [class*="empty-search"],
+%(bodysel)s [class*="emptySearch"],
+%(bodysel)s [class*="quick-search-input"],
+%(bodysel)s [class*="quickSearchInput"] {
+  background: %(hover)s !important;
+  border-color: %(border)s !important;
+  color: %(text)s !important;
+  border-radius: 12px !important;
+}
+%(bodysel)s [class*="welcome-search"] input,
+%(bodysel)s [class*="welcomeSearch"] input,
+%(bodysel)s [class*="home-search"] input,
+%(bodysel)s [class*="hero-search"] input,
+%(bodysel)s [class*="empty-search"] input,
+%(bodysel)s [class*="quick-search-input"] input,
+%(bodysel)s [class*="welcome-search"] textarea,
+%(bodysel)s [class*="hero-search"] textarea,
+%(bodysel)s [class*="empty-search"] textarea {
+  background: transparent !important;
+  color: %(text)s !important;
+}
+%(bodysel)s [class*="welcome-search"] input::placeholder,
+%(bodysel)s [class*="welcome-search"] textarea::placeholder,
+%(bodysel)s [class*="hero-search"] input::placeholder,
+%(bodysel)s [class*="empty-search"] input::placeholder,
+%(bodysel)s [class*="home-search"] input::placeholder {
+  color: %(muted)s !important;
+}
+
+/* ---- 透明容器/卡片背景（防止白色矩形） ---- */
+%(bodysel)s [class*="welcome-card"],
+%(bodysel)s [class*="welcomeCard"],
+%(bodysel)s [class*="welcome-container"]:not([class*="modal"]),
+%(bodysel)s [class*="welcome-container"]:not([class*="dialog"]) {
+  background: transparent !important;
+}
+
+/* ---- 欢迎页头像/装饰容器（防止白色圆形） ---- */
+%(bodysel)s [class*="welcome-avatar"],
+%(bodysel)s [class*="welcomeAvatar"],
+%(bodysel)s [class*="robot-avatar"],
+%(bodysel)s [class*="robotAvatar"],
+%(bodysel)s [class*="assistant-avatar"],
+%(bodysel)s [class*="assistantAvatar"],
+%(bodysel)s [class*="welcome-icon"],
+%(bodysel)s [class*="welcomeIcon"],
+%(bodysel)s [class*="welcome-logo"],
+%(bodysel)s [class*="welcomeLogo"] {
+  background: %(chip_bg)s !important;
+  border-color: %(border)s !important;
+}
+
+/* ---- 通用兜底：欢迎页所有非输入容器强制透明背景 ---- */
+%(bodysel)s [class*="welcome"] [class*="container"]:not([class*="modal"]):not([class*="dialog"]),
+%(bodysel)s [class*="welcome"] [class*="box"]:not([class*="modal"]):not([class*="dialog"]),
+%(bodysel)s [class*="welcome"] [class*="wrapper"]:not([class*="modal"]):not([class*="dialog"]) {
+  background: transparent !important;
+}
+
+/* ---- 任务/状态通知条（防止白框） ---- */
+%(bodysel)s [class*="task-notify"],
+%(bodysel)s [class*="taskNotify"],
+%(bodysel)s [class*="running-task"],
+%(bodysel)s [class*="runningTask"],
+%(bodysel)s [class*="progress-toast"],
+%(bodysel)s [class*="progressToast"],
+%(bodysel)s [class*="read-tip"],
+%(bodysel)s [class*="readTip"],
+%(bodysel)s [class*="file-loaded"],
+%(bodysel)s [class*="fileLoaded"],
+%(bodysel)s [class*="status-message"],
+%(bodysel)s [class*="statusMessage"],
+%(bodysel)s [class*="info-tip"],
+%(bodysel)s [class*="infoTip"],
+%(bodysel)s [class*="tip-bar"],
+%(bodysel)s [class*="tipBar"],
+%(bodysel)s [class*="notification-bar"],
+%(bodysel)s [class*="notificationBar"] {
+  background: %(hover)s !important;
+  border-color: %(border)s !important;
+  color: %(text)s !important;
+}
+
+/* ---- 按 placeholder 文本选择（覆盖"思考中"输入框） ---- */
+%(bodysel)s input[placeholder*="思考"],
+%(bodysel)s input[placeholder*="input"],
+%(bodysel)s input[placeholder*="消息"],
+%(bodysel)s input[placeholder*="请输入"],
+%(bodysel)s textarea[placeholder*="思考"],
+%(bodysel)s textarea[placeholder*="消息"],
+%(bodysel)s div[placeholder*="思考"],
+%(bodysel)s div[contenteditable="true"][data-placeholder*="思考"],
+%(bodysel)s div[contenteditable="true"][aria-placeholder*="思考"] {
+  background: %(hover)s !important;
+  border-color: %(border)s !important;
+  color: %(text)s !important;
+}
+
+/* ---- 兜底：所有 body 下的浅色容器都强制覆盖 ---- */
+%(bodysel)s div[style*="background-color: rgb(255, 255, 255)"],
+%(bodysel)s div[style*="background: rgb(255, 255, 255)"],
+%(bodysel)s div[style*="background-color:#fff"],
+%(bodysel)s div[style*="background-color: #fff"],
+%(bodysel)s div[style*="background:#fff"],
+%(bodysel)s div[style*="background: #fff"] {
+  background: %(hover)s !important;
+  background-color: %(hover)s !important;
 }
 
 /* ---- reduced motion ---- */
@@ -505,9 +929,9 @@ def render_css(theme, palette, mode, dark, hero_file=None):
     # hero 背景图: 纵向三段渐变遮罩 — 更透更清晰, 底部仍保文字可读
     if hero_file:
         if not dark:
-            v1, v2, v3 = rgba(d['bg'], 0.15), rgba(d['bg'], 0.45), rgba(d['bg'], 0.82)
+            v1, v2, v3 = rgba(d['bg'], 0.30), rgba(d['bg'], 0.55), rgba(d['bg'], 0.75)
         else:
-            v1, v2, v3 = rgba(d['bg'], 0.12), rgba(d['bg'], 0.42), rgba(d['bg'], 0.78)
+            v1, v2, v3 = rgba(d['bg'], 0.25), rgba(d['bg'], 0.50), rgba(d['bg'], 0.70)
         hero = 'linear-gradient(180deg, %s 0%%, %s 45%%, %s 100%%), url("./%s"), ' % (v1, v2, v3, hero_file)
     else:
         hero = ''

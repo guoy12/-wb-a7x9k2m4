@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "pink-crystal",
+  "name": "Pink Crystal · 深空樱雾",
+  "category": "creative",
+  "categoryName": "创意",
+  "desc": "深空底色配热粉强调色，毛玻璃星空主题",
+  "tags": [
+    "创意",
+    "毛玻璃",
+    "星空",
+    "粉色"
+  ],
+  "hero": "hero.png"
+}

@@ -1,138 +1,138 @@
 @charset "UTF-8";
-/* WorkBuddy Skin: 火影忍者·佐助 (naruto-sasuke) - light
+/* WorkBuddy Skin: Pink Crystal · 深空樱雾 (pink-crystal) - light
    由 workbuddy-skin-gallery 生成 */
 :root, body, body.light {
   /* -- 基础色 -- */
-  --vscode-foreground: #1a1a33 !important;
-  --vscode-editor-foreground: #1a1a33 !important;
-  --vscode-descriptionForeground: #5a5a7a !important;
-  --vscode-disabledForeground: #5a5a7a !important;
-  --vscode-editor-background: #f0f2f8 !important;
-  --vscode-sideBar-background: #d8dcea !important;
-  --vscode-panel-background: #f0f2f8 !important;
+  --vscode-foreground: #ffffff !important;
+  --vscode-editor-foreground: #ffffff !important;
+  --vscode-descriptionForeground: #ffb6d0 !important;
+  --vscode-disabledForeground: #ffb6d0 !important;
+  --vscode-editor-background: #1a0a1e !important;
+  --vscode-sideBar-background: #160818 !important;
+  --vscode-panel-background: #1a0a1e !important;
   /* -- 输入/下拉/菜单 -- */
   --vscode-input-background: #ffffff !important;
   --vscode-dropdown-background: #ffffff !important;
   --vscode-menu-background: #ffffff !important;
   --vscode-editorWidget-background: #ffffff !important;
-  --vscode-textCodeBlock-background: #e8eaf2 !important;
-  --vscode-input-border: #9fa8da !important;
-  --vscode-focusBorder: #283593 !important;
+  --vscode-textCodeBlock-background: #736b74 !important;
+  --vscode-input-border: #ff4d9c !important;
+  --vscode-focusBorder: #ff4d9c !important;
   /* -- 图标/链接 -- */
-  --vscode-icon-foreground: #5a5a7a !important;
-  --vscode-textLink-foreground: #283593 !important;
-  --vscode-textLink-activeForeground: #232f81 !important;
+  --vscode-icon-foreground: #ffb6d0 !important;
+  --vscode-textLink-foreground: #ff4d9c !important;
+  --vscode-textLink-activeForeground: #e04489 !important;
   /* -- 按钮 -- */
-  --vscode-button-background: #283593 !important;
+  --vscode-button-background: #ff4d9c !important;
   --vscode-button-foreground: #ffffff !important;
-  --vscode-button-hoverBackground: #232f81 !important;
-  --vscode-progressBar-background: #283593 !important;
-  --vscode-badge-background: #283593 !important;
+  --vscode-button-hoverBackground: #e04489 !important;
+  --vscode-progressBar-background: #ff4d9c !important;
+  --vscode-badge-background: #ff4d9c !important;
   --vscode-badge-foreground: #ffffff !important;
   /* -- 列表 -- */
-  --vscode-list-hoverBackground: #e8eaf2 !important;
-  --vscode-list-activeSelectionBackground: #d0d3e7 !important;
-  --vscode-list-activeSelectionForeground: #1a1a33 !important;
-  --vscode-list-inactiveSelectionBackground: #e8eaf2 !important;
-  --vscode-list-focusBackground: #d0d3e7 !important;
+  --vscode-list-hoverBackground: #736b74 !important;
+  --vscode-list-activeSelectionBackground: #ffd8e9 !important;
+  --vscode-list-activeSelectionForeground: #ffffff !important;
+  --vscode-list-inactiveSelectionBackground: #736b74 !important;
+  --vscode-list-focusBackground: #ffd8e9 !important;
   /* -- 行号/缩进/括号 -- */
-  --vscode-editorLineNumber-foreground: #5a5a7a !important;
-  --vscode-editorLineNumber-activeForeground: #1a1a33 !important;
-  --vscode-editorIndentGuide-background1: #9fa8da !important;
-  --vscode-editorBracketHighlight-foreground1: #283593 !important;
-  --vscode-editorBracketHighlight-foreground2: #00acc1 !important;
+  --vscode-editorLineNumber-foreground: #ffb6d0 !important;
+  --vscode-editorLineNumber-activeForeground: #ffffff !important;
+  --vscode-editorIndentGuide-background1: #ff4d9c !important;
+  --vscode-editorBracketHighlight-foreground1: #ff4d9c !important;
+  --vscode-editorBracketHighlight-foreground2: #ffb6d0 !important;
   /* -- 滚动条 -- */
-  --vscode-scrollbarSlider-background: #9fa8da !important;
-  --vscode-scrollbarSlider-hoverBackground: #283593 !important;
-  --vscode-scrollbarSlider-activeBackground: #232f81 !important;
+  --vscode-scrollbarSlider-background: #ff4d9c !important;
+  --vscode-scrollbarSlider-hoverBackground: #ff4d9c !important;
+  --vscode-scrollbarSlider-activeBackground: #e04489 !important;
   /* -- Tab -- */
   --vscode-tab-activeBackground: #ffffff !important;
-  --vscode-tab-inactiveBackground: #f0f2f8 !important;
-  --vscode-tab-border: #9fa8da !important;
-  --vscode-tab-activeForeground: #1a1a33 !important;
-  --vscode-tab-inactiveForeground: #5a5a7a !important;
+  --vscode-tab-inactiveBackground: #1a0a1e !important;
+  --vscode-tab-border: #ff4d9c !important;
+  --vscode-tab-activeForeground: #ffffff !important;
+  --vscode-tab-inactiveForeground: #ffb6d0 !important;
   /* -- Activity Bar / Status Bar / Title Bar -- */
-  --vscode-activityBar-background: #d8dcea !important;
-  --vscode-activityBar-foreground: #283593 !important;
-  --vscode-activityBar-inactiveForeground: #5a5a7a !important;
-  --vscode-statusBar-background: #283593 !important;
+  --vscode-activityBar-background: #160818 !important;
+  --vscode-activityBar-foreground: #ff4d9c !important;
+  --vscode-activityBar-inactiveForeground: #ffb6d0 !important;
+  --vscode-statusBar-background: #c01a6a !important;
   --vscode-statusBar-foreground: #ffffff !important;
-  --vscode-titleBar-activeBackground: #5c6bc0 !important;
+  --vscode-titleBar-activeBackground: #ff4d9c !important;
   --vscode-titleBar-activeForeground: #ffffff !important;
   /* -- 通知 -- */
   --vscode-notifications-background: #ffffff !important;
-  --vscode-notifications-foreground: #1a1a33 !important;
-  --vscode-notificationLink-foreground: #283593 !important;
+  --vscode-notifications-foreground: #ffffff !important;
+  --vscode-notificationLink-foreground: #ff4d9c !important;
   /* -- WorkBuddy 专有 -- */
-  --wb-home-bg-primary: #d8dcea !important;
-  --wb-home-bg-secondary: #f0f2f8 !important;
+  --wb-home-bg-primary: #160818 !important;
+  --wb-home-bg-secondary: #1a0a1e !important;
   --wb-bg-primary: #ffffff !important;
-  --wb-bg-secondary: #f0f2f8 !important;
-  --wb-bg-tertiary: #e8eaf2 !important;
-  --wb-bg-hover: #e8eaf2 !important;
-  --wb-bg-active: #d0d3e7 !important;
-  --wb-sidebar-bg: #d8dcea !important;
-  --wb-text-primary: #1a1a33 !important;
-  --wb-text-strong: #1a1a33 !important;
-  --wb-text-medium: #1a1a33 !important;
-  --wb-text-secondary: #5a5a7a !important;
-  --wb-text-tertiary: #5a5a7a !important;
-  --wb-color-text-primary: #1a1a33 !important;
-  --wb-color-text-secondary: #5a5a7a !important;
-  --wb-color-text-tertiary: #5a5a7a !important;
-  --wb-icon-primary: #1a1a33 !important;
-  --wb-icon-secondary: #5a5a7a !important;
-  --wb-icon-muted: #5a5a7a !important;
-  --wb-border-default: #9fa8da !important;
-  --wb-border-subtle: #e8eaf2 !important;
-  --wb-border-focus: #283593 !important;
+  --wb-bg-secondary: #1a0a1e !important;
+  --wb-bg-tertiary: #736b74 !important;
+  --wb-bg-hover: #736b74 !important;
+  --wb-bg-active: #ffd8e9 !important;
+  --wb-sidebar-bg: #160818 !important;
+  --wb-text-primary: #ffffff !important;
+  --wb-text-strong: #ffffff !important;
+  --wb-text-medium: #ffffff !important;
+  --wb-text-secondary: #ffb6d0 !important;
+  --wb-text-tertiary: #ffb6d0 !important;
+  --wb-color-text-primary: #ffffff !important;
+  --wb-color-text-secondary: #ffb6d0 !important;
+  --wb-color-text-tertiary: #ffb6d0 !important;
+  --wb-icon-primary: #ffffff !important;
+  --wb-icon-secondary: #ffb6d0 !important;
+  --wb-icon-muted: #ffb6d0 !important;
+  --wb-border-default: #ff4d9c !important;
+  --wb-border-subtle: #736b74 !important;
+  --wb-border-focus: #ff4d9c !important;
   --wb-bg-card-strong: #ffffff !important;
-  --wb-bg-pill-hover: #e8eaf2 !important;
-  --wb-bg-pill-active: #283593 !important;
-  --wb-bg-pill-active-hover: #232f81 !important;
-  --wb-control-selected-bg: #283593 !important;
-  --wb-control-selected-bg-hover: #232f81 !important;
-  --wb-button-primary-bg: #283593 !important;
-  --wb-button-primary-bg-hover: #232f81 !important;
-  --wb-button-primary-bg-active: #232f81 !important;
-  --wb-quick-action-arrow-bg: #e8eaf2 !important;
-  --wb-quick-action-selected-bg: #283593 !important;
+  --wb-bg-pill-hover: #736b74 !important;
+  --wb-bg-pill-active: #ff4d9c !important;
+  --wb-bg-pill-active-hover: #e04489 !important;
+  --wb-control-selected-bg: #ff4d9c !important;
+  --wb-control-selected-bg-hover: #e04489 !important;
+  --wb-button-primary-bg: #ff4d9c !important;
+  --wb-button-primary-bg-hover: #e04489 !important;
+  --wb-button-primary-bg-active: #e04489 !important;
+  --wb-quick-action-arrow-bg: #736b74 !important;
+  --wb-quick-action-selected-bg: #ff4d9c !important;
   --wb-quick-action-selected-fg: #ffffff !important;
-  --wb-quick-action-item-bg-hover: #e8eaf2 !important;
-  --wb-quick-action-item-border-hover: #9fa8da !important;
-  --wb-quick-action-sub-item-bg: #f0f2f8 !important;
-  --wb-quick-action-sub-item-hover-bg: #e8eaf2 !important;
+  --wb-quick-action-item-bg-hover: #736b74 !important;
+  --wb-quick-action-item-border-hover: #ff4d9c !important;
+  --wb-quick-action-sub-item-bg: #1a0a1e !important;
+  --wb-quick-action-sub-item-hover-bg: #736b74 !important;
   --wb-home-composer-card-bg: #ffffff !important;
-  --wb-home-composer-sub-card-bg: #f0f2f8 !important;
-  --wb-home-composer-chip-bg-hover: #e8eaf2 !important;
-  --wb-home-composer-arrow-fg: #5a5a7a !important;
-  --wb-quick-actions-fade-bg: #f0f2f8 !important;
+  --wb-home-composer-sub-card-bg: #1a0a1e !important;
+  --wb-home-composer-chip-bg-hover: #736b74 !important;
+  --wb-home-composer-arrow-fg: #ffb6d0 !important;
+  --wb-quick-actions-fade-bg: #1a0a1e !important;
   --cb-dropdown-bg-color: #ffffff !important;
-  --cb-dropdown-item-hover-bg-color: #e8eaf2 !important;
-  --cb-hover-card-bg-color: #e8eaf2 !important;
+  --cb-dropdown-item-hover-bg-color: #736b74 !important;
+  --cb-hover-card-bg-color: #736b74 !important;
   /* ⭐ 输入框双遮蔽源覆盖（白条根因） */
   --atm-surface: #ffffff !important;
   --atm-chat-content-bg: #ffffff !important;
   --cb-input-background: #ffffff !important;
-  --cb-main-area-background: #f0f2f8 !important;
-  --cb-content-background: #f0f2f8 !important;
+  --cb-main-area-background: #1a0a1e !important;
+  --cb-content-background: #1a0a1e !important;
   --cb-bg-surface: #ffffff !important;
-  --cb-vscode-editor-background: #f0f2f8 !important;
-  --cb-vscode-sideBar-background: #d8dcea !important;
-  --cb-vscode-foreground: #1a1a33 !important;
-  --cb-vscode-editor-foreground: #1a1a33 !important;
-  --cb-text-primary: #1a1a33 !important;
-  --cb-text-secondary: #5a5a7a !important;
-  --cb-vscode-titleBar-activeBackground: #5c6bc0 !important;
+  --cb-vscode-editor-background: #1a0a1e !important;
+  --cb-vscode-sideBar-background: #160818 !important;
+  --cb-vscode-foreground: #ffffff !important;
+  --cb-vscode-editor-foreground: #ffffff !important;
+  --cb-text-primary: #ffffff !important;
+  --cb-text-secondary: #ffb6d0 !important;
+  --cb-vscode-titleBar-activeBackground: #ff4d9c !important;
   --cb-vscode-titleBar-activeForeground: #ffffff !important;
   --cb-vscode-input-background: #ffffff !important;
   --cb-vscode-dropdown-background: #ffffff !important;
-  --cb-vscode-button-background: #283593 !important;
+  --cb-vscode-button-background: #ff4d9c !important;
   --cb-vscode-button-foreground: #ffffff !important;
-  --cb-vscode-button-hoverBackground: #232f81 !important;
-  --cb-vscode-list-hoverBackground: #e8eaf2 !important;
-  --cb-vscode-scrollbarSlider-background: #9fa8da !important;
-  --cb-vscode-scrollbarSlider-hoverBackground: #283593 !important;
+  --cb-vscode-button-hoverBackground: #e04489 !important;
+  --cb-vscode-list-hoverBackground: #736b74 !important;
+  --cb-vscode-scrollbarSlider-background: #ff4d9c !important;
+  --cb-vscode-scrollbarSlider-hoverBackground: #ff4d9c !important;
 }
 
 /* ---- 全局过渡动画（主题切换平滑） ---- */
@@ -150,27 +150,27 @@ body .workbuddy-topbar {
 
 body,
 body #root {
-  color: #1a1a33 !important;
-  background: #f0f2f8 !important;
+  color: #ffffff !important;
+  background: #1a0a1e !important;
 }
 
 body .teams-container {
-  background: #d8dcea !important;
+  background: #160818 !important;
 }
 
 body .teams-container [data-view-id="sidebar"],
 body .conversation-sidebar,
 body .conversation-list {
-  background: linear-gradient(180deg, #dce0ec 0%, #d8dcea 48%, #c7cad7 100%) !important;
-  border-right: 1px solid #9fa8da !important;
+  background: linear-gradient(180deg, #2d212f 0%, #160818 48%, #140716 100%) !important;
+  border-right: 1px solid #ff4d9c !important;
 }
 
 body .conversation-list-topbar,
 body .claw-agent-chat-topbar,
 body .workbuddy-topbar,
 body .teams-top-bar {
-  background: linear-gradient(180deg, #5c6bc0 0%, #283593 100%) !important;
-  border-bottom: 1px solid #212b79 !important;
+  background: linear-gradient(180deg, #ff4d9c 0%, #c01a6a 100%) !important;
+  border-bottom: 1px solid #9d1557 !important;
   color: #ffffff !important;
 }
 
@@ -189,8 +189,8 @@ body .main-content--welcome,
 body .welcome,
 body .welcome-container,
 body .claw-agent-chat-pane {
-  background-color: #f0f2f8 !important;
-  background-image:linear-gradient(180deg, rgba(240,242,248,0.3) 0%, rgba(240,242,248,0.55) 45%, rgba(240,242,248,0.75) 100%), url("./hero.png"),  linear-gradient(135deg, #f5f7fa 0%, #f0f2f8 46%, #e6e8ee 100%) !important;
+  background-color: #1a0a1e !important;
+  background-image:linear-gradient(180deg, rgba(26,10,30,0.3) 0%, rgba(26,10,30,0.55) 45%, rgba(26,10,30,0.75) 100%), url("./hero.png"),  linear-gradient(135deg, #6a606d 0%, #1a0a1e 46%, #190a1d 100%) !important;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -198,23 +198,23 @@ body .claw-agent-chat-pane {
 /* ---- Tab 选中态 ---- */
 body .conversation-list-tab-row.active,
 body .conversation-list-tab-button-box.active {
-  border-color: #283593 !important;
-  background: #d8dbec !important;
+  border-color: #ff4d9c !important;
+  background: #ffdfed !important;
 }
 
 body .conversation-agent-card:hover {
-  background: #e8eaf2 !important;
+  background: #736b74 !important;
 }
 
 body .conversation-agent-card[class*="selected"] {
-  border-color: #283593 !important;
-  background: #d8dbec !important;
+  border-color: #ff4d9c !important;
+  background: #ffdfed !important;
 }
 
 body .wb-scene-tabs__pill--active,
 body .wb-scene-tabs__pill--active:hover {
-  border-color: #283593 !important;
-  background: linear-gradient(180deg, #283593 0%, #232f81 100%) !important;
+  border-color: #ff4d9c !important;
+  background: linear-gradient(180deg, #ff4d9c 0%, #e04489 100%) !important;
   color: #ffffff !important;
 }
 
@@ -223,17 +223,17 @@ body .wb-home-composer__chips .quick-actions__item,
 body .wb-home-composer__chips .quick-actions-sub__item,
 body .wb-home-composer__chip,
 body .claw-agent-chat-pane .colleague-chat-suggestions__item {
-  border: 1px solid #9fa8da !important;
-  background: rgba(40,53,147,0.1) !important;
-  color: #1a1a33 !important;
+  border: 1px solid #ff4d9c !important;
+  background: rgba(255,77,156,0.1) !important;
+  color: #ffffff !important;
 }
 
 body .wb-home-composer__chips .quick-actions__item:hover,
 body .wb-home-composer__chips .quick-actions-sub__item:hover,
 body .wb-home-composer__chip:hover,
 body .claw-agent-chat-pane .colleague-chat-suggestions__item:hover {
-  border-color: #283593 !important;
-  background: #e8eaf2 !important;
+  border-color: #ff4d9c !important;
+  background: #736b74 !important;
 }
 
 /* ---- 输入框 ---- */
@@ -241,22 +241,22 @@ body .wb-home-composer__input-slot,
 body .claw-agent-chat-pane .colleague-chat-cb-chat [class*="input-area-container"],
 body .project-detail-view__chat-input,
 body .atm-modal-chat-input {
-  border: 1px solid #9fa8da !important;
+  border: 1px solid #ff4d9c !important;
   background: #ffffff !important;
-  box-shadow: 0 1px 4px rgba(28,37,103,0.14) !important;
+  box-shadow: 0 1px 4px rgba(178,54,109,0.14) !important;
   border-radius: 12px !important;
   transition: border-color .2s ease, box-shadow .2s ease !important;
 }
 
 body .wb-home-composer__input-slot:focus-within,
 body .claw-agent-chat-pane [class*="input-area-container"]:focus-within {
-  border-color: #283593 !important;
-  box-shadow: 0 0 0 3px rgba(40,53,147,0.1), 0 1px 8px rgba(28,37,103,0.14) !important;
+  border-color: #ff4d9c !important;
+  box-shadow: 0 0 0 3px rgba(255,77,156,0.1), 0 1px 8px rgba(178,54,109,0.14) !important;
 }
 
 body .wb-home-composer__input-slot [class*="editable"][contenteditable="true"],
 body .claw-agent-chat-pane [contenteditable="true"] {
-  color: #1a1a33 !important;
+  color: #ffffff !important;
 }
 
 /* ⭐ atm-modal-chat-input 直接覆盖（白条根因：双遮蔽源） */
@@ -270,7 +270,7 @@ body .atm-modal-chat-input [class*="_content_"],
 body .atm-modal-chat-input textarea,
 body .atm-modal-chat-input [contenteditable] {
   background: #ffffff !important;
-  border: 1px solid #9fa8da !important;
+  border: 1px solid #ff4d9c !important;
   border-radius: 12px !important;
 }
 
@@ -281,10 +281,10 @@ body .user-menu-popover,
 body [class*="tooltip"],
 body [class*="popover"],
 body [class*="dropdown-menu"] {
-  border: 1px solid #9fa8da !important;
+  border: 1px solid #ff4d9c !important;
   background: #ffffff !important;
-  color: #1a1a33 !important;
-  box-shadow: 0 6px 18px rgba(28,37,103,0.14) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(178,54,109,0.14) !important;
 }
 
 /* ---- 滚动条 (只改颜色不改尺寸) ---- */
@@ -294,17 +294,17 @@ body ::-webkit-scrollbar-track {
 body ::-webkit-scrollbar-thumb {
   border: 2px solid transparent;
   border-radius: 8px;
-  background: #9fa8da;
+  background: #ff4d9c;
   background-clip: padding-box;
 }
 body ::-webkit-scrollbar-thumb:hover {
-  background: #283593;
+  background: #ff4d9c;
 }
 
 /* ---- 选中文字 ---- */
 body ::selection {
   color: #ffffff !important;
-  background: #283593 !important;
+  background: #ff4d9c !important;
 }
 
 /* ---- 代码块 ---- */
@@ -313,9 +313,9 @@ body pre,
 body .code-block,
 body [class*="code-block"],
 body [class*="codeBlock"] {
-  background: #e8eaf2 !important;
-  color: #1a1a33 !important;
-  border: 1px solid #9fa8da !important;
+  background: #736b74 !important;
+  color: #ffffff !important;
+  border: 1px solid #ff4d9c !important;
   border-radius: 8px !important;
 }
 body pre code {
@@ -326,32 +326,32 @@ body pre code {
 /* ---- Markdown 内容 ---- */
 body h1, body h2, body h3,
 body h4, body h5, body h6 {
-  color: #1a1a33 !important;
+  color: #ffffff !important;
 }
 body blockquote {
-  border-left: 3px solid #283593 !important;
-  background: rgba(40,53,147,0.1) !important;
-  color: #1a1a33 !important;
+  border-left: 3px solid #ff4d9c !important;
+  background: rgba(255,77,156,0.1) !important;
+  color: #ffffff !important;
   border-radius: 0 8px 8px 0 !important;
 }
 body table {
   border-collapse: collapse !important;
 }
 body th, body td {
-  border: 1px solid #9fa8da !important;
-  color: #1a1a33 !important;
+  border: 1px solid #ff4d9c !important;
+  color: #ffffff !important;
 }
 body th {
-  background: #e8eaf2 !important;
+  background: #736b74 !important;
 }
 body hr {
-  border-color: #9fa8da !important;
+  border-color: #ff4d9c !important;
 }
 body a {
-  color: #283593 !important;
+  color: #ff4d9c !important;
 }
 body a:hover {
-  color: #232f81 !important;
+  color: #e04489 !important;
 }
 
 /* ---- 主题图标个性化: logo 替换为主题 emoji ---- */
@@ -359,7 +359,7 @@ body .conversation-list-logo .logo-workbuddy-icon {
   display: none !important;
 }
 body .conversation-list-logo-row::before {
-  content: "⚡";
+  content: "🌸";
   font-size: 24px;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
@@ -369,7 +369,7 @@ body .wb-home-composer__input-slot [class*="topRightSlotStandalone"] img {
   display: none !important;
 }
 body .wb-home-composer__input-slot [class*="topRightSlotStandalone"]::after {
-  content: "⚡";
+  content: "🌸";
   position: absolute;
   top: 8px;
   right: 8px;
@@ -385,12 +385,12 @@ body [class*="loading"],
 body [class*="spinner"],
 body [class*="placeholder"],
 body [class*="shimmer"] {
-  background: #e8eaf2 !important;
-  color: #5a5a7a !important;
+  background: #736b74 !important;
+  color: #ffb6d0 !important;
 }
 body [class*="spinner"] {
-  border-color: #9fa8da !important;
-  border-top-color: #283593 !important;
+  border-color: #ff4d9c !important;
+  border-top-color: #ff4d9c !important;
 }
 
 /* ---- 开关/复选框/单选 ---- */
@@ -398,12 +398,12 @@ body input[type="checkbox"]:checked,
 body input[type="radio"]:checked,
 body [class*="switch"][class*="checked"],
 body [class*="toggle"][class*="on"] {
-  background: #283593 !important;
-  border-color: #283593 !important;
+  background: #ff4d9c !important;
+  border-color: #ff4d9c !important;
 }
 body [class*="switch"],
 body [class*="toggle"] {
-  border-color: #9fa8da !important;
+  border-color: #ff4d9c !important;
 }
 
 /* ---- 右键菜单/上下文菜单 ---- */
@@ -414,13 +414,13 @@ body [class*="menuItem"],
 body [class*="menu-list"],
 body [class*="menuList"] {
   background: #ffffff !important;
-  color: #1a1a33 !important;
-  border-color: #9fa8da !important;
+  color: #ffffff !important;
+  border-color: #ff4d9c !important;
 }
 body [class*="menu-item"]:hover,
 body [class*="menuItem"]:hover {
-  background: #e8eaf2 !important;
-  color: #1a1a33 !important;
+  background: #736b74 !important;
+  color: #ffffff !important;
 }
 
 /* ---- 设置页面 ---- */
@@ -430,11 +430,11 @@ body [class*="config-page"],
 body [class*="SettingItem"],
 body [class*="setting-item"] {
   background: #ffffff !important;
-  color: #1a1a33 !important;
-  border-color: #9fa8da !important;
+  color: #ffffff !important;
+  border-color: #ff4d9c !important;
 }
 body [class*="setting-item"]:hover {
-  background: #e8eaf2 !important;
+  background: #736b74 !important;
 }
 
 /* ---- 空状态 ---- */
@@ -443,7 +443,7 @@ body [class*="emptyState"],
 body [class*="no-data"],
 body [class*="noData"],
 body [class*="illustration"] {
-  color: #5a5a7a !important;
+  color: #ffb6d0 !important;
 }
 
 /* ---- 链接预览卡片 ---- */
@@ -452,14 +452,14 @@ body [class*="linkCard"],
 body [class*="preview-card"],
 body [class*="previewCard"] {
   background: #ffffff !important;
-  border-color: #9fa8da !important;
-  color: #1a1a33 !important;
+  border-color: #ff4d9c !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
 }
 body [class*="link-card"]:hover,
 body [class*="linkCard"]:hover,
 body [class*="preview-card"]:hover {
-  border-color: #283593 !important;
+  border-color: #ff4d9c !important;
 }
 
 /* ---- 代码复制按钮 ---- */
@@ -467,15 +467,15 @@ body [class*="copy-button"],
 body [class*="copyButton"],
 body [class*="code-copy"],
 body [class*="codeCopy"] {
-  background: #e8eaf2 !important;
-  color: #5a5a7a !important;
-  border-color: #9fa8da !important;
+  background: #736b74 !important;
+  color: #ffb6d0 !important;
+  border-color: #ff4d9c !important;
   border-radius: 6px !important;
 }
 body [class*="copy-button"]:hover,
 body [class*="copyButton"]:hover,
 body [class*="code-copy"]:hover {
-  background: #283593 !important;
+  background: #ff4d9c !important;
   color: #ffffff !important;
 }
 
@@ -483,22 +483,22 @@ body [class*="code-copy"]:hover {
 body mark,
 body [class*="highlight"],
 body [class*="search-match"] {
-  background: rgba(40,53,147,0.1) !important;
-  color: #283593 !important;
+  background: rgba(255,77,156,0.1) !important;
+  color: #ff4d9c !important;
   border-radius: 3px !important;
 }
 
 /* ---- 拖拽区域 ---- */
 body [class*="dropzone"]:not([class*="dragging"]),
 body [class*="dropZone"]:not([class*="dragging"]) {
-  border-color: #9fa8da !important;
-  background: #e8eaf2 !important;
+  border-color: #ff4d9c !important;
+  background: #736b74 !important;
 }
 body [class*="dropzone"][class*="dragging"],
 body [class*="dropZone"][class*="active"],
 body [class*="drop-zone"][class*="drag"] {
-  border-color: #283593 !important;
-  background: rgba(40,53,147,0.1) !important;
+  border-color: #ff4d9c !important;
+  background: rgba(255,77,156,0.1) !important;
 }
 
 /* ---- 消息时间戳/元信息 ---- */
@@ -507,7 +507,7 @@ body [class*="message-time"],
 body [class*="messageTime"],
 body [class*="meta-text"],
 body [class*="metaText"] {
-  color: #5a5a7a !important;
+  color: #ffb6d0 !important;
 }
 
 /* ---- 专家页面 / 技能卡片 ---- */
@@ -516,16 +516,16 @@ body [class*="expertCard"],
 body [class*="skill-card"],
 body [class*="skillCard"] {
   background: #ffffff !important;
-  border-color: #9fa8da !important;
-  color: #1a1a33 !important;
+  border-color: #ff4d9c !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
 }
 body [class*="expert-card"]:hover,
 body [class*="expertCard"]:hover,
 body [class*="skill-card"]:hover,
 body [class*="skillCard"]:hover {
-  border-color: #283593 !important;
-  background: #e8eaf2 !important;
+  border-color: #ff4d9c !important;
+  background: #736b74 !important;
 }
 
 /* ---- 命令面板 ---- */
@@ -536,24 +536,24 @@ body [class*="quickInput"],
 body [class*="command-input"],
 body [class*="commandInput"] {
   background: #ffffff !important;
-  border-color: #9fa8da !important;
-  color: #1a1a33 !important;
+  border-color: #ff4d9c !important;
+  color: #ffffff !important;
 }
 
 /* ---- @提及 / 附件 ---- */
 body [class*="mention"],
 body [class*="Mention"] {
-  background: rgba(40,53,147,0.1) !important;
-  color: #283593 !important;
+  background: rgba(255,77,156,0.1) !important;
+  color: #ff4d9c !important;
   border-radius: 4px !important;
 }
 body [class*="attachment"],
 body [class*="Attachment"],
 body [class*="file-card"],
 body [class*="fileCard"] {
-  background: #e8eaf2 !important;
-  border-color: #9fa8da !important;
-  color: #1a1a33 !important;
+  background: #736b74 !important;
+  border-color: #ff4d9c !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
 }
 
@@ -561,20 +561,20 @@ body [class*="fileCard"] {
 body [class*="markdown-body"],
 body [class*="markdownBody"],
 body [class*="prose"] {
-  color: #1a1a33 !important;
+  color: #ffffff !important;
 }
 body [class*="diff-view"],
 body [class*="diffView"],
 body [class*="code-diff"],
 body [class*="codeDiff"] {
-  background: #e8eaf2 !important;
-  border-color: #9fa8da !important;
+  background: #736b74 !important;
+  border-color: #ff4d9c !important;
   border-radius: 8px !important;
 }
 body [class*="diff-view"] [class*="add"],
 body [class*="diffView"] [class*="add"],
 body [class*="line-add"] {
-  background: rgba(40,53,147,0.1) !important;
+  background: rgba(255,77,156,0.1) !important;
 }
 body [class*="diff-view"] [class*="del"],
 body [class*="diffView"] [class*="del"],
@@ -584,51 +584,51 @@ body [class*="line-del"] {
 body [class*="terminal"],
 body [class*="Terminal"],
 body [class*="xterm"] {
-  background: #f0f2f8 !important;
-  border-color: #9fa8da !important;
-  color: #1a1a33 !important;
+  background: #1a0a1e !important;
+  border-color: #ff4d9c !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
 }
 
 /* ---- 头像 / 树 / 分页 / 面包屑 ---- */
 body [class*="avatar"],
 body [class*="Avatar"] {
-  border-color: #9fa8da !important;
+  border-color: #ff4d9c !important;
 }
 body [class*="tree-node"],
 body [class*="treeNode"],
 body [class*="tree-item"],
 body [class*="treeItem"] {
-  color: #1a1a33 !important;
+  color: #ffffff !important;
 }
 body [class*="tree-node"]:hover,
 body [class*="treeNode"]:hover,
 body [class*="tree-item"]:hover {
-  background: #e8eaf2 !important;
+  background: #736b74 !important;
 }
 body [class*="tree-node"][class*="active"],
 body [class*="treeNode"][class*="selected"],
 body [class*="tree-item"][class*="active"] {
-  background: #d0d3e7 !important;
-  color: #1a1a33 !important;
+  background: #ffd8e9 !important;
+  color: #ffffff !important;
 }
 body [class*="pagination"],
 body [class*="Pagination"] {
-  color: #1a1a33 !important;
+  color: #ffffff !important;
 }
 body [class*="pagination"] [class*="active"],
 body [class*="Pagination"] [class*="active"] {
-  background: #283593 !important;
+  background: #ff4d9c !important;
   color: #ffffff !important;
-  border-color: #283593 !important;
+  border-color: #ff4d9c !important;
 }
 body [class*="breadcrumb"],
 body [class*="Breadcrumb"] {
-  color: #5a5a7a !important;
+  color: #ffb6d0 !important;
 }
 body [class*="breadcrumb"] a,
 body [class*="Breadcrumb"] a {
-  color: #283593 !important;
+  color: #ff4d9c !important;
 }
 
 /* ---- 优化: caret-color / 等宽字体 / Firefox 兼容 / 链接 ---- */
@@ -636,7 +636,7 @@ body [contenteditable="true"],
 body input[type="text"],
 body input[type="search"],
 body textarea {
-  caret-color: #283593 !important;
+  caret-color: #ff4d9c !important;
 }
 body code,
 body pre,
@@ -646,10 +646,10 @@ body [class*="codeBlock"] {
 }
 body ::-moz-selection {
   color: #ffffff !important;
-  background: #283593 !important;
+  background: #ff4d9c !important;
 }
 body {
-  scrollbar-color: #9fa8da transparent;
+  scrollbar-color: #ff4d9c transparent;
   scrollbar-width: thin;
 }
 body a {
@@ -670,9 +670,9 @@ body [class*="empty-search"],
 body [class*="emptySearch"],
 body [class*="quick-search-input"],
 body [class*="quickSearchInput"] {
-  background: #e8eaf2 !important;
-  border-color: #9fa8da !important;
-  color: #1a1a33 !important;
+  background: #736b74 !important;
+  border-color: #ff4d9c !important;
+  color: #ffffff !important;
   border-radius: 12px !important;
 }
 body [class*="welcome-search"] input,
@@ -685,14 +685,14 @@ body [class*="welcome-search"] textarea,
 body [class*="hero-search"] textarea,
 body [class*="empty-search"] textarea {
   background: transparent !important;
-  color: #1a1a33 !important;
+  color: #ffffff !important;
 }
 body [class*="welcome-search"] input::placeholder,
 body [class*="welcome-search"] textarea::placeholder,
 body [class*="hero-search"] input::placeholder,
 body [class*="empty-search"] input::placeholder,
 body [class*="home-search"] input::placeholder {
-  color: #5a5a7a !important;
+  color: #ffb6d0 !important;
 }
 
 /* ---- 透明容器/卡片背景（防止白色矩形） ---- */
@@ -714,8 +714,8 @@ body [class*="welcome-icon"],
 body [class*="welcomeIcon"],
 body [class*="welcome-logo"],
 body [class*="welcomeLogo"] {
-  background: rgba(40,53,147,0.1) !important;
-  border-color: #9fa8da !important;
+  background: rgba(255,77,156,0.1) !important;
+  border-color: #ff4d9c !important;
 }
 
 /* ---- 通用兜底：欢迎页所有非输入容器强制透明背景 ---- */
@@ -744,9 +744,9 @@ body [class*="tip-bar"],
 body [class*="tipBar"],
 body [class*="notification-bar"],
 body [class*="notificationBar"] {
-  background: #e8eaf2 !important;
-  border-color: #9fa8da !important;
-  color: #1a1a33 !important;
+  background: #736b74 !important;
+  border-color: #ff4d9c !important;
+  color: #ffffff !important;
 }
 
 /* ---- 按 placeholder 文本选择（覆盖"思考中"输入框） ---- */
@@ -759,9 +759,9 @@ body textarea[placeholder*="消息"],
 body div[placeholder*="思考"],
 body div[contenteditable="true"][data-placeholder*="思考"],
 body div[contenteditable="true"][aria-placeholder*="思考"] {
-  background: #e8eaf2 !important;
-  border-color: #9fa8da !important;
-  color: #1a1a33 !important;
+  background: #736b74 !important;
+  border-color: #ff4d9c !important;
+  color: #ffffff !important;
 }
 
 /* ---- 兜底：所有 body 下的浅色容器都强制覆盖 ---- */
@@ -771,8 +771,8 @@ body div[style*="background-color:#fff"],
 body div[style*="background-color: #fff"],
 body div[style*="background:#fff"],
 body div[style*="background: #fff"] {
-  background: #e8eaf2 !important;
-  background-color: #e8eaf2 !important;
+  background: #736b74 !important;
+  background-color: #736b74 !important;
 }
 
 /* ---- reduced motion ---- */
@@ -788,140 +788,140 @@ body div[style*="background: #fff"] {
 }
 
 @charset "UTF-8";
-/* WorkBuddy Skin: 火影忍者·佐助 (naruto-sasuke) - dark
+/* WorkBuddy Skin: Pink Crystal · 深空樱雾 (pink-crystal) - dark
    由 workbuddy-skin-gallery 生成 */
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body {
   /* -- 基础色 -- */
-  --vscode-foreground: #e8eaf6 !important;
-  --vscode-editor-foreground: #e8eaf6 !important;
-  --vscode-descriptionForeground: #8a90b8 !important;
-  --vscode-disabledForeground: #8a90b8 !important;
-  --vscode-editor-background: #14151d !important;
-  --vscode-sideBar-background: #1c1e29 !important;
-  --vscode-panel-background: #14151d !important;
+  --vscode-foreground: #ffffff !important;
+  --vscode-editor-foreground: #ffffff !important;
+  --vscode-descriptionForeground: #cc8aa8 !important;
+  --vscode-disabledForeground: #cc8aa8 !important;
+  --vscode-editor-background: #18141d !important;
+  --vscode-sideBar-background: #241c29 !important;
+  --vscode-panel-background: #18141d !important;
   /* -- 输入/下拉/菜单 -- */
-  --vscode-input-background: #202128 !important;
-  --vscode-dropdown-background: #202128 !important;
-  --vscode-menu-background: #27282f !important;
-  --vscode-editorWidget-background: #27282f !important;
-  --vscode-textCodeBlock-background: #33343e !important;
-  --vscode-input-border: #3949ab !important;
-  --vscode-focusBorder: #5c6bc0 !important;
+  --vscode-input-background: #242028 !important;
+  --vscode-dropdown-background: #242028 !important;
+  --vscode-menu-background: #2a272f !important;
+  --vscode-editorWidget-background: #2a272f !important;
+  --vscode-textCodeBlock-background: #3a333e !important;
+  --vscode-input-border: #d27aa1 !important;
+  --vscode-focusBorder: #ff4d9c !important;
   /* -- 图标/链接 -- */
-  --vscode-icon-foreground: #8a90b8 !important;
-  --vscode-textLink-foreground: #5c6bc0 !important;
-  --vscode-textLink-activeForeground: #707dc8 !important;
+  --vscode-icon-foreground: #cc8aa8 !important;
+  --vscode-textLink-foreground: #ff4d9c !important;
+  --vscode-textLink-activeForeground: #ff62a8 !important;
   /* -- 按钮 -- */
-  --vscode-button-background: #5c6bc0 !important;
+  --vscode-button-background: #ff4d9c !important;
   --vscode-button-foreground: #ffffff !important;
-  --vscode-button-hoverBackground: #707dc8 !important;
-  --vscode-progressBar-background: #5c6bc0 !important;
-  --vscode-badge-background: #5c6bc0 !important;
+  --vscode-button-hoverBackground: #ff62a8 !important;
+  --vscode-progressBar-background: #ff4d9c !important;
+  --vscode-badge-background: #ff4d9c !important;
   --vscode-badge-foreground: #ffffff !important;
   /* -- 列表 -- */
-  --vscode-list-hoverBackground: #33343e !important;
-  --vscode-list-activeSelectionBackground: #3c4477 !important;
-  --vscode-list-activeSelectionForeground: #e8eaf6 !important;
-  --vscode-list-inactiveSelectionBackground: #33343e !important;
-  --vscode-list-focusBackground: #3c4477 !important;
+  --vscode-list-hoverBackground: #3a333e !important;
+  --vscode-list-activeSelectionBackground: #973363 !important;
+  --vscode-list-activeSelectionForeground: #ffffff !important;
+  --vscode-list-inactiveSelectionBackground: #3a333e !important;
+  --vscode-list-focusBackground: #973363 !important;
   /* -- 行号/缩进/括号 -- */
-  --vscode-editorLineNumber-foreground: #8a90b8 !important;
-  --vscode-editorLineNumber-activeForeground: #e8eaf6 !important;
-  --vscode-editorIndentGuide-background1: #3949ab !important;
-  --vscode-editorBracketHighlight-foreground1: #5c6bc0 !important;
-  --vscode-editorBracketHighlight-foreground2: #26c6da !important;
+  --vscode-editorLineNumber-foreground: #cc8aa8 !important;
+  --vscode-editorLineNumber-activeForeground: #ffffff !important;
+  --vscode-editorIndentGuide-background1: #d27aa1 !important;
+  --vscode-editorBracketHighlight-foreground1: #ff4d9c !important;
+  --vscode-editorBracketHighlight-foreground2: #ffb6d0 !important;
   /* -- 滚动条 -- */
-  --vscode-scrollbarSlider-background: #3949ab !important;
-  --vscode-scrollbarSlider-hoverBackground: #5c6bc0 !important;
-  --vscode-scrollbarSlider-activeBackground: #707dc8 !important;
+  --vscode-scrollbarSlider-background: #d27aa1 !important;
+  --vscode-scrollbarSlider-hoverBackground: #ff4d9c !important;
+  --vscode-scrollbarSlider-activeBackground: #ff62a8 !important;
   /* -- Tab -- */
-  --vscode-tab-activeBackground: #27282f !important;
-  --vscode-tab-inactiveBackground: #14151d !important;
-  --vscode-tab-border: #3949ab !important;
-  --vscode-tab-activeForeground: #e8eaf6 !important;
-  --vscode-tab-inactiveForeground: #8a90b8 !important;
+  --vscode-tab-activeBackground: #2a272f !important;
+  --vscode-tab-inactiveBackground: #18141d !important;
+  --vscode-tab-border: #d27aa1 !important;
+  --vscode-tab-activeForeground: #ffffff !important;
+  --vscode-tab-inactiveForeground: #cc8aa8 !important;
   /* -- Activity Bar / Status Bar / Title Bar -- */
-  --vscode-activityBar-background: #1c1e29 !important;
-  --vscode-activityBar-foreground: #5c6bc0 !important;
-  --vscode-activityBar-inactiveForeground: #8a90b8 !important;
-  --vscode-statusBar-background: #28377b !important;
+  --vscode-activityBar-background: #241c29 !important;
+  --vscode-activityBar-foreground: #ff4d9c !important;
+  --vscode-activityBar-inactiveForeground: #cc8aa8 !important;
+  --vscode-statusBar-background: #7e2554 !important;
   --vscode-statusBar-foreground: #ffffff !important;
-  --vscode-titleBar-activeBackground: #28387b !important;
+  --vscode-titleBar-activeBackground: #7e254d !important;
   --vscode-titleBar-activeForeground: #ffffff !important;
   /* -- 通知 -- */
-  --vscode-notifications-background: #27282f !important;
-  --vscode-notifications-foreground: #e8eaf6 !important;
-  --vscode-notificationLink-foreground: #5c6bc0 !important;
+  --vscode-notifications-background: #2a272f !important;
+  --vscode-notifications-foreground: #ffffff !important;
+  --vscode-notificationLink-foreground: #ff4d9c !important;
   /* -- WorkBuddy 专有 -- */
-  --wb-home-bg-primary: #1c1e29 !important;
-  --wb-home-bg-secondary: #14151d !important;
-  --wb-bg-primary: #27282f !important;
-  --wb-bg-secondary: #14151d !important;
-  --wb-bg-tertiary: #33343e !important;
-  --wb-bg-hover: #33343e !important;
-  --wb-bg-active: #3c4477 !important;
-  --wb-sidebar-bg: #1c1e29 !important;
-  --wb-text-primary: #e8eaf6 !important;
-  --wb-text-strong: #e8eaf6 !important;
-  --wb-text-medium: #e8eaf6 !important;
-  --wb-text-secondary: #8a90b8 !important;
-  --wb-text-tertiary: #8a90b8 !important;
-  --wb-color-text-primary: #e8eaf6 !important;
-  --wb-color-text-secondary: #8a90b8 !important;
-  --wb-color-text-tertiary: #8a90b8 !important;
-  --wb-icon-primary: #e8eaf6 !important;
-  --wb-icon-secondary: #8a90b8 !important;
-  --wb-icon-muted: #8a90b8 !important;
-  --wb-border-default: #3949ab !important;
-  --wb-border-subtle: #33343e !important;
-  --wb-border-focus: #5c6bc0 !important;
-  --wb-bg-card-strong: #27282f !important;
-  --wb-bg-pill-hover: #33343e !important;
-  --wb-bg-pill-active: #5c6bc0 !important;
-  --wb-bg-pill-active-hover: #707dc8 !important;
-  --wb-control-selected-bg: #5c6bc0 !important;
-  --wb-control-selected-bg-hover: #707dc8 !important;
-  --wb-button-primary-bg: #5c6bc0 !important;
-  --wb-button-primary-bg-hover: #707dc8 !important;
-  --wb-button-primary-bg-active: #707dc8 !important;
-  --wb-quick-action-arrow-bg: #33343e !important;
-  --wb-quick-action-selected-bg: #5c6bc0 !important;
+  --wb-home-bg-primary: #241c29 !important;
+  --wb-home-bg-secondary: #18141d !important;
+  --wb-bg-primary: #2a272f !important;
+  --wb-bg-secondary: #18141d !important;
+  --wb-bg-tertiary: #3a333e !important;
+  --wb-bg-hover: #3a333e !important;
+  --wb-bg-active: #973363 !important;
+  --wb-sidebar-bg: #241c29 !important;
+  --wb-text-primary: #ffffff !important;
+  --wb-text-strong: #ffffff !important;
+  --wb-text-medium: #ffffff !important;
+  --wb-text-secondary: #cc8aa8 !important;
+  --wb-text-tertiary: #cc8aa8 !important;
+  --wb-color-text-primary: #ffffff !important;
+  --wb-color-text-secondary: #cc8aa8 !important;
+  --wb-color-text-tertiary: #cc8aa8 !important;
+  --wb-icon-primary: #ffffff !important;
+  --wb-icon-secondary: #cc8aa8 !important;
+  --wb-icon-muted: #cc8aa8 !important;
+  --wb-border-default: #d27aa1 !important;
+  --wb-border-subtle: #3a333e !important;
+  --wb-border-focus: #ff4d9c !important;
+  --wb-bg-card-strong: #2a272f !important;
+  --wb-bg-pill-hover: #3a333e !important;
+  --wb-bg-pill-active: #ff4d9c !important;
+  --wb-bg-pill-active-hover: #ff62a8 !important;
+  --wb-control-selected-bg: #ff4d9c !important;
+  --wb-control-selected-bg-hover: #ff62a8 !important;
+  --wb-button-primary-bg: #ff4d9c !important;
+  --wb-button-primary-bg-hover: #ff62a8 !important;
+  --wb-button-primary-bg-active: #ff62a8 !important;
+  --wb-quick-action-arrow-bg: #3a333e !important;
+  --wb-quick-action-selected-bg: #ff4d9c !important;
   --wb-quick-action-selected-fg: #ffffff !important;
-  --wb-quick-action-item-bg-hover: #33343e !important;
-  --wb-quick-action-item-border-hover: #3949ab !important;
-  --wb-quick-action-sub-item-bg: #14151d !important;
-  --wb-quick-action-sub-item-hover-bg: #33343e !important;
-  --wb-home-composer-card-bg: #27282f !important;
-  --wb-home-composer-sub-card-bg: #14151d !important;
-  --wb-home-composer-chip-bg-hover: #33343e !important;
-  --wb-home-composer-arrow-fg: #8a90b8 !important;
-  --wb-quick-actions-fade-bg: #14151d !important;
-  --cb-dropdown-bg-color: #27282f !important;
-  --cb-dropdown-item-hover-bg-color: #33343e !important;
-  --cb-hover-card-bg-color: #33343e !important;
+  --wb-quick-action-item-bg-hover: #3a333e !important;
+  --wb-quick-action-item-border-hover: #d27aa1 !important;
+  --wb-quick-action-sub-item-bg: #18141d !important;
+  --wb-quick-action-sub-item-hover-bg: #3a333e !important;
+  --wb-home-composer-card-bg: #2a272f !important;
+  --wb-home-composer-sub-card-bg: #18141d !important;
+  --wb-home-composer-chip-bg-hover: #3a333e !important;
+  --wb-home-composer-arrow-fg: #cc8aa8 !important;
+  --wb-quick-actions-fade-bg: #18141d !important;
+  --cb-dropdown-bg-color: #2a272f !important;
+  --cb-dropdown-item-hover-bg-color: #3a333e !important;
+  --cb-hover-card-bg-color: #3a333e !important;
   /* ⭐ 输入框双遮蔽源覆盖（白条根因） */
-  --atm-surface: #202128 !important;
-  --atm-chat-content-bg: #202128 !important;
-  --cb-input-background: #202128 !important;
-  --cb-main-area-background: #14151d !important;
-  --cb-content-background: #14151d !important;
-  --cb-bg-surface: #27282f !important;
-  --cb-vscode-editor-background: #14151d !important;
-  --cb-vscode-sideBar-background: #1c1e29 !important;
-  --cb-vscode-foreground: #e8eaf6 !important;
-  --cb-vscode-editor-foreground: #e8eaf6 !important;
-  --cb-text-primary: #e8eaf6 !important;
-  --cb-text-secondary: #8a90b8 !important;
-  --cb-vscode-titleBar-activeBackground: #28387b !important;
+  --atm-surface: #242028 !important;
+  --atm-chat-content-bg: #242028 !important;
+  --cb-input-background: #242028 !important;
+  --cb-main-area-background: #18141d !important;
+  --cb-content-background: #18141d !important;
+  --cb-bg-surface: #2a272f !important;
+  --cb-vscode-editor-background: #18141d !important;
+  --cb-vscode-sideBar-background: #241c29 !important;
+  --cb-vscode-foreground: #ffffff !important;
+  --cb-vscode-editor-foreground: #ffffff !important;
+  --cb-text-primary: #ffffff !important;
+  --cb-text-secondary: #cc8aa8 !important;
+  --cb-vscode-titleBar-activeBackground: #7e254d !important;
   --cb-vscode-titleBar-activeForeground: #ffffff !important;
-  --cb-vscode-input-background: #202128 !important;
-  --cb-vscode-dropdown-background: #27282f !important;
-  --cb-vscode-button-background: #5c6bc0 !important;
+  --cb-vscode-input-background: #242028 !important;
+  --cb-vscode-dropdown-background: #2a272f !important;
+  --cb-vscode-button-background: #ff4d9c !important;
   --cb-vscode-button-foreground: #ffffff !important;
-  --cb-vscode-button-hoverBackground: #707dc8 !important;
-  --cb-vscode-list-hoverBackground: #33343e !important;
-  --cb-vscode-scrollbarSlider-background: #3949ab !important;
-  --cb-vscode-scrollbarSlider-hoverBackground: #5c6bc0 !important;
+  --cb-vscode-button-hoverBackground: #ff62a8 !important;
+  --cb-vscode-list-hoverBackground: #3a333e !important;
+  --cb-vscode-scrollbarSlider-background: #d27aa1 !important;
+  --cb-vscode-scrollbarSlider-hoverBackground: #ff4d9c !important;
 }
 
 /* ---- 全局过渡动画（主题切换平滑） ---- */
@@ -939,27 +939,27 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .workbuddy-t
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body #root {
-  color: #e8eaf6 !important;
-  background: #14151d !important;
+  color: #ffffff !important;
+  background: #18141d !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .teams-container {
-  background: #1c1e29 !important;
+  background: #241c29 !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .teams-container [data-view-id="sidebar"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-sidebar,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-list {
-  background: linear-gradient(180deg, #2a2c36 0%, #1c1e29 48%, #181a23 100%) !important;
-  border-right: 1px solid #3949ab !important;
+  background: linear-gradient(180deg, #312a36 0%, #241c29 48%, #1f1823 100%) !important;
+  border-right: 1px solid #d27aa1 !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-list-topbar,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-topbar,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .workbuddy-topbar,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .teams-top-bar {
-  background: linear-gradient(180deg, #28387b 0%, #28377b 100%) !important;
-  border-bottom: 1px solid #212d65 !important;
+  background: linear-gradient(180deg, #7e254d 0%, #7e2554 100%) !important;
+  border-bottom: 1px solid #671e45 !important;
   color: #ffffff !important;
 }
 
@@ -978,8 +978,8 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .main-conten
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .welcome,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .welcome-container,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-pane {
-  background-color: #14151d !important;
-  background-image:linear-gradient(180deg, rgba(20,21,29,0.25) 0%, rgba(20,21,29,0.5) 45%, rgba(20,21,29,0.7) 100%), url("./hero.png"),  linear-gradient(135deg, #202128 0%, #14151d 46%, #101117 100%) !important;
+  background-color: #18141d !important;
+  background-image:linear-gradient(180deg, rgba(24,20,29,0.25) 0%, rgba(24,20,29,0.5) 45%, rgba(24,20,29,0.7) 100%), url("./hero.png"),  linear-gradient(135deg, #242028 0%, #18141d 46%, #131017 100%) !important;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -987,23 +987,23 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-
 /* ---- Tab 选中态 ---- */
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-list-tab-row.active,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-list-tab-button-box.active {
-  border-color: #5c6bc0 !important;
-  background: #38406e !important;
+  border-color: #ff4d9c !important;
+  background: #8c305c !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-agent-card:hover {
-  background: #33343e !important;
+  background: #3a333e !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-agent-card[class*="selected"] {
-  border-color: #5c6bc0 !important;
-  background: #38406e !important;
+  border-color: #ff4d9c !important;
+  background: #8c305c !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-scene-tabs__pill--active,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-scene-tabs__pill--active:hover {
-  border-color: #5c6bc0 !important;
-  background: linear-gradient(180deg, #5c6bc0 0%, #707dc8 100%) !important;
+  border-color: #ff4d9c !important;
+  background: linear-gradient(180deg, #ff4d9c 0%, #ff62a8 100%) !important;
   color: #ffffff !important;
 }
 
@@ -1012,17 +1012,17 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-com
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__chips .quick-actions-sub__item,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__chip,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-pane .colleague-chat-suggestions__item {
-  border: 1px solid #3949ab !important;
-  background: rgba(92,107,192,0.18) !important;
-  color: #e8eaf6 !important;
+  border: 1px solid #d27aa1 !important;
+  background: rgba(255,77,156,0.18) !important;
+  color: #ffffff !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__chips .quick-actions__item:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__chips .quick-actions-sub__item:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__chip:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-pane .colleague-chat-suggestions__item:hover {
-  border-color: #5c6bc0 !important;
-  background: #33343e !important;
+  border-color: #ff4d9c !important;
+  background: #3a333e !important;
 }
 
 /* ---- 输入框 ---- */
@@ -1030,8 +1030,8 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-com
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-pane .colleague-chat-cb-chat [class*="input-area-container"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .project-detail-view__chat-input,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input {
-  border: 1px solid #3949ab !important;
-  background: #202128 !important;
+  border: 1px solid #d27aa1 !important;
+  background: #242028 !important;
   box-shadow: 0 1px 4px rgba(0,0,0,0.5) !important;
   border-radius: 12px !important;
   transition: border-color .2s ease, box-shadow .2s ease !important;
@@ -1039,27 +1039,27 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-c
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__input-slot:focus-within,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-pane [class*="input-area-container"]:focus-within {
-  border-color: #5c6bc0 !important;
-  box-shadow: 0 0 0 3px rgba(92,107,192,0.18), 0 1px 8px rgba(0,0,0,0.5) !important;
+  border-color: #ff4d9c !important;
+  box-shadow: 0 0 0 3px rgba(255,77,156,0.18), 0 1px 8px rgba(0,0,0,0.5) !important;
 }
 
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__input-slot [class*="editable"][contenteditable="true"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .claw-agent-chat-pane [contenteditable="true"] {
-  color: #e8eaf6 !important;
+  color: #ffffff !important;
 }
 
 /* ⭐ atm-modal-chat-input 直接覆盖（白条根因：双遮蔽源） */
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input * {
-  --atm-surface: #202128 !important;
-  --atm-chat-content-bg: #202128 !important;
+  --atm-surface: #242028 !important;
+  --atm-chat-content-bg: #242028 !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input [class*="_mainArea_"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input [class*="_content_"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input textarea,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .atm-modal-chat-input [contenteditable] {
-  background: #202128 !important;
-  border: 1px solid #3949ab !important;
+  background: #242028 !important;
+  border: 1px solid #d27aa1 !important;
   border-radius: 12px !important;
 }
 
@@ -1070,9 +1070,9 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .user-menu-p
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tooltip"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="popover"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropdown-menu"] {
-  border: 1px solid #3949ab !important;
-  background: #27282f !important;
-  color: #e8eaf6 !important;
+  border: 1px solid #d27aa1 !important;
+  background: #2a272f !important;
+  color: #ffffff !important;
   box-shadow: 0 6px 18px rgba(0,0,0,0.5) !important;
 }
 
@@ -1083,17 +1083,17 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body ::-webkit-sc
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body ::-webkit-scrollbar-thumb {
   border: 2px solid transparent;
   border-radius: 8px;
-  background: #3949ab;
+  background: #d27aa1;
   background-clip: padding-box;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body ::-webkit-scrollbar-thumb:hover {
-  background: #5c6bc0;
+  background: #ff4d9c;
 }
 
 /* ---- 选中文字 ---- */
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body ::selection {
   color: #ffffff !important;
-  background: #5c6bc0 !important;
+  background: #ff4d9c !important;
 }
 
 /* ---- 代码块 ---- */
@@ -1102,9 +1102,9 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body pre,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .code-block,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="code-block"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="codeBlock"] {
-  background: #33343e !important;
-  color: #e8eaf6 !important;
-  border: 1px solid #3949ab !important;
+  background: #3a333e !important;
+  color: #ffffff !important;
+  border: 1px solid #d27aa1 !important;
   border-radius: 8px !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body pre code {
@@ -1115,32 +1115,32 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body pre code {
 /* ---- Markdown 内容 ---- */
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body h1, body.dark, body.dark-theme, body[data-theme="dark"], html.dark body h2, body.dark, body.dark-theme, body[data-theme="dark"], html.dark body h3,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body h4, body.dark, body.dark-theme, body[data-theme="dark"], html.dark body h5, body.dark, body.dark-theme, body[data-theme="dark"], html.dark body h6 {
-  color: #e8eaf6 !important;
+  color: #ffffff !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body blockquote {
-  border-left: 3px solid #5c6bc0 !important;
-  background: rgba(92,107,192,0.18) !important;
-  color: #e8eaf6 !important;
+  border-left: 3px solid #ff4d9c !important;
+  background: rgba(255,77,156,0.18) !important;
+  color: #ffffff !important;
   border-radius: 0 8px 8px 0 !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body table {
   border-collapse: collapse !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body th, body.dark, body.dark-theme, body[data-theme="dark"], html.dark body td {
-  border: 1px solid #3949ab !important;
-  color: #e8eaf6 !important;
+  border: 1px solid #d27aa1 !important;
+  color: #ffffff !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body th {
-  background: #33343e !important;
+  background: #3a333e !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body hr {
-  border-color: #3949ab !important;
+  border-color: #d27aa1 !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body a {
-  color: #5c6bc0 !important;
+  color: #ff4d9c !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body a:hover {
-  color: #707dc8 !important;
+  color: #ff62a8 !important;
 }
 
 /* ---- 主题图标个性化: logo 替换为主题 emoji ---- */
@@ -1148,7 +1148,7 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversatio
   display: none !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .conversation-list-logo-row::before {
-  content: "⚡";
+  content: "🌸";
   font-size: 24px;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
@@ -1158,7 +1158,7 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-com
   display: none !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body .wb-home-composer__input-slot [class*="topRightSlotStandalone"]::after {
-  content: "⚡";
+  content: "🌸";
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1174,12 +1174,12 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="loa
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="spinner"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="placeholder"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="shimmer"] {
-  background: #33343e !important;
-  color: #8a90b8 !important;
+  background: #3a333e !important;
+  color: #cc8aa8 !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="spinner"] {
-  border-color: #3949ab !important;
-  border-top-color: #5c6bc0 !important;
+  border-color: #d27aa1 !important;
+  border-top-color: #ff4d9c !important;
 }
 
 /* ---- 开关/复选框/单选 ---- */
@@ -1187,12 +1187,12 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[type="
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[type="radio"]:checked,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="switch"][class*="checked"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="toggle"][class*="on"] {
-  background: #5c6bc0 !important;
-  border-color: #5c6bc0 !important;
+  background: #ff4d9c !important;
+  border-color: #ff4d9c !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="switch"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="toggle"] {
-  border-color: #3949ab !important;
+  border-color: #d27aa1 !important;
 }
 
 /* ---- 右键菜单/上下文菜单 ---- */
@@ -1202,14 +1202,14 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="men
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menuItem"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menu-list"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menuList"] {
-  background: #27282f !important;
-  color: #e8eaf6 !important;
-  border-color: #3949ab !important;
+  background: #2a272f !important;
+  color: #ffffff !important;
+  border-color: #d27aa1 !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menu-item"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="menuItem"]:hover {
-  background: #33343e !important;
-  color: #e8eaf6 !important;
+  background: #3a333e !important;
+  color: #ffffff !important;
 }
 
 /* ---- 设置页面 ---- */
@@ -1218,12 +1218,12 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="pre
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="config-page"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="SettingItem"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="setting-item"] {
-  background: #27282f !important;
-  color: #e8eaf6 !important;
-  border-color: #3949ab !important;
+  background: #2a272f !important;
+  color: #ffffff !important;
+  border-color: #d27aa1 !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="setting-item"]:hover {
-  background: #33343e !important;
+  background: #3a333e !important;
 }
 
 /* ---- 空状态 ---- */
@@ -1232,7 +1232,7 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="emp
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="no-data"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="noData"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="illustration"] {
-  color: #8a90b8 !important;
+  color: #cc8aa8 !important;
 }
 
 /* ---- 链接预览卡片 ---- */
@@ -1240,15 +1240,15 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="lin
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="linkCard"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="preview-card"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="previewCard"] {
-  background: #27282f !important;
-  border-color: #3949ab !important;
-  color: #e8eaf6 !important;
+  background: #2a272f !important;
+  border-color: #d27aa1 !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="link-card"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="linkCard"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="preview-card"]:hover {
-  border-color: #5c6bc0 !important;
+  border-color: #ff4d9c !important;
 }
 
 /* ---- 代码复制按钮 ---- */
@@ -1256,15 +1256,15 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="cop
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="copyButton"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="code-copy"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="codeCopy"] {
-  background: #33343e !important;
-  color: #8a90b8 !important;
-  border-color: #3949ab !important;
+  background: #3a333e !important;
+  color: #cc8aa8 !important;
+  border-color: #d27aa1 !important;
   border-radius: 6px !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="copy-button"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="copyButton"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="code-copy"]:hover {
-  background: #5c6bc0 !important;
+  background: #ff4d9c !important;
   color: #ffffff !important;
 }
 
@@ -1272,22 +1272,22 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="cod
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body mark,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="highlight"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="search-match"] {
-  background: rgba(92,107,192,0.18) !important;
-  color: #5c6bc0 !important;
+  background: rgba(255,77,156,0.18) !important;
+  color: #ff4d9c !important;
   border-radius: 3px !important;
 }
 
 /* ---- 拖拽区域 ---- */
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropzone"]:not([class*="dragging"]),
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropZone"]:not([class*="dragging"]) {
-  border-color: #3949ab !important;
-  background: #33343e !important;
+  border-color: #d27aa1 !important;
+  background: #3a333e !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropzone"][class*="dragging"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="dropZone"][class*="active"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="drop-zone"][class*="drag"] {
-  border-color: #5c6bc0 !important;
-  background: rgba(92,107,192,0.18) !important;
+  border-color: #ff4d9c !important;
+  background: rgba(255,77,156,0.18) !important;
 }
 
 /* ---- 消息时间戳/元信息 ---- */
@@ -1296,7 +1296,7 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="mes
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="messageTime"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="meta-text"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="metaText"] {
-  color: #8a90b8 !important;
+  color: #cc8aa8 !important;
 }
 
 /* ---- 专家页面 / 技能卡片 ---- */
@@ -1304,17 +1304,17 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="exp
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="expertCard"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skill-card"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skillCard"] {
-  background: #27282f !important;
-  border-color: #3949ab !important;
-  color: #e8eaf6 !important;
+  background: #2a272f !important;
+  border-color: #d27aa1 !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="expert-card"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="expertCard"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skill-card"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="skillCard"]:hover {
-  border-color: #5c6bc0 !important;
-  background: #33343e !important;
+  border-color: #ff4d9c !important;
+  background: #3a333e !important;
 }
 
 /* ---- 命令面板 ---- */
@@ -1324,25 +1324,25 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="qui
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="quickInput"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="command-input"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="commandInput"] {
-  background: #27282f !important;
-  border-color: #3949ab !important;
-  color: #e8eaf6 !important;
+  background: #2a272f !important;
+  border-color: #d27aa1 !important;
+  color: #ffffff !important;
 }
 
 /* ---- @提及 / 附件 ---- */
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="mention"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Mention"] {
-  background: rgba(92,107,192,0.18) !important;
-  color: #5c6bc0 !important;
+  background: rgba(255,77,156,0.18) !important;
+  color: #ff4d9c !important;
   border-radius: 4px !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="attachment"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Attachment"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="file-card"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="fileCard"] {
-  background: #33343e !important;
-  border-color: #3949ab !important;
-  color: #e8eaf6 !important;
+  background: #3a333e !important;
+  border-color: #d27aa1 !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
 }
 
@@ -1350,20 +1350,20 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="fil
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="markdown-body"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="markdownBody"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="prose"] {
-  color: #e8eaf6 !important;
+  color: #ffffff !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diff-view"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diffView"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="code-diff"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="codeDiff"] {
-  background: #33343e !important;
-  border-color: #3949ab !important;
+  background: #3a333e !important;
+  border-color: #d27aa1 !important;
   border-radius: 8px !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diff-view"] [class*="add"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diffView"] [class*="add"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="line-add"] {
-  background: rgba(92,107,192,0.18) !important;
+  background: rgba(255,77,156,0.18) !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diff-view"] [class*="del"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="diffView"] [class*="del"],
@@ -1373,51 +1373,51 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="lin
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="terminal"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Terminal"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="xterm"] {
-  background: #14151d !important;
-  border-color: #3949ab !important;
-  color: #e8eaf6 !important;
+  background: #18141d !important;
+  border-color: #d27aa1 !important;
+  color: #ffffff !important;
   border-radius: 8px !important;
 }
 
 /* ---- 头像 / 树 / 分页 / 面包屑 ---- */
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="avatar"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Avatar"] {
-  border-color: #3949ab !important;
+  border-color: #d27aa1 !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-node"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="treeNode"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-item"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="treeItem"] {
-  color: #e8eaf6 !important;
+  color: #ffffff !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-node"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="treeNode"]:hover,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-item"]:hover {
-  background: #33343e !important;
+  background: #3a333e !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-node"][class*="active"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="treeNode"][class*="selected"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tree-item"][class*="active"] {
-  background: #3c4477 !important;
-  color: #e8eaf6 !important;
+  background: #973363 !important;
+  color: #ffffff !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="pagination"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Pagination"] {
-  color: #e8eaf6 !important;
+  color: #ffffff !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="pagination"] [class*="active"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Pagination"] [class*="active"] {
-  background: #5c6bc0 !important;
+  background: #ff4d9c !important;
   color: #ffffff !important;
-  border-color: #5c6bc0 !important;
+  border-color: #ff4d9c !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="breadcrumb"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Breadcrumb"] {
-  color: #8a90b8 !important;
+  color: #cc8aa8 !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="breadcrumb"] a,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="Breadcrumb"] a {
-  color: #5c6bc0 !important;
+  color: #ff4d9c !important;
 }
 
 /* ---- 优化: caret-color / 等宽字体 / Firefox 兼容 / 链接 ---- */
@@ -1425,7 +1425,7 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [contentedit
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[type="text"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[type="search"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body textarea {
-  caret-color: #5c6bc0 !important;
+  caret-color: #ff4d9c !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body code,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body pre,
@@ -1435,10 +1435,10 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="cod
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body ::-moz-selection {
   color: #ffffff !important;
-  background: #5c6bc0 !important;
+  background: #ff4d9c !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body {
-  scrollbar-color: #3949ab transparent;
+  scrollbar-color: #d27aa1 transparent;
   scrollbar-width: thin;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body a {
@@ -1459,9 +1459,9 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="emp
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="emptySearch"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="quick-search-input"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="quickSearchInput"] {
-  background: #33343e !important;
-  border-color: #3949ab !important;
-  color: #e8eaf6 !important;
+  background: #3a333e !important;
+  border-color: #d27aa1 !important;
+  color: #ffffff !important;
   border-radius: 12px !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-search"] input,
@@ -1474,14 +1474,14 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="wel
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="hero-search"] textarea,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="empty-search"] textarea {
   background: transparent !important;
-  color: #e8eaf6 !important;
+  color: #ffffff !important;
 }
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-search"] input::placeholder,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-search"] textarea::placeholder,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="hero-search"] input::placeholder,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="empty-search"] input::placeholder,
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="home-search"] input::placeholder {
-  color: #8a90b8 !important;
+  color: #cc8aa8 !important;
 }
 
 /* ---- 透明容器/卡片背景（防止白色矩形） ---- */
@@ -1503,8 +1503,8 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="wel
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeIcon"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcome-logo"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="welcomeLogo"] {
-  background: rgba(92,107,192,0.18) !important;
-  border-color: #3949ab !important;
+  background: rgba(255,77,156,0.18) !important;
+  border-color: #d27aa1 !important;
 }
 
 /* ---- 通用兜底：欢迎页所有非输入容器强制透明背景 ---- */
@@ -1533,9 +1533,9 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tip
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="tipBar"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="notification-bar"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="notificationBar"] {
-  background: #33343e !important;
-  border-color: #3949ab !important;
-  color: #e8eaf6 !important;
+  background: #3a333e !important;
+  border-color: #d27aa1 !important;
+  color: #ffffff !important;
 }
 
 /* ---- 按 placeholder 文本选择（覆盖"思考中"输入框） ---- */
@@ -1548,9 +1548,9 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body textarea[pla
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[placeholder*="思考"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[contenteditable="true"][data-placeholder*="思考"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[contenteditable="true"][aria-placeholder*="思考"] {
-  background: #33343e !important;
-  border-color: #3949ab !important;
-  color: #e8eaf6 !important;
+  background: #3a333e !important;
+  border-color: #d27aa1 !important;
+  color: #ffffff !important;
 }
 
 /* ---- 兜底：所有 body 下的浅色容器都强制覆盖 ---- */
@@ -1560,8 +1560,8 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background-color: #fff"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background:#fff"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[style*="background: #fff"] {
-  background: #33343e !important;
-  background-color: #33343e !important;
+  background: #3a333e !important;
+  background-color: #3a333e !important;
 }
 
 /* ---- reduced motion ---- */

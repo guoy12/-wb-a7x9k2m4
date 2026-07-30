@@ -58,4 +58,8 @@ dict(id="creative-chinese-red", name="创意·中国红", cat="creative",
      desc="故宫宫墙红配琉璃金，国潮当道", tags=["创意","国潮","中国红"],
      light=dict(accent="#b03a2e",secondary="#c9a227",bg="#fbf4f0",sidebar="#f2ddd6",topbar1="#c8503e",topbar2="#9c2a1e",text="#3c1410",muted="#7e5148",border="#e0a294"),
      dark=dict(accent="#e0705e",secondary="#ffd54f",bg="#160a08",sidebar="#2a1410",topbar1="#8e221a",topbar2="#581210",text="#fbe8e4",muted="#c08878",border="#b03a2e")),
+dict(id="pink-crystal", name="Pink Crystal · 深空樱雾", cat="creative",
+     desc="深空底色配热粉强调色，毛玻璃星空主题", tags=["创意","毛玻璃","星空","粉色"],
+     light=dict(accent="#ff4d9c",secondary="#ffb6d0",bg="#1a0a1e",sidebar="#160818",topbar1="#ff4d9c",topbar2="#c01a6a",text="#ffffff",muted="#ffb6d0",border="#ff4d9c"),
+     dark=dict(accent="#ff4d9c",secondary="#ffb6d0",bg="#10081a",sidebar="#1a0e22",topbar1="#ff4d9c",topbar2="#9c1a5e",text="#ffffff",muted="#cc8aa8",border="#ff4d9c")),
 ]
