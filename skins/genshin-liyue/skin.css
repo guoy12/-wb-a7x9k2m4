@@ -765,14 +765,20 @@ body [class*="notificationBar"] {
 }
 
 /* ---- 按 placeholder 文本选择（覆盖"思考中"输入框） ---- */
+body input[placeholder*="思考中"],
 body input[placeholder*="思考"],
 body input[placeholder*="input"],
+body input[placeholder*="Input"],
 body input[placeholder*="消息"],
 body input[placeholder*="请输入"],
+body textarea[placeholder*="思考中"],
 body textarea[placeholder*="思考"],
 body textarea[placeholder*="消息"],
+body div[placeholder*="思考中"],
 body div[placeholder*="思考"],
+body div[contenteditable="true"][data-placeholder*="思考中"],
 body div[contenteditable="true"][data-placeholder*="思考"],
+body div[contenteditable="true"][aria-placeholder*="思考中"],
 body div[contenteditable="true"][aria-placeholder*="思考"] {
   background: #f7f0de !important;
   border-color: #e0c36a !important;
@@ -1569,14 +1575,20 @@ body.dark, body.dark-theme, body[data-theme="dark"], html.dark body [class*="not
 }
 
 /* ---- 按 placeholder 文本选择（覆盖"思考中"输入框） ---- */
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="思考中"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="思考"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="input"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="Input"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="消息"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body input[placeholder*="请输入"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body textarea[placeholder*="思考中"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body textarea[placeholder*="思考"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body textarea[placeholder*="消息"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[placeholder*="思考中"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[placeholder*="思考"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[contenteditable="true"][data-placeholder*="思考中"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[contenteditable="true"][data-placeholder*="思考"],
+body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[contenteditable="true"][aria-placeholder*="思考中"],
 body.dark, body.dark-theme, body[data-theme="dark"], html.dark body div[contenteditable="true"][aria-placeholder*="思考"] {
   background: #3e3b33 !important;
   border-color: #7e6c2a !important;
